@@ -10,7 +10,7 @@ body{
 
 .navbar li{
     float:left;
-    padding-right: 20px;
+    padding-right: 50px;
 }
 
 .navbar ul{
@@ -25,6 +25,12 @@ body{
     display:flex;
     margin-top: 5px;
     justify-content: space-between;
+}
+
+
+.drop-btn{
+    padding-bottom:20px;
+    margin-bottom:10px;
 }
 
 .span-btn{
@@ -42,7 +48,7 @@ body{
     display: none;
     z-index:1;
     height:0;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .nav-list li{
@@ -64,20 +70,28 @@ body{
     margin-right:50px;
 }
 .dropdown-list{
-  display: none;
-  position: absolute;
+    height:0px;
+    width:fit-content;
+ position:absolute;
+ visibility:hidden;
+  margin-top:20px;
   background-color:rgb(17, 167, 119);
   min-width: 100px;
   z-index: 1;
   list-style-type: none;
   padding-left: 0px;
-  margin-top:10px;
   font-size:18px;
+  transition: 0.5s;
+ 
 }
-
+.nav-btn{
+    display:none;
+    margin-right:10px;
+    font-size:20px;
+}
 .logo{
-    max-width:100%;
-    height:auto;
+    max-width:120px;
+    height:80px;
 }
 
 .dropdown-list li{
@@ -86,11 +100,60 @@ body{
     border:1px solid white;
     padding-bottom: 10px;
     padding-left: 10px;
+    padding-right:15px;
 }
 
 .drop-btn:hover .dropdown-list{
-    display:block;
+    height:176px;
+    visibility:visible;
+
 }
+
+.sub-list{
+    display:none;
+    position: absolute;
+    background-color:rgb(17, 167, 119);
+  z-index: 1;
+  list-style-type: none;
+  padding-left: 0px;
+  margin-top:5px;
+  font-size:16px;
+  top:5px;
+  right:0;
+  transform: translate(100%,0);
+  
+}
+
+.dropdown-list > li{
+    position: relative;
+}
+
+.dropdown-list > li:hover .sub-list{
+    display:block;
+    
+}
+
+#sidenav{
+ 
+    width:0px;
+    z-index:1;
+    position: absolute;
+    right:0;
+    background-color: rgb(0,0,0,0.8);
+    transition: 0.5s;
+}
+.side-list{
+    padding-left:5px;
+}
+.side-list>li{
+    padding:20px;
+    font-size:20px;
+    list-style-type: none;
+    color:aliceblue;
+    z-index: 1;
+}
+
+
 .menu-text{
     display:none;
 }
@@ -112,10 +175,15 @@ body{
         display: block;
         margin-right:10px;
     }
+
+    .nav-btn{
+        display:block;
+    }
+
     .upper{
         display:flex;
         align-items: center;
-        justify-content:center;
+        justify-content:space-between;
     }
 
 }
