@@ -96,7 +96,8 @@
                 </li>
                 <ul id="sub2" class="menu-list">
                     <li>dropdown-1</li>
-                    <li>dropdown-2</li>
+                    <li>dropdown-2
+</li>
                     <li>dropdown-3</li>
                     <li>dropdown-4</li>
                 </ul>
@@ -132,6 +133,9 @@ function closeNav() {
   document.getElementById("drop-list").style.height = "0";
 }
 
+function droplist(){
+  document.getElementById("subx1").style.display="block";
+}
 
 function opencard(){
     if(document.getElementById("sub").style.height==="170px"){
@@ -176,11 +180,11 @@ function opencard3(){
 
 function sideopen(){
     document.getElementById("sidenav").style.width="200px";
-    document.getElementById("sidenav").style.display="block";
+
 }
 function sideclose(){
     document.getElementById("sidenav").style.width="0";
-    document.getElementById("sidenav").style.display="none";
+
 
 }
 

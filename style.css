@@ -143,10 +143,14 @@ body{
     
 }
 
+
+
+
+
 #sidenav{
  
     width:0px;
-    display:none;
+    overflow-x: hidden;
     z-index:1;
     position: absolute;
     right:0;
