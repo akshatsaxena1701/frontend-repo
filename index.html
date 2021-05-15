@@ -85,38 +85,35 @@
                 <i class="las la-bars span-btn" onclick="openNav()"></i>
             </div>
             <ul class="nav-list" id="drop-list">
-                <li class="drop-btn">Option1
-                    <ul class="dropdown-list">
+                <li class="drop-btn" onclick="opencard()">Option1</li>
+                    <ul id="sub" class="menu-list">
                         <li>dropdown-1</li>
                         <li>dropdown-2</li>
                         <li>dropdown-3</li>
                         <li>dropdown-4</li>
                     </ul>
+                <li class="drop-btn"  onclick="opencard1()">Option2
                 </li>
-                <li class="drop-btn">Option2
-                    <ul class="dropdown-list">
-                        <li>dropdown-1</li>
-                        <li>dropdown-2</li>
-                        <li>dropdown-3</li>
-                        <li>dropdown-4</li>
-                    </ul>
-                </li>
-                <li class="drop-btn">Option3
-                    <ul class="dropdown-list">
-                        <li>dropdown-1</li>
-                        <li>dropdown-2</li>
-                        <li>dropdown-3</li>
-                        <li>dropdown-4</li>
-                    </ul>
-                </li>
-                <li class="drop-btn">Option4
-                    <ul class="dropdown-list">
-                        <li>dropdown-1</li>
-                        <li>dropdown-2</li>
-                        <li>dropdown-3</li>
-                        <li>dropdown-4</li>
-                    </ul>
-                </li>
+                <ul id="sub2" class="menu-list">
+                    <li>dropdown-1</li>
+                    <li>dropdown-2</li>
+                    <li>dropdown-3</li>
+                    <li>dropdown-4</li>
+                </ul>
+                <li class="drop-btn"  onclick="opencard2()">Option3
+                </li><ul id="sub3" class="menu-list">
+                    <li>dropdown-1</li>
+                    <li>dropdown-2</li>
+                    <li>dropdown-3</li>
+                    <li>dropdown-4</li>
+                </ul>
+                <li class="drop-btn"  onclick="opencard3()">Option4
+                </li> <ul id="sub4" class="menu-list">
+                    <li>dropdown-1</li>
+                    <li>dropdown-2</li>
+                    <li>dropdown-3</li>
+                    <li>dropdown-4</li>
+                </ul>
             </ul>
         </div>
     </section>
@@ -124,10 +121,12 @@
 
 <script>
     function openNav() {
-  if(document.getElementById("drop-list").style.height==="178px"){
+  if(document.getElementById("drop-list").style.height==="max-content"){
     document.getElementById("drop-list").style.height = "0px";
   }else{
-    document.getElementById("drop-list").style.height = "178px";
+    document.getElementById("drop-list").style.height = "max-content";
+
+    
     }
 }
 
@@ -136,14 +135,51 @@ function closeNav() {
 }
 
 
+function opencard(){
+    if(document.getElementById("sub").style.height==="180px"){
+        document.getElementById("sub").style.height="0px";
+        document.getElementById("sub").style.display="none";
 
+    }else{
+    document.getElementById("sub").style.height="180px";
+    document.getElementById("sub").style.display="block";
+    document.getElementById("sub").style.position="relative";}
+}
+function opencard1(){
+    if(document.getElementById("sub2").style.height==="180px"){
+        document.getElementById("sub2").style.height="0px";
+        document.getElementById("sub2").style.display="none";
+
+    }else{
+    document.getElementById("sub2").style.height="180px";
+    document.getElementById("sub2").style.display="block";
+    document.getElementById("sub2").style.position="relative";}
+}
+function opencard2(){
+    if(document.getElementById("sub3").style.height==="180px"){
+        document.getElementById("sub3").style.height="0px";
+        document.getElementById("sub3").style.display="none";
+
+    }else{
+    document.getElementById("sub3").style.height="180px";
+    document.getElementById("sub3").style.display="block";
+    document.getElementById("sub3").style.position="relative";}
+}
+function opencard3(){
+    if(document.getElementById("sub4").style.height==="180px"){
+        document.getElementById("sub4").style.height="0px";
+        document.getElementById("sub4").style.display="none";
+
+    }else{
+    document.getElementById("sub4").style.height="180px";
+    document.getElementById("sub4").style.display="block";
+    document.getElementById("sub4").style.position="relative";}
+}
 
 function sideopen(){
-   
     document.getElementById("sidenav").style.width="200px";
 }
 function sideclose(){
-
     document.getElementById("sidenav").style.width="0px";
 }
 

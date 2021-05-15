@@ -44,7 +44,6 @@ body{
     margin-top: 0px;
     list-style-type: none;
     padding-left:0px;
-    overflow-y: hidden;
     display: none;
     z-index:1;
     height:0;
@@ -84,6 +83,17 @@ body{
   transition: 0.5s;
  
 }
+
+.menu-list{
+    list-style-type: none;
+    font-size:18px;
+    display:none;
+
+}
+.menu-list>li{
+    border: 0px;
+}
+
 .nav-btn{
     display:none;
     margin-right:10px;
