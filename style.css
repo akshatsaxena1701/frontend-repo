@@ -6,6 +6,8 @@ body{
     margin-right:1%;
     font-family:"Roboto";
     font-weight:bold;
+
+  padding: 0;
 }
 
 .navbar li{
@@ -31,6 +33,7 @@ body{
 .drop-btn{
     padding-bottom:20px;
     margin-bottom:10px;
+    z-index: 2;
 }
 
 .span-btn{
@@ -45,7 +48,7 @@ body{
     list-style-type: none;
     padding-left:0px;
     display: none;
-    z-index:1;
+    z-index:2;
     max-height:0;
     transition: 0.8s;
 }
@@ -70,10 +73,11 @@ body{
     margin-right:50px;
 }
 .dropdown-list{
-    max-height:0px;
+    max-height:200px;
     width:fit-content;
+    visibility:hidden;
+    opacity:0;
  position:absolute;
- visibility:hidden;
   margin-top:16px;
   background-color:rgb(17, 167, 119);
   min-width: 100px;
@@ -82,7 +86,7 @@ body{
   padding-left: 0px;
   font-size:15px;
   transition: 0.5s;
- 
+
 }
 
 .menu-list{
@@ -124,16 +128,19 @@ body{
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right:15px;
+
 }
 
 .drop-btn:hover .dropdown-list{
-    max-height:200px;
-    visibility:visible;
+    visibility:initial;
+    opacity:1;
+
 
 }
 
 .sub-list{
-    display:none;
+    visibility:hidden;
+    opacity:0;
     position: absolute;
     background-color:rgb(17, 167, 119);
   z-index: 1;
@@ -145,7 +152,8 @@ body{
   right:0;
   transform: translate(100%,0);
   width:max-content;
-  
+  transition:0.5s;
+
 }
 
 .dropdown-list > li{
@@ -153,7 +161,8 @@ body{
 }
 
 .dropdown-list > li:hover .sub-list{
-    display:block;
+    visibility:initial;
+    opacity:1;
 }
 
 #sidenav{
@@ -219,3 +228,35 @@ body{
 
 }
 
+
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  z-index:0;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  max-width: 400px;
+  max-height: 400px;
+  min-width:120px;
+  min-height:120px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.carousel-section{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+ .carousel-section .caro-img
+{
+  max-width: 600px;
+  max-height:600px;
+}
