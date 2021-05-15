@@ -19,7 +19,7 @@ body{
 
 .nav2{
     height:4rem;
-    font-size:20px;
+    font-size:19px;
     color:white;
     background-color:rgb(0, 128, 90);
     display:flex;
@@ -46,8 +46,8 @@ body{
     padding-left:0px;
     display: none;
     z-index:1;
-    height:0;
-    transition: 0.5s;
+    max-height:0;
+    transition: 0.8s;
 }
 
 .nav-list li{
@@ -62,7 +62,7 @@ body{
 }
 
 .upper .list-right li{
-    font-size:20px;
+    font-size:18px;
     padding:10px;
 }
 .upper .list-right{

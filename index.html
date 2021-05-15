@@ -40,7 +40,7 @@
                         <p>Menu</p>
                     </div>
                     <ul id="nav2-list">
-                        <li class="drop-btn" onclick="listopen()">Option1
+                        <li class="drop-btn" onclick="listopen()">Option1 <i class="las la-angle-down "></i>
                             <ul class="dropdown-list">
                                 <li>dropdown-1</li>
                                 <li>dropdown-2
@@ -56,7 +56,7 @@
                                 <li>dropdown-4</li>
                             </ul>
                         </li>
-                        <li class="drop-btn">Option2
+                        <li class="drop-btn">Option2 <i class="las la-angle-down "></i>
                             <ul class="dropdown-list">
                                 <li>dropdown-1</li>
                                 <li>dropdown-2</li>
@@ -64,7 +64,7 @@
                                 <li>dropdown-4</li>
                             </ul>
                         </li>
-                        <li class="drop-btn">Option3
+                        <li class="drop-btn">Option3 <i class="las la-angle-down "></i>
                             <ul class="dropdown-list">
                                 <li>dropdown-1</li>
                                 <li>dropdown-2</li>
@@ -72,7 +72,7 @@
                                 <li>dropdown-4</li>
                             </ul>
                         </li>
-                        <li class="drop-btn">Option4
+                        <li class="drop-btn">Option4 <i class="las la-angle-down "></i>
                             <ul class="dropdown-list">
                                 <li>dropdown-1</li>
                                 <li>dropdown-2</li>
@@ -121,12 +121,10 @@
 
 <script>
     function openNav() {
-  if(document.getElementById("drop-list").style.height==="max-content"){
-    document.getElementById("drop-list").style.height = "0px";
+  if(document.getElementById("drop-list").style.maxHeight==="1000px"){
+    document.getElementById("drop-list").style.maxHeight = "0";
   }else{
-    document.getElementById("drop-list").style.height = "max-content";
-
-    
+    document.getElementById("drop-list").style.maxHeight="1000px";
     }
 }
 
