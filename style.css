@@ -69,7 +69,7 @@ body{
     margin-right:50px;
 }
 .dropdown-list{
-    height:0px;
+    max-height:0px;
     width:fit-content;
  position:absolute;
  visibility:hidden;
@@ -79,7 +79,7 @@ body{
   z-index: 1;
   list-style-type: none;
   padding-left: 0px;
-  font-size:18px;
+  font-size:15px;
   transition: 0.5s;
  
 }
@@ -114,7 +114,7 @@ body{
 }
 
 .drop-btn:hover .dropdown-list{
-    height:176px;
+    max-height:200px;
     visibility:visible;
 
 }
@@ -146,6 +146,7 @@ body{
 #sidenav{
  
     width:0px;
+    display:none;
     z-index:1;
     position: absolute;
     right:0;
