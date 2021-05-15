@@ -53,6 +53,7 @@ body{
 .nav-list li{
     padding: 10px;
     border:1px solid white;
+    height:auto;
 }
 
 .upper{
@@ -88,10 +89,22 @@ body{
     list-style-type: none;
     font-size:15px;
     display:none;
+    max-height: 0px;
 
 }
 .menu-list>li{
     border: 0px;
+}
+
+.nested-list{
+    display:none;
+}
+
+.nested{
+    list-style-type:none;
+}
+.nested > li{
+    border:0px;
 }
 
 .nav-btn{
@@ -131,6 +144,7 @@ body{
   top:5px;
   right:0;
   transform: translate(100%,0);
+  width:max-content;
   
 }
 
@@ -140,15 +154,9 @@ body{
 
 .dropdown-list > li:hover .sub-list{
     display:block;
-    
 }
 
-
-
-
-
 #sidenav{
- 
     width:0px;
     overflow-x: hidden;
     z-index:1;

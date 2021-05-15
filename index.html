@@ -96,8 +96,15 @@
                 </li>
                 <ul id="sub2" class="menu-list">
                     <li>dropdown-1</li>
-                    <li>dropdown-2
-</li>
+                    <li onclick="droplist()">dropdown-2</li>
+                    <li class="nested-list" id="nested-list">
+                        <ul class="nested">
+                            <li>dropdown-1</li>
+                            <li>dropdown-2</li>
+                            <li>dropdown-3</li>
+                            <li>dropdown-4</li>
+                        </ul>
+                    </li>
                     <li>dropdown-3</li>
                     <li>dropdown-4</li>
                 </ul>
@@ -133,47 +140,52 @@ function closeNav() {
   document.getElementById("drop-list").style.height = "0";
 }
 
-function droplist(){
-  document.getElementById("subx1").style.display="block";
-}
 
+
+function droplist(){
+    if(document.getElementById("nested-list").style.display==="none"){
+        document.getElementById("nested-list").style.display="block"
+    }else{
+        document.getElementById("nested-list").style.display="none"
+    }
+}
 function opencard(){
-    if(document.getElementById("sub").style.height==="170px"){
-        document.getElementById("sub").style.height="0px";
+    if(document.getElementById("sub").style.maxHeight==="500px"){
+        document.getElementById("sub").style.maxHeight="0px";
         document.getElementById("sub").style.display="none";
 
     }else{
-    document.getElementById("sub").style.height="170px";
-    document.getElementById("sub").style.display="block";
+    document.getElementById("sub").style.maxHeight="500px";
+    document.getElementById("sub").style.maxHeight="block";
     document.getElementById("sub").style.position="relative";}
 }
 function opencard1(){
-    if(document.getElementById("sub2").style.height==="170px"){
-        document.getElementById("sub2").style.height="0px";
+    if(document.getElementById("sub2").style.maxHeight==="500px"){
+        document.getElementById("sub2").style.maxHeight="0px";
         document.getElementById("sub2").style.display="none";
 
     }else{
-    document.getElementById("sub2").style.height="170px";
+    document.getElementById("sub2").style.maxHeight="500px";
     document.getElementById("sub2").style.display="block";
     document.getElementById("sub2").style.position="relative";}
 }
 function opencard2(){
-    if(document.getElementById("sub3").style.height==="170px"){
-        document.getElementById("sub3").style.height="0px";
+    if(document.getElementById("sub3").style.maxHeight==="500px"){
+        document.getElementById("sub3").style.maxHeight="0px";
         document.getElementById("sub3").style.display="none";
 
     }else{
-    document.getElementById("sub3").style.height="170px";
+    document.getElementById("sub3").style.maxHeight="500px";
     document.getElementById("sub3").style.display="block";
     document.getElementById("sub3").style.position="relative";}
 }
 function opencard3(){
-    if(document.getElementById("sub4").style.height==="170px"){
-        document.getElementById("sub4").style.height="0px";
+    if(document.getElementById("sub4").style.maxHeight==="500px"){
+        document.getElementById("sub4").style.maxHeight="0px";
         document.getElementById("sub4").style.display="none";
 
     }else{
-    document.getElementById("sub4").style.height="170px";
+    document.getElementById("sub4").style.maxHeight="500px";
     document.getElementById("sub4").style.display="block";
     document.getElementById("sub4").style.position="relative";}
 }
