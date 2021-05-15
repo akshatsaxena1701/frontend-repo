@@ -48,7 +48,7 @@ body{
     display: none;
     z-index:1;
     height:0;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .nav-list li{
@@ -184,6 +184,9 @@ body{
         display:flex;
         align-items: center;
         justify-content:space-between;
+    }
+    .drop-btn{
+        margin-bottom: 0px;
     }
 
 }
