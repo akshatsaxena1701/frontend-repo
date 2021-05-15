@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">    
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   
+
+
+
+
+    <section class="navg">
+        <div class="container">
+            <div class="nav1">
+                <nav class="navbar upper">
+                    <img class="logo" src="./img.jpg" alt="logo">
+                    <ul class="list-right">
+                        <li>Option1</li>
+                        <li>Option2</li>
+                        
+                        <li>Option3</li>
+                        <li>Option4</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="nav2">
+                <nav class="navbar">
+                    <div class="menu-text">
+                        <p>Menu</p>
+                    </div>
+                    <ul id="nav2-list">
+                        <li class="drop-btn">Option1
+                            <ul class="dropdown-list">
+                                <li>dropdown-1</li>
+                                <li>dropdown-2</li>
+                                <li>dropdown-3</li>
+                                <li>dropdown-4</li>
+                            </ul>
+                        </li>
+                        <li class="drop-btn">Option2
+                            <ul class="dropdown-list">
+                                <li>dropdown-1</li>
+                                <li>dropdown-2</li>
+                                <li>dropdown-3</li>
+                                <li>dropdown-4</li>
+                            </ul>
+                        </li>
+                        <li class="drop-btn">Option3
+                            <ul class="dropdown-list">
+                                <li>dropdown-1</li>
+                                <li>dropdown-2</li>
+                                <li>dropdown-3</li>
+                                <li>dropdown-4</li>
+                            </ul>
+                        </li>
+                        <li class="drop-btn">Option4
+                            <ul class="dropdown-list">
+                                <li>dropdown-1</li>
+                                <li>dropdown-2</li>
+                                <li>dropdown-3</li>
+                                <li>dropdown-4</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <i class="las la-bars span-btn" onclick="openNav()"></i>
+            </div>
+            <ul class="nav-list" id="drop-list">
+                <li class="drop-btn">Option1
+                    <ul class="dropdown-list">
+                        <li>dropdown-1</li>
+                        <li>dropdown-2</li>
+                        <li>dropdown-3</li>
+                        <li>dropdown-4</li>
+                    </ul>
+                </li>
+                <li class="drop-btn">Option2
+                    <ul class="dropdown-list">
+                        <li>dropdown-1</li>
+                        <li>dropdown-2</li>
+                        <li>dropdown-3</li>
+                        <li>dropdown-4</li>
+                    </ul>
+                </li>
+                <li class="drop-btn">Option3
+                    <ul class="dropdown-list">
+                        <li>dropdown-1</li>
+                        <li>dropdown-2</li>
+                        <li>dropdown-3</li>
+                        <li>dropdown-4</li>
+                    </ul>
+                </li>
+                <li class="drop-btn">Option4
+                    <ul class="dropdown-list">
+                        <li>dropdown-1</li>
+                        <li>dropdown-2</li>
+                        <li>dropdown-3</li>
+                        <li>dropdown-4</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+<script>
+    function openNav() {
+  if(document.getElementById("drop-list").style.height==="178px"){
+    document.getElementById("drop-list").style.height = "0px";
+  }else{
+    document.getElementById("drop-list").style.height = "178px";
+
+  }
+}
+
+function closeNav() {
+  document.getElementById("drop-list").style.height = "0";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+body{
+    margin-left:1%;
+    margin-right:1%;
+    font-family:"Roboto";
+    font-weight:bold;
+}
+
+.navbar li{
+    float:left;
+    padding-right: 20px;
+}
+
+.navbar ul{
+    list-style-type: none;
+}
+
+.nav2{
+    height:4rem;
+    font-size:20px;
+    color:white;
+    background-color:rgb(0, 128, 90);
+    display:flex;
+    margin-top: 5px;
+    justify-content: space-between;
+}
+
+.span-btn{
+    margin-top:20px;
+    display:none;
+}
+.nav-list{
+    font-size:20px;
+    color:white;
+    background-color:rgb(0, 128, 90);
+    margin-top: 0px;
+    list-style-type: none;
+    padding-left:0px;
+    overflow-y: hidden;
+    display: none;
+    z-index:1;
+    height:0;
+    transition: 0.5s;
+}
+
+.nav-list li{
+    padding: 10px;
+    border:1px solid white;
+}
+
+.upper{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.upper .list-right li{
+    font-size:20px;
+    padding:10px;
+}
+.upper .list-right{
+    margin-right:50px;
+}
+.dropdown-list{
+  display: none;
+  position: absolute;
+  background-color:rgb(17, 167, 119);
+  min-width: 100px;
+  z-index: 1;
+  list-style-type: none;
+  padding-left: 0px;
+  margin-top:10px;
+  font-size:18px;
+}
+
+.logo{
+    max-width:100%;
+    height:auto;
+}
+
+.dropdown-list li{
+    float: none;
+    padding-top:10px;
+    border:1px solid white;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.drop-btn:hover .dropdown-list{
+    display:block;
+}
+.menu-text{
+    display:none;
+}
+@media screen and (max-width:630px){
+    .list-right{
+        display: none;
+    }
+    #nav2-list{
+        display: none;
+    }
+    .menu-text{
+        display: block;
+        padding-left:10px;
+    }
+    .nav-list{
+        display: block;
+    }
+    .span-btn{
+        display: block;
+        margin-right:10px;
+    }
+    .upper{
+        display:flex;
+        align-items: center;
+        justify-content:center;
+    }
+
+}
+
