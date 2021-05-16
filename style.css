@@ -73,7 +73,7 @@ body{
     margin-right:50px;
 }
 .dropdown-list{
-    max-height:200px;
+    max-height:1000px;
     width:fit-content;
     visibility:hidden;
     opacity:0;
