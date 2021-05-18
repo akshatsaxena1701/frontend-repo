@@ -140,8 +140,8 @@
             </div>
             <div class="desc-text" id="desc1">
                 <div class="text-cont" id="desc2">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, iusto error? Deleniti doloribus velit fugit minima, quod magni eius hic ad blanditiis unde, dolorum itaque esse cupiditate vitae eveniet, dolorem sapiente minus aliquid tempora porro magnam odio! Minus non iste soluta! Cupiditate quo voluptatibus tenetur, sed pariatur omnis quos aperiam tempora, tempore dolores architecto unde doloribus delectus numquam id earum at, eius iure magni quas veritatis debitis. Sit vitae consequuntur sed veritatis nihil quo quia, tempora voluptas? Natus, itaque labore! Tenetur voluptates nulla dicta recusandae maxime deleniti quibusdam perspiciatis architecto incidunt enim voluptas sint aliquid labore quas eos, praesentium magnam.    
-                </div>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam temporibus quae amet iusto numquam suscipit doloribus, praesentium est sunt quidem id quas assumenda, quod similique. Voluptas ratione esse vitae dolore consequuntur, est alias quaerat? Quisquam tenetur repellendus non velit enim voluptatum, alias at nesciunt cupiditate odit quis, laborum dolor animi, numquam officia voluptatem dolorem. Fuga molestias repudiandae alias itaque explicabo vel, mollitia quos magni, facilis esse delectus asperiores qui. Vel aperiam animi accusamus illo odit temporibus. Delectus, voluptate eius architecto molestiae velit magni accusantium quae ipsum nostrum corrupti, nemo ex ullam repellendus voluptatum modi sunt unde fugit aliquam nisi officiis at. Suscipit facilis architecto similique voluptas quidem alias dolores fugiat quaerat itaque atque eveniet nostrum error fugit nemo, ducimus illo, asperiores repellendus nesciunt fuga! Corrupti quibusdam distinctio deleniti, tempora sit dicta, reiciendis dolor nobis omnis ipsa beatae blanditiis voluptate odit quis illum magnam similique minima. Laudantium non quos, sit nostrum doloribus quidem labore maiores pariatur harum nesciunt, consectetur perspiciatis, sunt nihil veritatis? Cum culpa ipsum qui. Beatae modi aut molestiae, consequatur quos amet eum nihil possimus incidunt asperiores praesentium doloremque ex, harum quam ipsum velit deserunt itaque rem. Dolorum et velit distinctio enim odio ipsam tempore aperiam tempora, cum facilis similique, maxime repellat quam quos veniam sed vitae, excepturi non fugit accusantium pariatur alias? Eveniet, eligendi non a, adipisci laudantium quas ipsum necessitatibus perspiciatis tempora quo cumque natus voluptate aperiam enim animi eius aspernatur velit, praesentium nemo molestiae veritatis recusandae! Accusantium labore, aliquid incidunt inventore in quo dolores repudiandae, distinctio magnam impedit, deleniti placeat cum odio reiciendis consequuntur eius at alias veritatis. Quasi, omnis cupiditate. Nemo quo voluptatum eos alias. Natus fugit, voluptas eum incidunt dolorum optio modi beatae magnam placeat iusto quos nihil non, corporis perspiciatis illum distinctio veniam fugiat vitae voluptates facere molestiae. Vel, sed aut! Facilis corrupti quasi molestiae nemo ipsum earum fugit odit quam, iure labore magni neque, praesentium dicta veniam! Sapiente impedit amet, dolores inventore tempore exercitationem ut nam rem facilis doloremque nemo molestiae qui ad fugit itaque veritatis provident. Similique libero animi provident vel necessitatibus? Eligendi corporis deleniti nobis tempore magni. Perferendis incidunt consequatur maxime ducimus modi quaerat pariatur neque dignissimos unde harum excepturi aspernatur reprehenderit autem nesciunt atque officia inventore eius, quam doloribus corporis magni consequuntur ullam ea magnam. Iste laborum dolor minus debitis officia. Magnam, nesciunt commodi officia vero laboriosam explicabo provident molestias, maxime sint cum numquam sed quo perferendis id, quae beatae praesentium aliquid fugiat optio accusantium blanditiis? Repellat suscipit voluptatibus eius soluta ipsum aperiam quas, assumenda ullam similique cumque error fuga autem culpa ad, porro nemo minima laudantium fugit voluptas omnis corrupti possimus rerum? Consequuntur facere quis sapiente natus voluptas necessitatibus fugiat odio quasi adipisci quaerat possimus facilis omnis commodi totam excepturi praesentium, quisquam, voluptatum unde quibusdam? Commodi architecto animi a necessitatibus, officiis eos dolorum! Eius quos est repellat dolorum ad expedita, pariatur modi maiores ullam suscipit cupiditate iusto quasi dignissimos quod numquam rem corrupti libero omnis inventore minima autem? Sapiente quasi debitis laboriosam, consequuntur beatae eum nobis. Iure, alias?                  </div>
+            </div>
             <span id="expandtxt" onclick="expandtext()">...Read More</span>
             <span id="collapsetxt" onclick="collapsetext()">Close</span>
                 </div>
@@ -261,12 +261,10 @@ function sideopen(){
 function sideclose(){
     document.getElementById("sidenav").style.width="0";
 }
-var height;
+
 (function textlen(){
     var x=document.getElementById("desc2");
-    if(x.offsetHeight<500){
-        var y=document.getElementById("expandtxt").style.display="none";
-    }
+    console.log(x.style.offsetHeight);
 })();
 
 function expandtext(){
@@ -280,7 +278,7 @@ function expandtext(){
 }
 function collapsetext(){
     var x=document.getElementById("desc1");
-    x.style.maxHeight="500px";
+    x.style.maxHeight="200px";
     var z=document.getElementById("expandtxt");
     z.style.display="block";
     var y=document.getElementById("collapsetxt");
