@@ -47,7 +47,8 @@ body{
     margin-top: 0px;
     list-style-type: none;
     padding-left:0px;
-    display: none;
+    visibility:hidden;
+    opacity:0;
     z-index:2;
     max-height:0;
     transition: 0.8s;
@@ -194,6 +195,34 @@ body{
     display:none;
     font-size: 18px;
 }
+
+.desc-read{
+    margin-left: 15%;
+    margin-right:15%;
+}
+
+.desc-cont{
+    background-color: rgb(218, 214, 214);
+    padding:15px;
+}
+
+.desc-head h2{
+    font-size:40px;
+    font-weight:bold;
+    font-family:"Roboto";
+}
+.desc-text h5{
+    font-size: 20px;
+}
+.para-collapse{
+    max-height:0px;
+    transition: max-height 0.4s ease-out;
+}
+.para-collapse h5{
+    display: none;
+}
+
+
 @media screen and (max-width:630px){
     .list-right{
         display: none;
@@ -226,7 +255,18 @@ body{
         margin-bottom: 0px;
     }
 
+    .desc-text h5{
+        font-size:15px;
+    }
+    .desc-head h2{
+        font-size:20px;
+    }
+
 }
+
+
+
+
 
 
 
@@ -240,8 +280,8 @@ body{
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 300px;
+  max-height: 300px;
   min-width:120px;
   min-height:120px;
 }
@@ -252,11 +292,11 @@ body{
 }
 
 .carousel-section{
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
  .carousel-section .caro-img
 {
-  max-width: 600px;
+  max-width: 1000px;
   max-height:600px;
 }

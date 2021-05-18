@@ -22,7 +22,6 @@
             <li>Option4</li>
         </ul>
     </div>
-
     <section class="navg">
         <div class="container">
             <div class="nav1">
@@ -131,6 +130,33 @@
         </div>
     </section>
 
+
+    <section class="desc-read">
+        <div class="desc-cont">
+            <div class="desc-head">
+                <h2 class="head-text">
+                    Class 6th
+                </h2>
+            </div>
+            <div class="desc-text">
+                <div>
+                    <h5 class="para-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quod eius numquam voluptatem et quisquam mollitia rerum, enim pariatur iste deleniti veritatis laborum, fuga fugit laudantium aliquid facilis non cum blanditiis, animi eligendi! Aut ab consequatur reprehenderit architecto, ad beatae temporibus vitae corrupti modi aspernatur neque non velit numquam odio nobis minus alias aperiam amet ratione consectetur magnam! Voluptatem libero at impedit eligendi, aut aliquam culpa adipisci ad? Quas facilis esse cumque in, obcaecati voluptatum optio tempore doloribus reprehenderit, mollitia rem iusto molestias eligendi non similique voluptas distinctio odio magnam hic dolorum doloremque atque fugiat aspernatur sapiente? Blanditiis, explicabo fugit?
+                    </h5>
+                    <p class="readmore" onClick="collapse()">
+                    Read More
+                    </p>
+                </div>
+                <div  class="para-collapse" id="para-coll">
+                    <h5 id="text-de">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quae id maiores ipsa, suscipit facilis alias, quia dolorum praesentium nemo, natus eaque odio et repellat eius quod doloribus. Aliquid numquam at quod voluptatum minima veritatis possimus iusto, quo nesciunt hic dolorum fugit quia magni quaerat labore. Sapiente maiores dolor soluta rem magni laboriosam quisquam qui non officia? Itaque totam saepe harum minus, eligendi reiciendis facilis officiis iure eos porro cupiditate obcaecati, rerum facere veritatis, deserunt provident hic! Obcaecati facere repudiandae saepe? In ut, consequatur totam explicabo molestias temporibus impedit mollitia, odio quos non nesciunt? Ipsa obcaecati necessitatibus quidem quis illum!
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <section class="carousel-section">
       <div class="swiper-container mySwiper">
         <div class="swiper-wrapper">
@@ -172,10 +198,14 @@
 
 
     function openNav() {
-  if(document.getElementById("drop-list").style.maxHeight==="1000px"){
-    document.getElementById("drop-list").style.maxHeight = "0";
+  if(document.getElementById("drop-list").style.maxHeight==="0px"){
+    document.getElementById("drop-list").style.maxHeight = "1000px";
+    document.getElementById("drop-list").style.visibility = "visible";
+      document.getElementById("drop-list").style.opacity = "1";
   }else{
-    document.getElementById("drop-list").style.maxHeight="1000px";
+    document.getElementById("drop-list").style.maxHeight="0px";
+    document.getElementById("drop-list2").style.visibility = "hidden";
+        document.getElementById("drop-list").style.opacity = "0";
     }
 }
 
@@ -239,6 +269,18 @@ function sideopen(){
 }
 function sideclose(){
     document.getElementById("sidenav").style.width="0";
+}
+
+function collapse(){
+    if(document.getElementById("para-coll").style.maxHeight=="0px"){
+        document.getElementById("para-coll").style.maxHeight="1000px";
+        document.getElementById("text-de").style.display="block";
+
+
+    }else{
+        document.getElementById("para-coll").style.maxHeight="0px";
+        document.getElementById("text-de").style.display="none";
+    }
 }
 
 
