@@ -151,6 +151,10 @@
                     <h5 id="text-de">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quae id maiores ipsa, suscipit facilis alias, quia dolorum praesentium nemo, natus eaque odio et repellat eius quod doloribus. Aliquid numquam at quod voluptatum minima veritatis possimus iusto, quo nesciunt hic dolorum fugit quia magni quaerat labore. Sapiente maiores dolor soluta rem magni laboriosam quisquam qui non officia? Itaque totam saepe harum minus, eligendi reiciendis facilis officiis iure eos porro cupiditate obcaecati, rerum facere veritatis, deserunt provident hic! Obcaecati facere repudiandae saepe? In ut, consequatur totam explicabo molestias temporibus impedit mollitia, odio quos non nesciunt? Ipsa obcaecati necessitatibus quidem quis illum!
                     </h5>
+                    <p class="close" onClick="closecollap()">
+                        CLose
+                    </p>
+                    
                 </div>
             </div>
         </div>
@@ -272,15 +276,21 @@ function sideclose(){
 }
 
 function collapse(){
-    if(document.getElementById("para-coll").style.maxHeight=="0px"){
+ 
         document.getElementById("para-coll").style.maxHeight="1000px";
         document.getElementById("text-de").style.display="block";
+        document.getElementsByClassName("readmore")[0].style.display="none";
+        document.getElementsByClassName("close")[0].style.display="block";
 
-
-    }else{
+    
+}
+function closecollap(){
         document.getElementById("para-coll").style.maxHeight="0px";
         document.getElementById("text-de").style.display="none";
-    }
+        document.getElementsByClassName("readmore")[0].style.display="block";
+        document.getElementsByClassName("close")[0].style.display="none";
+
+
 }
 
 

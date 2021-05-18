@@ -216,12 +216,20 @@ body{
 }
 .para-collapse{
     max-height:0px;
-    transition: max-height 0.4s ease-out;
+    transition: max-height 0.9s ease-out;
 }
 .para-collapse h5{
     display: none;
 }
+.readmore{
+    width:fit-content;
+    display:block;
+}
+.close{
+    display: none;
+    width:fit-content;
 
+}
 
 @media screen and (max-width:630px){
     .list-right{
