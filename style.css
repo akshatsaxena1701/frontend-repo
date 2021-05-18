@@ -206,30 +206,18 @@ body{
 .desc-cont{
     padding:15px;
 }
-.desc-text{
-    overflow:hidden;
-    max-height: 200px;
-    transition: max-height 0.4s ease-in-out;
+.dummy{
+    transition: 0.5s;
 }
-.text-cont{
-    font-size:15px;
-    font-family: "Roboto";
-    line-height: 25px;;
-}
+
+
+
 
 .head-text{
     font-size:25px;
     font-weight:50px;
 }
 
-#collapsetxt{
-    display:none;
-    margin-top:5px;
-}
-
-#expandtxt{
-    margin-top:5px;
-}
 
 @media screen and (max-width:630px){
     .list-right{
@@ -262,13 +250,6 @@ body{
     .drop-btn{
         margin-bottom: 0px;
     }
-    .desc-text{
-        max-height:500px;
-    }
-    
-    
-    
-
 }
 
 
