@@ -199,36 +199,36 @@ body{
 .desc-read{
     margin-left: 15%;
     margin-right:15%;
+    background-color: rgb(218, 214, 214);
+
 }
 
 .desc-cont{
-    background-color: rgb(218, 214, 214);
     padding:15px;
 }
+.desc-text{
+    overflow:hidden;
+    max-height: 500px;
+    transition: max-height 0.4s ease-in-out;
+}
+.text-cont{
+    font-size:15px;
+    font-family: "Roboto";
+    line-height: 25px;;
+}
 
-.desc-head h2{
-    font-size:40px;
-    font-weight:bold;
-    font-family:"Roboto";
+.head-text{
+    font-size:25px;
+    font-weight:50px;
 }
-.desc-text h5{
-    font-size: 20px;
-}
-.para-collapse{
-    max-height:0px;
-    transition: max-height 0.9s ease-out;
-}
-.para-collapse h5{
-    display: none;
-}
-.readmore{
-    width:fit-content;
-    display:block;
-}
-.close{
-    display: none;
-    width:fit-content;
 
+#collapsetxt{
+    display:none;
+    margin-top:5px;
+}
+
+#expandtxt{
+    margin-top:5px;
 }
 
 @media screen and (max-width:630px){
@@ -262,13 +262,12 @@ body{
     .drop-btn{
         margin-bottom: 0px;
     }
-
-    .desc-text h5{
-        font-size:15px;
+    .desc-text{
+        max-height:500px;
     }
-    .desc-head h2{
-        font-size:20px;
-    }
+    
+    
+    
 
 }
 

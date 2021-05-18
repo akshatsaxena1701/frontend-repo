@@ -138,26 +138,13 @@
                     Class 6th
                 </h2>
             </div>
-            <div class="desc-text">
-                <div>
-                    <h5 class="para-text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quod eius numquam voluptatem et quisquam mollitia rerum, enim pariatur iste deleniti veritatis laborum, fuga fugit laudantium aliquid facilis non cum blanditiis, animi eligendi! Aut ab consequatur reprehenderit architecto, ad beatae temporibus vitae corrupti modi aspernatur neque non velit numquam odio nobis minus alias aperiam amet ratione consectetur magnam! Voluptatem libero at impedit eligendi, aut aliquam culpa adipisci ad? Quas facilis esse cumque in, obcaecati voluptatum optio tempore doloribus reprehenderit, mollitia rem iusto molestias eligendi non similique voluptas distinctio odio magnam hic dolorum doloremque atque fugiat aspernatur sapiente? Blanditiis, explicabo fugit?
-                    </h5>
-                    <p class="readmore" onClick="collapse()">
-                    Read More
-                    </p>
+            <div class="desc-text" id="desc1">
+                <div class="text-cont" id="desc2">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, iusto error? Deleniti doloribus velit fugit minima, quod magni eius hic ad blanditiis unde, dolorum itaque esse cupiditate vitae eveniet, dolorem sapiente minus aliquid tempora porro magnam odio! Minus non iste soluta! Cupiditate quo voluptatibus tenetur, sed pariatur omnis quos aperiam tempora, tempore dolores architecto unde doloribus delectus numquam id earum at, eius iure magni quas veritatis debitis. Sit vitae consequuntur sed veritatis nihil quo quia, tempora voluptas? Natus, itaque labore! Tenetur voluptates nulla dicta recusandae maxime deleniti quibusdam perspiciatis architecto incidunt enim voluptas sint aliquid labore quas eos, praesentium magnam.    
                 </div>
-                <div  class="para-collapse" id="para-coll">
-                    <h5 id="text-de">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quae id maiores ipsa, suscipit facilis alias, quia dolorum praesentium nemo, natus eaque odio et repellat eius quod doloribus. Aliquid numquam at quod voluptatum minima veritatis possimus iusto, quo nesciunt hic dolorum fugit quia magni quaerat labore. Sapiente maiores dolor soluta rem magni laboriosam quisquam qui non officia? Itaque totam saepe harum minus, eligendi reiciendis facilis officiis iure eos porro cupiditate obcaecati, rerum facere veritatis, deserunt provident hic! Obcaecati facere repudiandae saepe? In ut, consequatur totam explicabo molestias temporibus impedit mollitia, odio quos non nesciunt? Ipsa obcaecati necessitatibus quidem quis illum!
-                    </h5>
-                    <p class="close" onClick="closecollap()">
-                        CLose
-                    </p>
-                    
+            <span id="expandtxt" onclick="expandtext()">...Read More</span>
+            <span id="collapsetxt" onclick="collapsetext()">Close</span>
                 </div>
-            </div>
-        </div>
     </section>
 
 
@@ -274,26 +261,33 @@ function sideopen(){
 function sideclose(){
     document.getElementById("sidenav").style.width="0";
 }
+var height;
+(function textlen(){
+    var x=document.getElementById("desc2");
+    h=x.offsetHeight;
+    if(x.offsetHeight<500 && x.offsetWidth<500){
+        var y=document.getElementById("expandtxt").style.display="none";
+    }
+})();
 
-function collapse(){
- 
-        document.getElementById("para-coll").style.maxHeight="1000px";
-        document.getElementById("text-de").style.display="block";
-        document.getElementsByClassName("readmore")[0].style.display="none";
-        document.getElementsByClassName("close")[0].style.display="block";
+function expandtext(){
+    var x=document.getElementById("desc1");
+    x.style.maxHeight="5000px";
+    var y=document.getElementById("expandtxt");
+    y.style.display="none";
+    var z=document.getElementById("collapsetxt");
+    z.style.display="block";
 
+}
+function collapsetext(){
+    var x=document.getElementById("desc1");
+    x.style.maxHeight="500px";
+    var z=document.getElementById("expandtxt");
+    z.style.display="block";
+    var y=document.getElementById("collapsetxt");
+    y.style.display="none";
     
 }
-function closecollap(){
-        document.getElementById("para-coll").style.maxHeight="0px";
-        document.getElementById("text-de").style.display="none";
-        document.getElementsByClassName("readmore")[0].style.display="block";
-        document.getElementsByClassName("close")[0].style.display="none";
-
-
-}
-
-
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
