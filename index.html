@@ -264,15 +264,14 @@ function sideclose(){
 var height;
 (function textlen(){
     var x=document.getElementById("desc2");
-    h=x.offsetHeight;
-    if(x.offsetHeight<500 && x.offsetWidth<500){
+    if(x.offsetHeight<1000){
         var y=document.getElementById("expandtxt").style.display="none";
     }
 })();
 
 function expandtext(){
     var x=document.getElementById("desc1");
-    x.style.maxHeight="5000px";
+    x.style.maxHeight="1000px";
     var y=document.getElementById("expandtxt");
     y.style.display="none";
     var z=document.getElementById("collapsetxt");
@@ -281,7 +280,7 @@ function expandtext(){
 }
 function collapsetext(){
     var x=document.getElementById("desc1");
-    x.style.maxHeight="500px";
+    x.style.maxHeight="1000px";
     var z=document.getElementById("expandtxt");
     z.style.display="block";
     var y=document.getElementById("collapsetxt");
