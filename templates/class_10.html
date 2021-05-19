@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <script src="{% static 'webpages/Js/Scrolling-tabs.js' %}"></script>
+<link rel="stylesheet" href="{% static 'webpages/Js/jquery_flipster_min.css' %}">
+<link rel="stylesheet" href="{% static 'webpages/Js/jquery_flipster.css' %}">
+  <script src="{% static 'webpages/Js/Scrolling-tabs.js' %}"></script>
+<script href="{% static 'webpages/Js/Test.js' %}"></script>
+      <script src="{% static 'webpages/Js/st_demo.js' %}"></script>
+  <link rel="stylesheet" href="{% static 'webpages/Scrolling-tabs.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'webpages/Fonts.css' %}">
+    <link rel="stylesheet" href="{% static 'webpages/st_demo.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'webpages/Doubts.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'webpages/Index.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'webpages/css/dist/css/bootstrap.min.css' %}" >
+    <link rel="stylesheet" type="text/css" href="{% static 'webpages/css/dist/css/bootstrap.css' %}" >
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{% static 'webpages/css/dist/css/bootstrap-theme.css' %}" >
+    <title>Ekal Shiksha</title>
+
+  </head>
+  <body>
+    <!-- 2nd Navbar Starts here-->
+    <nav class="navbar navbar-default navbar-fixed-top nav1">
+      <div class="container-fluid white" id='Lowerband'>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+   <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav navbar-left">
+              <li><a href="{% url 'About' %}"><h4 class='navh4'>About us</h4></a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4 class='navh4'>Courses</h4> </a>
+                        <ul  class="dropdown-menu dropdown-menu">
+                          <li style='border-bottom: 0%; padding-top: 0%'><a href="{% url '6th' %}"><h5>Class 6th</h5></a></li>
+                          <li><a href="{% url '7th' %}"><h5>class 7th</h5></a></li>
+                          <li><a href="{% url '8th' %}"><h5>Class 8th</h5></a></li>
+                          <li><a href="{% url '9th' %}"><h5 >Class 9th</h5></a></li>
+                          <li><a href="{% url '10th' %}"><h5 >Class 10th</h5></a></li>
+                          <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h5>Class 11th</h5> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '11th_Science' %}"><h5 >Science</h5></a></li>
+                            <li><a href="{% url '11th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                            <li><a href="{% url '11th_Humanities' %}"><h5 >Arts</h5></a></li>
+                          </ul>
+                        </li>
+                          <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle"><h5>Class 12th</h5> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '12th_Science' %}"><h5 >Science</h5></a></li>
+                            <li><a href="{% url '12th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                            <li><a href="{% url '12th_Humanities' %}"><h5 >Arts</h5></a></li>
+                          </ul>
+                          </li>
+                          <!-- <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle"><h4 >Micro Course</h4> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '9th' %}"><h4 >Class 9th</h4></a></li>
+                            <li><a href="{% url '10th' %}"><h4 >Class 10th</h5></a></li>
+                            <li class="dropdown-submenu">
+                            <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h5 >Class 11th</h5> </a>
+                            <ul class="dropdown-menu ">
+                              <li><a href="{% url '11th_Science' %}"><h5 >Science</h5></a></li>
+                              <li><a href="{% url '11th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                              <li><a href="{% url '11th_Humanities' %}"><h5 >Arts</h5></a></li>
+                            </ul>
+                          </li>
+                          <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h5 >Class 12th</h5> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '11th_Science' %}"><h5 >Science</h5></a></li>
+                            <li><a href="{% url '11th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                            <li><a href="{% url '11th_Humanities' %}"><h5 >Arts</h5></a></li>
+                          </ul>
+                        </li>
+                        </li>
+
+                          </ul>
+                          </li> -->
+                          <!-- <li><li><a href='#'><h5 >English Speaking</h5></a></li></li> -->
+                        </ul>
+                          <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4 class='navh4'>Study Material</h4></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#"><h5 >Class 6th</h5></a></li>
+                            <li><a href="#"><h5 >Class 7th</h5></a></li>
+                            <li><a href="#"><h5 >Class 8th</h5></a></li>
+                            <li><a href="#"><h5 >Class 9th</h5></a></li>
+                            <li><a href="#"><h5 >Class 10th</h5></a></li>
+                            <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h5>Class 11th</h5> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '11th_Science' %}"><h5 >Science</h5></a></li>
+                            <li><a href="{% url '11th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                            <li><a href="{% url '11th_Humanities' %}"><h5 >Arts</h5></a></li>
+                          </ul>
+                        </li>
+                          <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle"><h5>Class 12th</h5> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '12th_Science' %}"><h5 >Science</h5></a></li>
+                            <li><a href="{% url '12th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                            <li><a href="{% url '12th_Humanities' %}"><h5 >Arts</h5></a></li>
+                          </ul>
+                          </li>
+
+                          </ul>
+                          </li>
+                  <li><a href="{% url 'Doubts' %}"><h4 class='navh4'>Doubt class</h4></a></li>
+                  <!-- <li><a href="#"><h4>Competitions</h4></a></li> -->
+                  <li><a href="#"><h4 class='navh4'>Teach with us</h4></a></li>
+
+
+            </div>
+      </div>
+  </ul>
+  </nav>
+  <!-- 1st navbar start here -->
+  <nav class="navbar navbar-default navbar-fixed-top nav2">
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+
+        <p><a href="{% url 'index' %}"><img class="pull-up" src="{% static 'webpages/images/Logo.png' %}" width='40%' alt='' ></p>
+      </a>
+    </a>
+  </div>
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+
+
+
+
+  <div class="collapse navbar-collapse" id="navbar1">
+      <ul id='pad'class="nav navbar-nav navbar-right ">
+    <div class="row">
+      <!-- <div class="col-xs-2 col-md-2 col-lg-2 "></div> -->
+    <div class="col-xs-10 col-md-10 col-lg-10"style="padding-right:0px;margin-right:0px;">
+    <li id='pad' ><a href="tel:9716864415"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>  9716864415 &nbsp; </a>
+    </li></div>
+    <!-- <div class="col-xs-2 col-md-2 col-lg-2 "></div> -->
+    <div class="col-xs-10 col-md-10 col-lg-10">
+    <li id='pad' ><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzBWVHwwpBgTtmnMDMpQkrrhrZRHZGFhgBxJqMrBmbcdRghJMXzwLJlLtsjzDCJNcqwSLjv" ><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  Contact@ekalshiksha.in &nbsp; </a>
+    </li></div>
+    <!-- <div class="col-xs-2 col-md-2 col-lg-2 "></div> -->
+    </div>
+
+    </ul>
+    <ul id='pad'class="nav navbar-nav navbar-right ">
+    <div class="row">
+      <div class="col-xs-2 col-md-2 col-lg-2 "></div>
+    <div class="col-xs-10 col-md-10 col-lg-10">
+    <li id='pad' style='margin-left:0px;'><a href="#" ><h4><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  Sign In &nbsp;</h4> </a>
+    </li></div>
+
+    </div>
+
+    </ul>
+
+      <ul id='pad'class="nav navbar-nav navbar-right ">
+
+        <div class="row">
+          <div class="col-xs-10 col-md-10 col-lg-10 ">
+            <li id='pad' style='margin-left:0px;'><a href="#"><h4><span class="glyphicon glyphicon-search" aria-hidden="true"></span>  Enquiry  Now &nbsp;</h4> </a>
+    </div>
+    <div class="col-xs-2 col-md-2 col-lg-2 "></div>
+  </div>
+
+  </ul>
+  </div>
+  </div>
+
+
+  </nav>
+<!-- Start for class 6 -->
+<div class="container">
+  <div class="jumbotron">
+    <div class="item readmore">
+
+  <h1>Class 10th</h1>
+  <p>CBSE class 10 board exams are crucial for the students as every single concept plays a vital role in making a successful individual. It carries an opportunity for progress. Understanding each topic is crucial for strengthening the fundamental knowledge that is hidden in each concept. Moreover, class 10 signifies a student’s academic achievements. Based on the academic results of Class 10 Board examinations, students can decide whether they should go for Science, Commerce or Humanities.<br> Also, many reputed universities of the world assign extra points to Class X board results while granting admission. Hence, CBSE Class 10 board exam is referred to as a career shaper. Scoring good marks in Class 10 board exams is not easy but can be achieved under the guidance of a patient and hard-working mentor. Board examinations always come up with a lot of stress for students & they must be guided on how to change their mindset towards stress. <br>
+Enhanced engagement between a student and a teacher is necessary for a better understanding and measurable progress.<br>
+We are providing our students with an opportunity for successful exam preparation with our specialised individual classes. Join Ekal Shiksha to get access to the best teacher who will help in shaping the career plans accordingly.
+</p>
+  </div>
+</div>
+  <br>
+</div>
+<!-- <div class="container">
+
+<div class='row'>
+  <div class="col-md-1">
+  </div>
+  <div class="col-md-5">
+    <h1 class='para'>6th class course</h1>
+  </div>
+  <div class="col-md-5">
+    <h1>Language Subject</h1>
+  </div>
+</div>
+<div class='row'>
+<div class="col-xs-1"></div>
+
+<div class="col-xs-3 col-md-3">
+
+
+
+    <div class="btn-group-lg btn-group-vertical">
+      <button type="button" id="pre-reading-btn" class="btn btn-default">Maths</button>
+      <br>
+      <button type="button" id="passage-btn" class="btn btn-default">Science</button>
+      <br>
+      <button type="button" id="post-reading-btn" class="btn btn-default">SST</button>
+    </div>
+
+</div>
+<div class="col-xs-3 col-md-3">
+  <div class="btn-group-lg btn-group-vertical">
+      <button type="button" id="pre-reading-btn" class="btn btn-default">English</button>
+      <br>
+      <button type="button" id="passage-btn" class="btn btn-default">IT</button>
+      <br>
+      <button type="button" id="post-reading-btn" class="btn btn-default">Sanskrit</button>
+      <br>
+    </div>
+
+  </div>
+
+  <div class="col-xs-3 col-md-3">
+    <div class="btn-group-lg btn-group-vertical">
+        <button type="button" class="btn btn-default">English</button>
+        <br>
+        <button type="button" class="btn btn-default">IT</button>
+        <br>
+        <button type="button" class="btn btn-default">Sanskrit</button>
+        <br>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <h1><br></h1>
+        <button type="button" class="btn btn-primary btn-lg btn-huge">Coding classes</button>
+        <br>
+    </div>
+</div>
+
+</div> -->
+<h1 class='para'>Subjects we Offer for your Exellence!!!</font></h1>
+
+  <div class="container">
+    <div class='row'>
+      <div class='col-xs-0 col-md-2 col-lg-2'></div>
+      <div class='col-xs-12 col-md-9 col-lg-9'>
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#tab1" role="tab" data-toggle="tab"><h2>Mathematics</h2></a></li>
+      <li role="presentation"><a href="#tab2" role="tab" data-toggle="tab"><h2>Science</h2></a></li>
+      <li role="presentation"><a href="#tab3" role="tab" data-toggle="tab"><h2>Social Studies</h2></a></li>
+      <li role="presentation"><a href="#tab4" role="tab" data-toggle="tab"><h2>English</h2></a></li>
+      <!-- <li role="presentation"><a href="#tab5" role="tab" data-toggle="tab"><h2><font face="Crimson Text" size="6">Language Subjects</font></h2></a></li>
+      <li role="presentation"><a href="#tab6" role="tab" data-toggle="tab"><h2><font face="Crimson Text" size="6">Coding Classes</font></h2></a></li> -->
+    </ul>
+
+
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="tab1">
+        <br>
+          <div class="item">
+              <p id='smal' style="padding-top:4%;"><h3 style="font-family: crimson text; font-size: 250%">What all chapters are combined in Class 10 Maths?</h3><br>
+              <p style=" font-size: 120%">The attempt is always to make the curriculum more meaningful and enjoyable for learners. The textbook and the syllabus is focused on building knowledge in a way that allows children to enjoy mathematics, and to realise it is more about a way of reasoning than just mechanically applying the formulas and the algorithms. It is made sure that the content is linked to what the child has studied before, and to their experience. <br><br>
+
+                <ul>
+                  <li> <p>	Class 10 Maths Chapter 1 discusses Real Numbers constituting Euclid’s Division Lemma, arithmetic theorems, different operations of rational and irrational numbers.</p> </li>
+                  <li> <p>	10 class Maths Chapter 2 discusses  Zero of polynomials, its geometrical meaning, connection with coefficient and division algorithms for Polynomials.</p> </li>
+                  <li> <p>	Class 10 Maths Chapter 3 focuses on linear equations in 2 variables Graphical representation of the solution of a pair of equations and an algebraic method to solve them and their reducible form is explained well. </p> </li>
+                  <li> <p>	10 class Maths Chapter 4 introduces a student to Quadratic equations and their solutions by factoring or by completing the square. </p> </li>
+                  <li> <p>	Class 10 Maths Chapter 5 introduces some new concepts of Arithmetic Progression. Concepts are introduced using the situations from the child's environment. </p> </li>
+                  <li> <p>	Class 10 Maths Chapter 6 contains the criterion of similarity of triangles, their area and Pythagoras theorem is explained. </p> </li>
+                  <li> <p>	10 class Maths Chapter 7 Coordinate geometry teaches about distance formula, section formula and area of triangle. <p> </li>
+                  <li> <p>	Class 10 Maths Chapter 8 offers a completely new concept of Trigonometry. It concentrates on trigonometric ratios, ratios with specific angles, trigonometric identities and applications of trigonometry.</p> </li>
+                  <li> <p>	10 class Maths Chapter 9 focuses on the applications of trigonometry.</p> </li>
+                  <li> <p>	Class 10 Maths Chapter 10 introduces what is tangent of a circle, its perimeter and area and the area of sector and segment of a circle. </p> </li>
+                  <li> <p>	Class 10 Maths Chapter 11 focuses on the construction of tangents to a circle, division of line segments is also included in the syllabus. <p> </li>
+                  <li> <p>	10 class Maths Chapter 12 explains the concept of Surface Area and Volume is strengthened, new topics like the frustum of cone and different solid shapes.  </p> </li>
+                  <li> <p>	Class 10 Maths Chapter 13 contains Mean, median, mode of grouped data and graphical representation of cumulative frequency distribution. </p> </li>
+                  <li> <p>	10 class Maths Chapter 14 discusses Statistics. </p> </li>
+                  <li> <p>	In Class 10 Maths Chapter 15, the two special appendices have been given- proofs in mathematics, and mathematical modelling. These are optional readings for interested students.<p> </li>
+                  </ul>
+              </p>
+
+              </p>
+</div>
+
+      </div>
+      <div role="tabpanel" class="tab-pane" id="tab2">
+        <br>
+        <div>
+            <p id='smal' style="padding-top:4%;"><h3 style="font-family: crimson text; font-size: 250%">What do we study in Class 10 Science?</h3><br>
+
+              <p style=" font-size: 120%">The textbook consists of 16 chapters. Theme of each chapter is introduced with examples from daily life and using the activities which students can perform. The textbook follows the constructive approach and provides opportunities to the students to construct knowledge themselves and explore and think beyond the syllabus.<br><br>
+
+                <ul>
+                  <li> <p>	Class 10 Science Chapter 1 is about Chemical Reactions and Equations. Also, it discusses the formation of a chemical reaction and its types. </p> </li>
+                  <li> <p>	10 class Science Chapter 2 is about the reactivity of Acids, Bases and Salts with different chemical substances. </p> </li>
+                  <li> <p>	Class 10 Science Chapter 3 discusses the physical and chemical properties of Metals and Non-metals and their occurrence. </p> </li>
+                  <li> <p>	10 class Science Chapter 4 completely focuses upon the versatile nature of Carbon. Further, it discusses Carbon and its Compounds and their properties, formation, reactivity, etc. </p> </li>
+                  <li> <p>	Class 10 Science Chapter 5 is an attempt to introduce the Periodic Classification of Elements.  </p> </li>
+                  <li> <p>	10 class Science Chapter 6 discusses various Life Processes along with nutrition, transportation, reproduction and excretion.</p> </li>
+                  <li> <p>	Class 10 Science Chapter 7 discusses Control and coordination regarding reflex action and walking. <p> </li>
+                  <li> <p>	10 class Science Chapter 8 answers the question “How do Organisms Reproduce?” </p> </li>
+                  <li> <p>	Class 10 Science Chapter 9 focuses on the Heredity and the Evolution of organisms. </p> </li>
+                  <li> <p>	10 class Science Chapter 10 Light explains the phenomenon of Reflection and Refraction in depth. </p> </li>
+                  <li> <p>	In Class 10 Science Chapter 11, the student will understand the functioning of their Eye.  <p> </li>
+                  <li> <p>	10 class Science Chapter 12 focuses on Electricity.</p> </li>
+                  <li> <p>	Class 10 Science Chapter 13 focuses on Magnetic Effects of Electric Current. </p> </li>
+                  <li> <p>	10 class Science Chapter 14 discusses the various sources of energy present in our earth. </p> </li>
+                  <li> <p>	Class 10 Science Chapter 15 discusses various components present in our environment.<p> </li>
+                  <li> <p>	10 class Science Chapter 16 focuses on the management of natural resources available.<p> </li>
+
+                  </ul>
+                  <strong style="font-family: crimson text; font-size: 150%">                  At the end of every chapter, a quick review of all the important points of the chapter is given. In-text questions are given after the main section so that students can check their understanding. Also, Multiple choice questions, numerical, and hints for difficult questions are included at the end of every chapter.
+                  </strong><br>
+</p>
+
+</p>
+      </div>
+    </div>
+      <div role="tabpanel" class="tab-pane" id="tab3">
+        <div >
+          <p id='smal' style="padding-top:4%;"><h3 style="font-family: crimson text; font-size: 250%">(CIVICS) Democratic Politics-2 <br> What is the course content of Class 10 SST Civics?
+
+</h3><br>
+
+              <p style=" font-size: 120%">The book begins where the political science textbooks stopped last year. This textbook focuses on process. It introduces us to how democracy works in practice and what can be expected of it.
+It allows reading more directly about politics which involves ideas, ideals, cooperation, coordination, conflict, collective interest, power sharing, etc.
+<br><br>
+
+
+
+<ul>
+  <li> <p>	Class 10 SST Civics Chapter 1 presents the idea of power-sharing and elaborates on it in the context of power-sharing between different levels of government.  Two stories from Belgium and Sri Lanka elaborate on how democracies handle demands for power-sharing. 
+  <li> <p></p>	10 class SST Civics Chapter 2 focuses on a form of power-sharing known as Federalism and its theory and practice in India. 
+     </p> </li>
+  <li> <p>		Class 10 SST Civics Chapter 3“Democracy and Diversity” is about power-sharing and accommodation among different social groups. 
+
+  </p> </li>
+  <li> <p>	10 class SST Civics Chapter 4  “Gender, Religion and Caste” discusses how democracy responds to social differences, divisions and inequalities and how democratic politics affects and is affected by these social diversities. 
+
+  </p> </li>
+  <li> <p>	10 class SST Civics Chapter 5 “Popular Struggles and Movements,” tells how different political organisations and movements are important in democratic politics. It discusses how struggles around conflicting demands and pressures shape democracy. 
+
+  </p> </li>
+  <li> <p>	10 class SST Civics Chapter 6 answers the questions of Why do we need political parties? How many parties are good for democracy? How do they function? And put light on the Indian political system. 
+
+  </p> </li>
+  <li> <p>	10 class SST Civics Chapter 7 “Outcomes of Democracy” discusses what democracy has achieved till now? And what is yet to be achieved? 
+    <p> </li>
+  <li> <p>	Class 10 SST Civics Chapter 8 discusses the challenges faced in a democracy and ways to overcome them. It provides the child with an opportunity to come up with their definition, challenges etc of democracy. 
+
+  </p> </li>
+
+  </ul>
+                 <strong style="font-family: crimson text; font-size: 250%">(HISTORY) India and the Contemporary World 2<br>What do we study in Class 10 SST history?</strong><br>
+                 India and the contemporary World 2, has 8 chapters divided into three sections.
+><br>
+
+<ul>
+  <li> <p>	Class 10 SST History Chapter 1 “Nationalism in Europe” focuses on the process that took many decades, involved many revolutions, many ideological battles and political conflicts.
+  <li> <p></p>	10 class SST History Chapter 2 “The Nationalist Movement in Indo-China” was shaped by the experience of Colonialism and the Anti-Imperialist movement. 
+     </p> </li>
+  <li> <p>	Class 10 SST History Chapter 3 “Nationalism in India” focuses on the words and deeds of important leaders, the events that led to this and on aspirations and activities of ordinary people. 
+
+  </p> </li>
+  <li> <p>		10 class SST History Chapter 4 “The Making of a Global World” focuses on economies and livelihoods.
+
+  </p> </li>
+  <li> <p>	Class 10 SST Chapter 5 “The Age of Industrialization” shows how the global world has emerged out of a long and complicated history of how traders, travellers have traversed distances carrying goods, information, skills, taste, diseases, metals, plantations, etc. 
+
+  </p> </li>
+  <li> <p>	10 class SST Chapter 6 “Work, Life and Leisure” focus on the development of new modes of transport, selling of diverse goods, expansion of trade and industries, employment opportunities and other factors that played an important role in the development of cities. 
+
+  </p> </li>
+  <li> <p>		10 class SST Chapter 7 “Print, Culture and the Modern World” will trace how the history of the contemporary world is intimately connected with the growth of print.
+    <p> </li>
+      <li> <p>	Class 10 SST Chapter 8 will trace how novels influenced the minds of people, shaped identities and behaviours, and became connected to the culture and politics of the time. It will reflect on how literature moulds our attitude.
+        <p> </li>
+  </p> </li>
+
+  </ul>
+
+
+
+                 <strong style="font-family: crimson text; font-size: 250%">(GEOGRAPHY) Contemporary India 2 <br>What is the syllabus of Class 10 SST Geography?
+</strong><br>
+                 The textbook attempts to give higher priority and space for contemplation and wondering. It is made in such a way that learning becomes more meaningful rather than stress or boredom.
+<br>
+
+
+<ul>
+  <li> <p>	Class 10 SST Geography Chapter 1 “Resources and Development,” tells about the types, development, and planning of resources. Notably, it discusses land use patterns, classification of soil, its importance.  
+  <li> <p></p>	10 class SST Geography Chapter 2 “Forest and Wildlife Resources” throws light on the Flora and Fauna of India, various environmental projects and needs for the conservation of the environment. 
+     </p> </li>
+  <li> <p>	10 class SST Geography Chapter 3 focuses on Water as a Resource. Significantly, it discusses water scarcity and the needs for its conservation, multi-purpose river projects and water resource management. 
+
+  </p> </li>
+  <li> <p>	Class 10 SST chapter 4 is based upon “Agriculture” which tells about types of farming, cropping patterns, major crops, the contribution of agriculture to the national economy, and the impact of globalisation on the agriculture sector. 
+
+  </p> </li>
+  <li> <p>	10 class SST Geography Chapter 5 discusses another important resource of “Minerals and Energy”. What is a mineral, its mode of occurrence, conservation is discussed? Furthermore, It also discusses energy resources and their conservation. 
+
+  </p> </li>
+  <li> <p>	Class 10 SST Geography Chapter 6 “Manufacturing Industries” is about the importance of manufacturing, the contribution of industries to the national economy, location and classification of industries, the pollution and degradation caused due to them and the way to control it
+
+  </p> </li>
+  <li> <p>	10 class SST Geography Chapter 7 of this textbook tells about “Lifelines of National Economy”. Also, it discusses transportation, communication, tourism and trade. 
+    <p> </li>
+  </p> </li>
+
+  </ul>
+
+<b>The appendix and glossary given at the end will benefit the child by providing them with some extra resources and opportunities to learn. </b>
+<br><br>
+
+
+                 <strong style="font-family: crimson text; font-size: 250%">(ECONOMICS) Understanding Economic Development <br>What is the course content of class 10 SST Economics?</strong><br>
+
+                 The textbook focuses on the process of development. Its purpose is to understand the economic life around us and what is the meaning of economic development. an attempt is made to look at economic development as a more general concept of human development.<br>
+
+
+                 <ul>
+                  <li> <p>	Class 10 SST Economics Chapter 1 “Development” focuses on a child who will get to know about how people perceive development and how it can be measured. What is National Development? How can we compare different countries or states economically? And the sustainability of development. 
+                  <li> <p></p>	10 class, SST Economics  Chapter 2 “Sectors of the Indian Economy” will look at the way economic activities in a modern economy can be classified within the primary, secondary and tertiary sector. The focus is on India and the changes that occurred in these sectors in past decades. Further, it talks about the protection of workers in different sectors and shows the statistics of the country’s employed population and the sectors of employment. 
+                     </p> </li>
+                  <li> <p>	Class 10 SST Economics Chapter 3 “Money and Credit” introduces the world of money. It discusses money as a medium of exchange, modern forms of money, loan activities, formal sector of credit in India and self-help grouping for the poor. The ideas in the chapter are presented through a case study. 
+                
+                  </p> </li>
+                  <li> <p>	10 class SST Economics Chapter 4 “Globalisation and the Indian Economy” puts light on an important phenomenon that has influenced the development and people of the world in many ways. It focuses on the economic nature of globalisation, the role of multinational companies, factors that enabled globalisation, the World Trade Organisation, the impact of Globalisation on India. 
+                
+                  </p> </li>
+                  <li> <p>	Class 10 SST Economics Chapter 5 “Consumer Rights” provides a study about the protection of rights of citizens as consumers. Further, it tells about the consumer movement and the consumer protection process that evolved over the years. Also, it offers details about consumer courts and their proceedings and functioning. Lastly, real-life examples are used which makes it easy to understand. 
+                
+                
+                  </ul>
+
+<b>All the chapters of class 9th and 10th are linked with each other and provide a child with detailed knowledge making them a well aware citizen of a nation.</b>
+<br><br>
+
+
+</p>
+
+</p>
+        </div>
+      </div>
+
+      <div role="tabpanel" class="tab-pane" id="tab4">
+        <br>
+        <div>
+          <p id='smal'><h3 style="font-family: crimson text; font-size: 250%">What is the course content of the NCERT Class 10 English main textbook and supplementary reader?</h3><br>
+
+              <p style=" font-size: 120%">
+Class 10 English NCERT has divided its content into two main segments:-<br>
+Main Textbook - First Flight<br>
+Supplementary Reader - Footprints without feet.<br><br>
+
+                 <strong style="font-family: crimson text; font-size: 150%">NCERT CLASS 10 ENGLISH MAIN TEXTBOOK “FIRST FLIGHT”<br>(PROSE)</strong>
+              <br><br>
+
+              <ul>
+                <li> <p>	Class 10 English Chapter 1 “A letter to god” is a short story that begins with a farmer. For instance, he was expecting rain to shower so that some nourishment can be provided to his field of corn.</p> </li>
+                <li> <p>		10 class English Chapter 2 “Nelson Mandela: A long walk to freedom” is a short extract from the biography of the life of Nelson Mandela. Indeed, his struggle for the independence movement from the white rule.
+                   </p> </li>
+                <li> <p>		Class 10 English Chapter 3 “Two stories about flying” is about a young seagull. She was afraid to take its first step in the air with the wings wide open.
+
+                </p> </li>
+                <li> <p>		10 class English Chapter 4 “From the diary of Anne Frank” is an autobiographical work from Anne frank. Furthermore, Anne expresses her thoughts and desires onto a diary that was gifted to her on her birthday.
+
+                </p> </li>
+                <li> <p>	Class 10 English Chapter 5 “The hundred dresses I” is the story of a young little polish girl.  In addition to this, her classmates always tease her because of her appearance and attire. 
+
+                </p> </li>
+                <li> <p>	10 class English Chapter 6 “ The hundred dresses II” is the continuation of part 1. Here, Wanta, the little girl seems missing from the schools and her classmates were deeply apologetic for their rude behaviour.
+
+                </p> </li>
+                <li> <p>	Class 10 English Chapter 7 “Glimpses of India” is a story that has three segments from three parts of India. Also, the author recalls his childhood experiences from the three places that he had visited with their specialities. I. Baker from Goa, II. Coorg, III. Tea from Assam Class 10 Science Chapter 7 discusses Control and coordination regarding reflex action and walking. 
+                  <p> </li>
+                <li> <p>	10 class English Chapter 8 “Mijbil the Otter” is the deeply shared bond between the author and Mijbil, and otter. Further, the chapter discusses how they both went to many countries together. Lastly, developed a deep inseparable bond with each other.
+
+                </p> </li>
+                <li> <p>	Class 10 English Chapter 9 “Madam rides the Bus” is an inspirational story on how a small girl named Valli raised the bus all by herself despite the warning by the elders. Therefore, read the story to see what happened which changed her point of view. 
+                   </p> </li>
+                <li> <p>	10 class English Chapter 10 “The sermon at Benares” is a story about Gautama Buddha and his early life on how he was born as a prince of a royal family. Despite this, in search of various questions, he left everything and moved on to the path of salvation. There, he started the study of sacred Hindu scriptures.
+
+                </p> </li>
+                <li> <p>	10 class English Chapter 11 “The proposal” is a comedy-drama based on two wealthy families. Also, they want to join by themselves to prosper and increase their estates through a marriage alliance. 
+                  <p> </li>
+
+                </ul>
+<br><br>
+
+                
+                 <strong style="font-family: crimson text; font-size: 150%">NCERT CLASS 10 ENGLISH MAIN TEXTBOOK “FIRST FLIGHT”<br>(POEM)</strong><br><br>
+
+                 <ul>
+                  <li> <p>	Class 10 English Poem “Dust of Snow” is a nature-based poem in which the sudden drop of the flake of snow changes the whole mood and perspective of the poet. Moreover, the poet suddenly started feeling jolly from the sadness.
+                  <li> <p></p>	10 class English Poem “Fire and Ice” is a poem by the famous poet Robert Frost. On the whole, he discusses the nature of both fire and ice as destructive. Lastly, he is afraid that the violent desires of the people may take the world to an end.
+                     </p> </li>
+                  <li> <p>	Class 10 English Poem “A tiger in the zoo” is a poem that discusses the life of a tiger in the zoo. In comparison, it discusses the life of a tiger among others in the natural vegetation.
+  
+                  </p> </li>
+                  <li> <p>		10 class English Poem “How to tell wild animals” is very humorous. Further, it discusses various methods of identifying wild animals.
+  
+                  </p> </li>
+                  <li> <p>	Class 10 English Poem “The Ball” is sharing experiences of a boy who lost his ordinary ball. The ball was not expensive yet he had deep knotted ties with the ball. Therefore, he is extremely sad at losing it.
+  
+                  </p> </li>
+                  <li> <p>	10 class English Poem “Amanda” teaches an important lesson about the parent-children bond. For instance, the parent should do their best while living with them and nurture them to their best.
+  
+                  </p> </li>
+                  <li> <p>	Class 10 English Poem “Animals” is discussing the lack of humanity that humans have these days. Subsequently, being an animal is far better than being a human being with no sentiments.
+                    <p> </li>
+                  <li> <p>	10 class English Poem “The trees” is revolving around a central theme that people should start saving trees. Then, he talks about trees in a very symbolic way as women.
+  
+                  </p> </li>
+                  <li> <p>	Class 10 English Poem “Fog” is the poet’s interest in nature and discusses the incomings and outgoings of the Fog. He, in his poem, is treated by Fog as a living creature.
+                     </p> </li>
+                  <li> <p>	10 class English Poem “The Tale of Custard the Dragon” is a ballad. It is about a pet named “Custard”. Then, the poem discussed the pet’s cowardly nature.
+  
+                  </p> </li>
+                  <li> <p>	Class 10 English Poem “For Anne Gregory'' is a conversational poem. Further, it is between the poet “William Butler Yeats” and a little girl named “Anne Gregory”. 
+                    <p> </li>
+  
+                  </ul>
+                <strong style="font-family: crimson text; font-size: 150%">NCERT CLASS 10 ENGLISH SUPPLEMENTARY READER “FOOTPRINTS WITHOUT FEET”</strong><br><br>
+
+                <ul>
+                  <li> <p>	Class 10 English Supplementary Reader Chapter 1 “A triumph of surgery” is a narrative of a dog named tricky who is too much exploited by his owner. The owner provides him with all the comforts of the world that the dog has become overweight and cannot even walk a bit.
+                  <li> <p></p>	10 class English Supplementary Reader Chapter 2 “The thief’s story” is a story of a thief who is running away from cops. For this, the thief changes his name frequently without valuing human values and relations.
+                     </p> </li>
+                  <li> <p>	Class 10 English Supplementary Reader Chapter 3 “The midnight visitor” is revolving around a central theme that one should not judge others only through the basis of their appearance. Ausable is lazy yet the most intelligent character of the story.
+  
+                  </p> </li>
+                  <li> <p>	10 class English Supplementary Reader Chapter 4 “A question of trust” is about a thief who used to steal occasionally. Once, a lady befooled him and put him behind the bars. 
+  
+                  </p> </li>
+                  <li> <p>	Class 10 English Supplementary Reader Chapter 5 “Footprints without feet” is about a scientist named Griffin who talks about the rare formula of invisibility. He made a drug for consumption and became invisible.
+  
+                  </p> </li>
+                  <li> <p>	10 class English Supplementary Reader Chapter 6 “The making of a scientist” is about a scientist “Richard Ebright” who was a very curious child from his childhood days. 
+  
+                  </p> </li>
+                  <li> <p>	Class 10 English Supplementary Reader Chapter 7 “The Necklace” is based on few themes such as Greed, beauty, and appearance. 
+                    <p> </li>
+                  <li> <p>	Class 10 English Supplementary Reader Chapter 8 “The hack driver” is a story of a man who was unhappy with his job of serving clients due to their harsh behaviour towards him.
+  
+                  </p> </li>
+                  <li> <p>	10 class English Supplementary Reader Chapter 9 “Bholi” is about an Ugly girl who is not given proper care and nourishment in her family just like her siblings received because she is different from others.
+                     </p> </li>
+                  <li> <p>	Class 10 English Supplementary Reader Chapter 10 “The book that saved the earth” is a play written by English writer “Claire Bioko” and based on a universal truth that half-fed information is always dangerous.
+  
+                  </p> </li>
+                  <li> <p>	Class 10 English Poem “For Anne Gregory'' is a conversational poem. Further, it is between the poet “William Butler Yeats” and a little girl named “Anne Gregory”. 
+                    <p> </li>
+  
+                  </ul>
+
+               <strong style="font-family: crimson text; font-size: 150%">Class 10 English all chapters solutions are prepared with in-depth explanations and a deep layout. The students will have ease at acquiring the best content of class 10 English all chapters and access it for their future reference.</strong>
+
+
+</p>
+
+
+          </p>
+        </div></div>
+
+
+
+      <div role="tabpanel" class="tab-pane" id="tab5">
+        <p id='smal'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="tab6">
+        <p id='smal'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+<!-- Slider starts here -->
+<br>
+<h1 class='para' style="font-family: crimson text; font-size: 350%">What we have for your child...</h1>
+<section class="carousel-section">
+  <div class="swiper-container mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img class="caro-img"  width=150% src="{% static 'webpages/images/1 (2).png' %}" />
+      </div>
+      <div class="swiper-slide">
+        <img class="caro-img"   width=150% src="{% static 'webpages/images/2 (2).png' %}" />
+      </div>
+      <div class="swiper-slide">
+        <img class="caro-img"  width=150% src="{% static 'webpages/images/3 (2).png' %}" />
+      </div>
+      <div class="swiper-slide">
+        <img class="caro-img"   width=150% src="{% static 'webpages/images/5 (2).png' %}" />
+      </div>
+      <div class="swiper4slide">
+        <img class="caro-img"   width=150% src="{% static 'webpages/images/4 (2).png' %}" />
+      </div>
+
+      <div class="swiper-slide">
+        <img class="caro-img"   width=150% src="{% static 'webpages/images/6 (2).png' %}" />
+      </div>
+      <div class="swiper-slide">
+        <img class="caro-img"  width=150%  src="{% static 'webpages/images/7 (2).png' %}" />
+      </div>
+      <div class="swiper-slide">
+        <img class="caro-img"  width=150% src="{% static 'webpages/images/8 (2).png' %}" />
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+  <h1 class="para" style="font-family: crimson text; font-size: 450%">Road Map to your success</h1>
+  <img src="{% static 'webpages/images/RoadMap.png' %}" width="100%" alt="">
+</div>
+<br>
+<div class="jumbotron white" id='Lowerband'>
+    <h1 class='para' style="font-family: crimson text; font-size: 550%">Take your free counseling</h1>
+    <div class="row" style='margin-right:0px;'>
+      <div class="col-xs-4 col-lg-5"></div>
+      <div class="col-xs-4 col-lg-5">
+        <a href="#">
+          <button class="btn btn-danger btn-lg" type="button" name="button">Join us for free!!!</button>
+        </a>
+      </div>
+      <div class="col-xs-4 col-lg-5"></div>
+    </div>
+  </div>
+
+<footer class="footer-bs">
+           <div class="row">
+            <div class="col-md-3 footer-brand animated fadeInLeft">
+              <div class="item">
+                <h2>Logo</h2>
+                   <p>Ekal Shiksha is an Ed-tech company which provides one on one individual online classes. It is an initiative which aims to revolutionize the standard teaching and learning methods. We believe that each student has his or her personal learning speed, method and curriculum which is very important for a teacher to understand and personalize their teaching methods according to the students not vice versa. This platform is especially built for those who have immense potential but are never focused on in group classes, the growth of such students is our moto.
+
+<br>We have been in the teaching industry for past four years, catered to more than 1000s of students till the date. We are unique in a manner that we not only provide tuitions but also we make sure that the performance of each student is tracked through our LMS system and they get to check their clearity of concepts by the MCQs provided after each concept is taught. We have adopted the EAD approach for the better learning, understanding and self assessing of students. We are in a way parent friendly and make sure that the parents are kept in loop for each activity of the student and the teacher.
+
+<br>We have accommodated the best of talented teachers from all across the India for students who believe in learning beyond a classroom. We are a one step solution for all those parents who worry about their kid not being focused enough in group classes, for those who believe that their child can do far better if focused a little more, for those who worry for their kid’s safety when they are at work and their child alone with a teacher at home, for those who worry sending their child to coaching at odd hours and most of all for those who not only believe in passing but in learning.</p>
+</div>
+               </div>
+            <div class="col-md-6 footer-nav animated fadeInUp">
+                <h4 class='para'>Menu —</h4>
+                <div class="col-md-4">
+                       <ul class="list">
+                           <li><a href="{% url '6th' %}">Class 6th</a></li>
+                           <li><a href="{% url '7th' %}">Class 7th</a></li>
+                           <li><a href="{% url '8th' %}">Class 8th</a></li>
+                           <li><a href="{% url '9th' %}">Class 9th</a></li>
+                           <li><a href="{% url '10th' %}">Class 10th</a></li>
+                           <li><a href="{% url '11th_Science' %}">Class 11th Science</a></li>
+                           <li><a href="{% url '11th_Commerce' %}">Class 11th Commerce</a></li>
+                         </ul>
+                       </div>
+                           <div class="col-md-4">
+                                  <ul class="list">
+
+                           <li><a href="{% url '11th_Humanities' %}">Class 11th Humanities</a></li>
+                           <li><a href="{% url '12th_Science' %}">Class 12th Science</a></li>
+                           <li><a href="{% url '12th_Commerce' %}">Class 12th Commerce</a></li>
+                           <li><a href="{% url '12th_Humanities' %}">Class 12th Humanities</a></li>
+                       </ul>
+                   </div>
+                <div class="col-md-4">
+                       <ul class="list">
+                           <li><a href="#">About Us</a></li>
+                           <li><a href="#">Contacts</a></li>
+                           <li><a href="#">Terms & Condition</a></li>
+                           <li><a href="#">Privacy Policy</a></li>
+                       </ul>
+                   </div>
+               </div>
+            <div class="col-md-3 footer-social animated fadeInDown">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/ekalshiksha/">Facebook</a></li>
+                    <li><a href="https://twitter.com/ekalshiksha?lang=en">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/ekal_shiksha/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/company/ekal-shiksha/?originalSubdomain=in">Linkdin</a></li>
+                   </ul>
+               </div>
+            </div>
+       </footer>
+
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "3",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+  </script>
+<script src="{% static 'webpages/Js/ReadMore.js' %}"></script>
+<script src="{% static 'webpages/Js/readMoreJS.min.js' %}"></script>
+<script>
+   $readMoreJS.init({
+   target: '.readmore',           // Selector of the element the plugin applies to (any CSS selector, eg: '#', '.'). Default: ''
+   numOfWords: 100,               // Number of words to initially display (any number). Default: 50
+   toggle: true,                 // If true, user can toggle between 'read more' and 'read less'. Default: true
+   moreLink: 'Read More ...',    // The text of 'Read more' link. Default: 'read more ...'
+   lessLink: 'Read Less'         // The text of 'Read less' link. Default: 'read less'
+});
+</script>
+<script src="{% static 'webpages/Js/jquery_flipster_min.js' %}"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</html>

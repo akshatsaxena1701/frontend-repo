@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="{% static 'webpages/Js/Scrolling-tabs.js' %}"></script>
+
+  <script href="{% static 'webpages/Js/Test.js' %}"></script>
+      <script src="{% static 'webpages/Js/st_demo.js' %}"></script>
+  <link rel="stylesheet" href="{% static 'webpages/Scrolling-tabs.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'webpages/Fonts.css' %}">
+    <link rel="stylesheet" href="{% static 'webpages/st_demo.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'webpages/Doubts.css' %}">
+  <script src="{% static 'webpages/Js/Scrolling-tabs.js' %}"></script>
+  <link rel="stylesheet" href="{% static 'webpages/Js/jquery_flipster_min.css' %}">
+  <link rel="stylesheet" href="{% static 'webpages/Js/jquery_flipster.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'webpages/Index.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'webpages/css/dist/css/bootstrap.min.css' %}" >
+    <link rel="stylesheet" type="text/css" href="{% static 'webpages/css/dist/css/bootstrap.css' %}" >
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{% static 'webpages/css/dist/css/bootstrap-theme.css' %}" >
+    <title>Ekal Shiksha</title>
+
+  </head>
+  <body>
+    <!-- 2nd Navbar Starts here-->
+    <nav class="navbar navbar-default navbar-fixed-top nav1">
+      <div class="container-fluid white" id='Lowerband'>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+   <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav navbar-left">
+              <li><a href="{% url 'About' %}"><h4 class='navh4'>About us</h4></a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4 class='navh4'>Courses</h4> </a>
+                        <ul  class="dropdown-menu dropdown-menu">
+                          <li style='border-bottom: 0%; padding-top: 0%'><a href="{% url '6th' %}"><h5>Class 6th</h5></a></li>
+                          <li><a href="{% url '7th' %}"><h5>class 7th</h5></a></li>
+                          <li><a href="{% url '8th' %}"><h5>Class 8th</h5></a></li>
+                          <li><a href="{% url '9th' %}"><h5 >Class 9th</h5></a></li>
+                          <li><a href="{% url '10th' %}"><h5 >Class 10th</h5></a></li>
+                          <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h5>Class 11th</h5> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '11th_Science' %}"><h5 >Science</h5></a></li>
+                            <li><a href="{% url '11th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                            <li><a href="{% url '11th_Humanities' %}"><h5 >Arts</h5></a></li>
+                          </ul>
+                        </li>
+                          <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle"><h5>Class 12th</h5> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '12th_Science' %}"><h5 >Science</h5></a></li>
+                            <li><a href="{% url '12th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                            <li><a href="{% url '12th_Humanities' %}"><h5 >Arts</h5></a></li>
+                          </ul>
+                          </li>
+                          <!-- <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle"><h4 >Micro Course</h4> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '9th' %}"><h4 >Class 9th</h4></a></li>
+                            <li><a href="{% url '10th' %}"><h4 >Class 10th</h5></a></li>
+                            <li class="dropdown-submenu">
+                            <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h5 >Class 11th</h5> </a>
+                            <ul class="dropdown-menu ">
+                              <li><a href="{% url '11th_Science' %}"><h5 >Science</h5></a></li>
+                              <li><a href="{% url '11th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                              <li><a href="{% url '11th_Humanities' %}"><h5 >Arts</h5></a></li>
+                            </ul>
+                          </li>
+                          <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h5 >Class 12th</h5> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '11th_Science' %}"><h5 >Science</h5></a></li>
+                            <li><a href="{% url '11th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                            <li><a href="{% url '11th_Humanities' %}"><h5 >Arts</h5></a></li>
+                          </ul>
+                        </li>
+                        </li>
+
+                          </ul>
+                          </li> -->
+                          <!-- <li><li><a href='#'><h5 >English Speaking</h5></a></li></li> -->
+                        </ul>
+                          <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4 class='navh4'>Study Material</h4></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#"><h5 >Class 6th</h5></a></li>
+                            <li><a href="#"><h5 >Class 7th</h5></a></li>
+                            <li><a href="#"><h5 >Class 8th</h5></a></li>
+                            <li><a href="#"><h5 >Class 9th</h5></a></li>
+                            <li><a href="#"><h5 >Class 10th</h5></a></li>
+                            <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h5>Class 11th</h5> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '11th_Science' %}"><h5 >Science</h5></a></li>
+                            <li><a href="{% url '11th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                            <li><a href="{% url '11th_Humanities' %}"><h5 >Arts</h5></a></li>
+                          </ul>
+                        </li>
+                          <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle"><h5>Class 12th</h5> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '12th_Science' %}"><h5 >Science</h5></a></li>
+                            <li><a href="{% url '12th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                            <li><a href="{% url '12th_Humanities' %}"><h5 >Arts</h5></a></li>
+                          </ul>
+                          </li>
+
+                          </ul>
+                          </li>
+                  <li><a href="{% url 'Doubts' %}"><h4 class='navh4'>Doubt class</h4></a></li>
+                  <!-- <li><a href="#"><h4>Competitions</h4></a></li> -->
+                  <li><a href="#"><h4 class='navh4'>Teach with us</h4></a></li>
+
+
+            </div>
+      </div>
+  </ul>
+  </nav>
+  <!-- 1st navbar start here -->
+  <nav class="navbar navbar-default navbar-fixed-top nav2">
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <p><a href="{% url 'index' %}"><img class="pull-up" src="{% static 'webpages/images/Logo.png' %}" width=40% alt='' ></p>
+      </a>
+    </a>
+  </div>
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+
+
+
+
+  <div class="collapse navbar-collapse" id="navbar1">
+      <ul id='pad'class="nav navbar-nav navbar-right ">
+    <div class="row">
+      <!-- <div class="col-xs-2 col-md-2 col-lg-2 "></div> -->
+    <div class="col-xs-10 col-md-10 col-lg-10"style="padding-right:0px;margin-right:0px;">
+    <li id='pad' ><a href="tel:9716864415"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>  9716864415 &nbsp; </a>
+    </li></div>
+    <!-- <div class="col-xs-2 col-md-2 col-lg-2 "></div> -->
+    <div class="col-xs-10 col-md-10 col-lg-10">
+    <li id='pad' ><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzBWVHwwpBgTtmnMDMpQkrrhrZRHZGFhgBxJqMrBmbcdRghJMXzwLJlLtsjzDCJNcqwSLjv" ><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  Contact@ekalshiksha.in &nbsp; </a>
+    </li></div>
+    <!-- <div class="col-xs-2 col-md-2 col-lg-2 "></div> -->
+    </div>
+
+    </ul>
+    <ul id='pad'class="nav navbar-nav navbar-right ">
+    <div class="row">
+      <div class="col-xs-2 col-md-2 col-lg-2 "></div>
+    <div class="col-xs-10 col-md-10 col-lg-10">
+    <li id='pad' style='margin-left:0px;'><a href="#" ><h4><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  Sign In &nbsp;</h4> </a>
+    </li></div>
+
+    </div>
+
+    </ul>
+
+      <ul id='pad'class="nav navbar-nav navbar-right ">
+
+        <div class="row">
+          <div class="col-xs-10 col-md-10 col-lg-10 ">
+            <li id='pad' style='margin-left:0px;'><a href="#"><h4><span class="glyphicon glyphicon-search" aria-hidden="true"></span>  Enquiry  Now &nbsp;</h4> </a>
+    </div>
+    <div class="col-xs-2 col-md-2 col-lg-2 "></div>
+  </div>
+
+  </ul>
+  </div>
+  </div>
+
+
+  </nav>
+<!-- Start for class 6 -->
+<div class="container">
+  <div class="jumbotron">
+
+
+  <h1>Class 7th</h1>
+  <div class="item readmore">
+
+
+  <p>CBSE Class 7 broadly covers up all the fundamentals and conceptions that a student had covered up in the first year of his middle school. All the textbooks of this grade focus on developing student’s interest in the core subjects such as physics, biology and chemistry as they consider these burdensome. These subjects are going to be covered broadly in the later classes. The concepts that are being taught in this grade are considered as the educational walls which support the learning avenue of students. <br>Emphasis on a complete set of curriculum and content is required to build a strong foundation so that they can thrive meticulously. Also, distraction management is the most crucial aspect that the children must learn and bring out consistency and not feel disoriented.
+  <br>
+A good mentorship can help the children in bringing out the best in themselves. By this, they can fight against all the odds which they generally face and lay proper execution of the plans and progress checking.
+<br>Our vigorous and reliable team of experts will be the best fit for them for the best student-teacher interaction by conducting LIVE online Individual classes without any fear of judgement. </p>
+</div>
+  </div>
+  <br>
+</div>
+<!-- <div class="container">
+
+<div class='row'>
+  <div class="col-md-1">
+  </div>
+  <div class="col-md-5">
+    <h1 class='para'>6th class course</h1>
+  </div>
+  <div class="col-md-5">
+    <h1>Language Subject</h1>
+  </div>
+</div>
+<div class='row'>
+<div class="col-xs-1"></div>
+
+<div class="col-xs-3 col-md-3">
+
+
+
+    <div class="btn-group-lg btn-group-vertical">
+      <button type="button" id="pre-reading-btn" class="btn btn-default">Maths</button>
+      <br>
+      <button type="button" id="passage-btn" class="btn btn-default">Science</button>
+      <br>
+      <button type="button" id="post-reading-btn" class="btn btn-default">SST</button>
+    </div>
+
+</div>
+<div class="col-xs-3 col-md-3">
+  <div class="btn-group-lg btn-group-vertical">
+      <button type="button" id="pre-reading-btn" class="btn btn-default">English</button>
+      <br>
+      <button type="button" id="passage-btn" class="btn btn-default">IT</button>
+      <br>
+      <button type="button" id="post-reading-btn" class="btn btn-default">Sanskrit</button>
+      <br>
+    </div>
+
+  </div>
+
+  <div class="col-xs-3 col-md-3">
+    <div class="btn-group-lg btn-group-vertical">
+        <button type="button" class="btn btn-default">English</button>
+        <br>
+        <button type="button" class="btn btn-default">IT</button>
+        <br>
+        <button type="button" class="btn btn-default">Sanskrit</button>
+        <br>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <h1><br></h1>
+        <button type="button" class="btn btn-primary btn-lg btn-huge">Coding classes</button>
+        <br>
+    </div>
+</div>
+
+</div> -->
+<h1 class='para' style="font-family: Josefin Sans; font-size: 350%">Subjects we Offer for your Exellence!!!</h1>
+  <div class="container">
+    <div class='row'>
+      <div class='col-xs-0 col-md-2 col-lg-2'></div>
+      <div class='col-xs-12 col-md-9 col-lg-9'>
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#tab1" role="tab" data-toggle="tab"><h2>Mathematics</h2></a></li>
+      <li role="presentation"><a href="#tab2" role="tab" data-toggle="tab"><h2>Science</h2></a></li>
+      <li role="presentation"><a href="#tab3" role="tab" data-toggle="tab"><h2>Social Studies</h2></a></li>
+      <li role="presentation"><a href="#tab4" role="tab" data-toggle="tab"><h2>English</h2></a></li>
+      <!-- <li role="presentation"><a href="#tab5" role="tab" data-toggle="tab"><h2 style="font-family: crimson text; font-size: 250%">Language Subjects</h2></a></li>
+      <li role="presentation"><a href="#tab6" role="tab" data-toggle="tab"><h2 style="font-family: crimson text; font-size: 250%">Coding Classes</h2></a></li> -->
+    </ul>
+
+
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="tab1">
+        <h2 style='padding-top:5%;'>What is the syllabus of Class 7 Mathematics?</h2>
+        <p>The focus of the class 7 maths book is on making a child mathematise. The aim of mathematics is not merely being able to do quantitative calculations but to develop a child’s ability.  By this, they can redefine their relationship with the world. In the 7th standard initiation of movement from concrete models, and experiences towards abstraction begins. </p>
+        <p>In class 6th attempt to introduce a child to the abstract nature of mathematics has been done. Thus, the 7 class textbook continues the spirit and uses the language which is easy for a child to read and understand. </p>
+        <ul>
+          <li> <p>Class 7 Maths Chapter 1 focuses on elaborating the “Integers” for the previous standard it introduces properties of addition, subtraction, multiplication and division of integers, making a child familiar with the application and function of both negative and positive integers. Also, word problems in the form of a story have been included which will engage the child with the text. </p> </li>
+          <li> <p>In 7 class Maths Chapter 2, a child at this time also learns multiplication and division of fractions and decimals. </p> </li>
+          <li> <p>In class 7 Maths Chapter 3, Knowledge of various concepts like average, arithmetic means, median, mode, uses of graphs, and an introduction to probability has been given to the student in the chapter Data Handling. </p> </li>
+          <li> <p>7 class Maths Chapter 4 focuses on finding the solution to an equation and forming an equation from a solution and their uses in practical life have been taught to students, using Simple Equations. </p> </li>
+          <li> <p>In class 7 Maths Chapter 5, the concepts of geometry have been developed in chapters like Lines and Angles. Thus, a child learns about different types of angles and their properties. </p> </li>
+          <li> <p>In 7 class Maths Chapter 6, the triangle and its properties teach about various components of triangles like altitude, medians, angle sum property, exterior angle property and different types of triangles.</p> </li>
+          <li> <p>In Class 7 Maths Chapter 7 the concept of congruence of triangles is introduced to the child for the first time. Also, It explains the meaning of congruence and its criterion using games or relatable examples. </p> </li>
+          <li> <p>In 7 class Maths Chapter 8, the introduction of comparing quantities and percentages has been explained. Similarly, a child can use it in calculating and comparing their marks, dealing in the market etc. </p> </li>
+          <li> <p>In Class 7 Maths Chapter 9, the concept of Rational numbers has been extended from the previous class. Most importantly, operations of rational numbers, negative rational numbers are explained well. </p> </li>
+          <li> <p>In 7 class Maths Chapter 10, Practical geometry brings interesting activities along with. Consequently, it also allows the child to construct angles, triangles themselves using a compass. </p> </li>
+          <li> <p>Class 7 Maths Chapter 11 recalls from square and rectangle the chapter Perimeter and Area and moves to new topics like a parallelogram, circle. Moreover, It includes practical uses of the area and perimeter like in fields which helps a child to understand it better. </p> </li>
+          <li> <p>7 class Maths Chapter 12 explains how to convert from one unit to another. Also, the Meaning of algebra, coefficient, introduction to monomial, binomial etc has been provided. Also, the addition of algebraic expressions and finding their solutions has been explained in chapter Algebraic Expressions. </p> </li>
+        </ul>
+      </div>
+
+      <div role="tabpanel" class="tab-pane" id="tab2">
+      <h2 style='padding-top:5%;'>What is the course curriculum of class 7 science?</h2>
+      <p>The Class 7 Science book is designed in a way that it becomes more interactive and child can recall their own experiences and build concepts around them. Therefore, simple activities are included which can be performed easily by students and the language has been kept as simple as possible. Along with the two friends Paheli and Boojho, other pictures, illustrations, and cartoons make it very engaging for students. </p>
+      <ul>
+        <li><p>	Class  7 Science Chapter 1 talks about Nutrition in Plants and how they are derived.</p> </li>
+        <li> <p>7 class Science Chapter 2 talked about Nutrition in Animals and how they are transferred to one another in an economy.</p> </li>
+        <li> <p>Class 7 Science Chapter 3 describes the process and sources of different fibres and how the fabric is made out of fibres.</p> </li>
+        <li> <p>7 class  Science Chapter 4 explains to the students What is heat, how is it measured and the methods of transfer of heat.</p> </li>
+        <li> <p>In class 7 Science Chapter 5, the child gets a brief about what Acids, Bases and Salts are.</p> </li>
+        <li> <p>In 7 class Science Chapter 6 the child will understand the concept of Physical and Chemical Changes.</p> </li>
+        <li> <p>Class 7 Science Chapter 7 tells the difference between Weather and Climate and the Adaptations of animals to climate. </p> </li>
+        <li> <p>7 class Science Chapter 8 discusses Winds, Storms and Cyclones and their effect on the atmosphere.</p> </li>
+        <li> <p>Class 7 Science Chapter 9 tells about Soil Profile, preparation, properties and types of soil. </p> </li>
+        <li> <p>7 class Science Chapter 10 tells the difference between the process of Respiration and Breathing and how organisms breathe.</p> </li>
+        <li> <p>In Class 7 Science Chapter 11, Transportation in Plants and Animals the child will learn about the circulatory system, excretory system and the transportation of substances in plants. </p> </li>
+        <li> <p>7 class Science Chapter 12 is based upon the Reproduction in Plants. Motion and Time gives a brief idea. Also, it gives a picture of what is motion, how can one measure speed and time. Lastly, it discusses their unit and their dependency upon each other. </p> </li>
+        <li> <p>Class 7 Science Chapter 13 Motion and Time describes the different kinds of motions.</p> </li>
+
+        <li> <p>7 class Science Chapter 14 is about Electric Current and its Effects. </p> </li>
+        <li> <p>Class 7 Science Chapter 15 introduces the child to the applications of the plane and spherical mirrors, and the way light travels</p> </li>
+        <li> <p>7 class Science Chapter 16 is based on water as a precious resource. Further, it also describes the way to prevent the excess usage of water to sustain.</p> </li>
+        <li> <p>Class 7 Science Chapter 17 focuses on Forest and marks their essence in the lives of people.</p> </li>
+        <li> <p>7 class Science Chapter 18 tells everything related to pollutants, wastewater plants, sewage etc.</p> </li>
+
+
+      </ul>
+      <p>Class 7 science all chapters are based on Facts, anecdotes and stories to make it more engaging and interesting for students.</p>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="tab3">
+    <h2 style='padding-top:5%;'>What does a student study in class 7 SST?</h2>
+    <p>The Class 7 SST history textbook focuses on the fact that the children’s life at school must link to their life outside the school. Also, it encourages children to reflect on their learning and to pursue imaginative questions and activities. </p>
+    <h3>7 CLASS HISTORY (Our Past II) - </h3>
+    <p>In context with history, the textbook focuses on telling our past. </p>
+    <ul>
+      <li> <p>Class 7 SST History Chapter 1 starts with Tracing Changes Through a Thousand Years that talks about new and old terminologies. Further, it talks about historians and their sources, old and new regions. </p> </li>
+      <li> <p>7 class SST History Chapter 2 talks about New Kings and Kingdoms where we discuss the emergence of New Dynasties. </p> </li>
+      <li> <p>7 class SST History Chapter 3 focuses on The Delhi Sultans. </p> </li>
+      <li> <p>Class 7 SST History Chapter 4 discusses The Mughal Empire. Specifically, It discusses Mughals, their traditions, successions etc. </p> </li>
+      <li> <p>The succeeding 7 class SST History Chapter 5 tells us about the history of various buildings, monuments. Also, this is what that we see or visit that is named Rulers and Buildings. </p> </li>
+      <li> <p>In Class 7 SST History Chapter 6, we get to know about the Towns, Traders and Craftspersons. </p> </li>
+      <li> <p>7 class SST History Chapter 7 tells about the lives of Tribes, Nomads and the people living in settled communities. </p> </li>
+      <li> <p>Class 7 SST History Chapter 8 Devotional Paths to Divine talks about the Idea of Supreme God. Also, about various religious beliefs prevailing in the past. </p> </li>
+      <li> <p>7 class SST History Chapter 9 discusses the making of Regional Cultures. </p> </li>
+      <li> <p>Lastly, Class 7 SST History Chapter 10 tells about the Political Formations of the 18th century. </p> </li>
+
+    </ul>
+    <h3>7 CLASS GEOGRAPHY (Our Environment) - </h3>
+    <ul>
+      <li> <p>Class 7 Geography Chapter 1, Environment, the child learns about the various Components of the Environment. </p> </li>
+      <li> <p>7 class Geography Chapter 2 Inside Our Earth discusses the interior of the Earth. </p> </li>
+      <li> <p>Class 7 Geography Chapter 3, Our Changing Earth talks about the different natural phenomenon which takes place inside the Earth. </p> </li>
+      <li> <p>7 class Geography Chapter 4, Air tells about the structure, composition of Atmosphere and weather and climate. </p> </li>
+      <li> <p>Class 7 Geography Chapter 5, Water, the child learns about the distribution of various water bodies and natural phenomenon linked. </p> </li>
+      <li> <p>7 class Geography Chapter 6, the child also gets to know about Natural Vegetation and Wildlife. </p> </li>
+      <li> <p>Class 7 Geography Chapter 7, Human environment- settlements, transport, communication.</p> </li>
+      <li> <p>7 class Geography Chapter 8, Human-Environment Interaction – the tropical and subtropical region is discussed in the chapter. </p> </li>
+      <li> <p>Class 7 Geography Chapter 9, provides a glimpse to the students about life in temperate grasslands.</p> </li>
+      <li> <p>Lastly, 7 class Geography Chapter 10, talks about Life in Deserts and explains different types of deserts. </p> </li>
+
+    </ul>
+    <h3>7 CLASS CIVICS (Social and political life) -</h3>
+    <p>The book starts by talking about the basic right of equality.</p>
+    <ul>
+      <li> <p>Class 7 Civics Chapter 1, On Equality, the child learns about their basic rights, responsibilities and the functioning of governmental bodies. </p> </li>
+      <li> <p>7 class Civics Chapter 2 tells about the role of Government in health. </p> </li>
+      <li> <p>Class 7 Civics Chapter 3 explains the functioning of the State Government. </p> </li>
+      <li> <p>7 class Civics Chapter 4 deals with the concept of Gender and shows how girls and boys are brought up or socialised differently.  </p> </li>
+      <li> <p>Class 7 Civics Chapter 5 further develops ideas around gender inequalities in the world of work and describes women’s struggles for equality. </p> </li>
+      <li> <p>7 class Civics Chapter 6 is about Understanding Media. Hence, the focus is on explaining the strong links between media and technology and the widespread effects of media. </p> </li>
+      <li> <p>Class 7 Civics Chapter 7 and 8 helps in understanding the working of the market, examining the chain of markets operates etc. </p> </li>
+      <li> <p>And lastly, 7 class Civics Chapter 9 talks about the Struggle for Equality of various groups. </p> </li>
+    </ul>
+    <p>The textbook contains class 7 SST all chapter which also includes various case studies, stories, classroom activities, data analysis and photographs which encourage students to learn and think more.</p>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="tab4">
+  <h2 style='padding-top:5%;'>What is the course curriculum of Class 7 English main textbook and supplementary reader?</h2>
+  <p>NCERT has prescribed two books to the students for the preparation of class 7 exams chapter wise.<br>
+    The 7 class English book is - <br>
+    Main textbook - Honeycomb <br>
+    Supplementary reader - An Alien Hand
+  </p>
+  <h3>NCERT CLASS 7 ENGLISH MAIN TEXTBOOK  HONEYCOMB (PROSE)</h3>
+  <ul>
+    <li> <p>Class 7 English Chapter 1 “Three questions” is about three questions asked by the king. Also, the king promises a large sum of money in return to anyone who would answer the three questions.</p> </li>
+    <li> <p>7 class English Chapter 2 “A Gift of Chappals” focuses on the simplicity of children’s behaviour. Further, it sees how they wish to explore so many aspects of this human world.</p> </li>
+    <li> <p>Class 7 English Chapter 3 “Gopal and the Hilsa Fish” is a moral based tale that provides a lesson. Also, it explains that nothing is impossible in this world once you learn to make smart decisions.</p> </li>
+    <li> <p>7 class English Chapter 4 “The Ashes that made trees bloom” is a Japanese story that underscores the important values of humanity.  They explore values of honesty and compassion.</p> </li>
+    <li> <p>Class 7 English Chapter 5 “Quality” is about german shoemakers, the Gessler brothers who died of starvation in the end.</p> </li>
+    <li> <p>7 class English Chapter 6 “Expert Detectives” is about two siblings who are certainly worried about a stranger. </p> </li>
+    <li> <p>Class 7 English Chapter 7 “The Inventions of Vita - Wonk is based on an assumption that imagination plays a certain massive role in developing magical items.</p> </li>
+    <li> <p>7 class English Chapter 8 “Fire: Friend and Foe” talks about the advantages and disadvantages of the invention of fire. Further, it explains the possible methods to prevent fire.</p> </li>
+    <li> <p>Class 7 English Chapter 9 “A bicycle in good repair” is a humorous tale. Here, the author's friend dismantles his bicycle while repairing it.</p> </li>
+    <li> <p>7 class English Chapter 10 “The story of cricket” provides answers to the multiple questions related to the sport “Cricket”. Further, it compares it with other sports.</p> </li>
+    <li> <p></p> </li>
+  </ul>
+  <h3>NCERT CLASS 7 ENGLISH MAIN TEXTBOOK “HONEYCOMB” (POEMS)</h3>
+  <ul>
+    <li> <p>Class 7 English poem “The squirrel” by M.B Armstrong all about a description of a squirrel. Further, it explains how it moves, the food it likes, how it plays and so on.</p> </li>
+    <li> <p>7 class English poem “The Rebel” by D.J. Enright is all about the character Rebel. Here, this Rebel does not follow the norms and conventions of society and is different.</p> </li>
+    <li> <p>Class 7 English poem “The Shed” by Frank Flynn is all about the fear of a child about a Shed present in the garden.</p> </li>
+    <li> <p>7 class English poem “Chivvy” by Michael Rosen is all about how children are frequently told by grown-up kids. Moreover, it focuses on what to do and what not to.</p> </li>
+    <li> <p>Class 7 English poem “Trees” talks about the benefits that trees provide Individuals and society.</p> </li>
+    <li> <p>7 class English poem ”Mystery of the talking fan” by Maude Rubin is all about a fan who is talking in some code languages with the poet.</p> </li>
+    <li> <p>Class 7 English poem “Dad and the cat and the tree” by Kit Wright is about the self-confidence of the dad. Also, how it failed in multiple attempts to bring the cat down from the tree.</p> </li>
+    <li> <p>7 class English poem “Meadow surprises” Lois Brandt Phillips is about the beauty of the meadows filled with velvet grass.</p> </li>
+    <li> <p>Class 7 English poem “Garden Snake” by Murial L. Sonne is all about the advantages of having a Snake in the garden as it eats up the insects.</p> </li>
+    <li> <p></p> </li>
+  </ul>
+  <h3>NCERT CLASS 7 ENGLISH SUPPLEMENTARY READER “AN ALIEN HAND”</h3>
+  <ul>
+    <li> <p>Class 7 English Supplementary reader chapter 1 “The Tiny Teacher” by Gill Vaisey shares the sense of duties. consequently, it delivers the responsibilities to children to learn from sincerely.</p> </li>
+    <li> <p>7 class English Supplementary reader chapter 2 “Bringing Up Kari” by Gopal Mukherji is about a five five-year-old elephant Kari. Also, it is about its upbringing by the narrator.</p> </li>
+    <li> <p>Class 7 English Supplementary reader chapter 3 “The Desert” describes a desert and break all the misconceptions. here, people have negative content in their minds related to a deserted place.</p> </li>
+    <li> <p>7 class English Supplementary reader chapter 4 “The Cop and the Anthem” describes the themes of goals, dreams, hope. Here are some plans which play a major role in the success of our career and future.</p> </li>
+    <li> <p>Class 7 English Supplementary reader chapter 5 “Golu grows a Nose” is about a baby elephant whose name is Golu. He is curious about the things happening around him keep asking questions. </p> </li>
+    <li> <p>7 class English Supplementary reader chapter 6 “I want something in a cage” is all about a shopkeeper who once encountered a strange person in his shop.</p> </li>
+    <li> <p>Class 7 English Supplementary reader chapter 7 “Chandni” is concerning a goat named Chandni. She refused to join a group of wild goats because she did not want to lose her freedom.</p> </li>
+    <li> <p>7 class English Supplementary reader chapter 8 “The Bear Story” is about the love bear can shower on someone. Additionally, they too have a side which everyone loves even if they are wild.</p> </li>
+    <li> <p>Class 7 English Supplementary reader chapter 9 “A tiger in the house” by Ruskin Bond is regarding dealing with wild animals like a tiger with love and compassion.</p> </li>
+    <li> <p>7 class English Supplementary reader chapter 10  “An Alien hand” is about the characters who live on the planet Mars under certain artificial conditions.</p> </li>
+  </ul>
+  <p>Summary of 7 class English all chapter is prepared deeply and analytically deeply and analytically with in-depth explanation and information.</p>
+  </div>
+  </div>
+</div>
+
+<!-- Slider starts here -->
+<br>
+<h1 class='para' style="font-family: crimson text; font-size: 350%">What we have for your child...</h1>
+<section class="carousel-section">
+  <div class="swiper-container mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img class="caro-img" width= 150% src="{% static 'webpages/images/1 (2).png' %}" />
+      </div>
+      <div class="swiper-slide">
+        <img class="caro-img"  width= 150% src="{% static 'webpages/images/2 (2).png' %}" />
+      </div>
+      <div class="swiper-slide">
+        <img class="caro-img" width= 150% src="{% static 'webpages/images/3 (2).png' %}" />
+      </div>
+      <div class="swiper-slide">
+        <img class="caro-img"  width= 150% src="{% static 'webpages/images/5 (2).png' %}" />
+      </div>
+      <div class="swiper4slide">
+        <img class="caro-img"  width= 150% src="{% static 'webpages/images/4 (2).png' %}" />
+      </div>
+
+      <div class="swiper-slide">
+        <img class="caro-img"  width= 150% src="{% static 'webpages/images/6 (2).png' %}" />
+      </div>
+      <div class="swiper-slide">
+        <img class="caro-img" width= 150%  src="{% static 'webpages/images/7 (2).png' %}" />
+      </div>
+      <div class="swiper-slide">
+        <img class="caro-img" width= 150% src="{% static 'webpages/images/8 (2).png' %}" />
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+</div>
+<br>
+<div class="container">
+
+
+ <h1 class="para" style="font-family: crimson text; font-size: 450%">Road Map to your success</h1>
+  <img src="{% static 'webpages/images/RoadMap.png' %}" width="100%" alt="">
+</div>
+<br>
+<div class="jumbotron white" id='Lowerband'>
+    <h1 class='para' style="font-family: crimson text; font-size: 550%">Take your free counseling</h1>
+    <div class="row" style='margin-right:0px;'>
+      <div class="col-xs-4 col-lg-5"></div>
+      <div class="col-xs-4 col-lg-5">
+        <a href="#">
+          <button class="btn btn-danger btn-lg" type="button" name="button">Join us for free!!!</button>
+        </a>
+      </div>
+      <div class="col-xs-4 col-lg-5"></div>
+    </div>
+  </div>
+
+<footer class="footer-bs">
+           <div class="row">
+            <div class="col-md-3 footer-brand animated fadeInLeft">
+              <div class="item">
+                <h2>Logo</h2>
+                   <p>Ekal Shiksha is an Ed-tech company which provides one on one individual online classes. It is an initiative which aims to revolutionize the standard teaching and learning methods. We believe that each student has his or her personal learning speed, method and curriculum which is very important for a teacher to understand and personalize their teaching methods according to the students not vice versa. This platform is especially built for those who have immense potential but are never focused on in group classes, the growth of such students is our moto.
+
+<br>We have been in the teaching industry for past four years, catered to more than 1000s of students till the date. We are unique in a manner that we not only provide tuitions but also we make sure that the performance of each student is tracked through our LMS system and they get to check their clearity of concepts by the MCQs provided after each concept is taught. We have adopted the EAD approach for the better learning, understanding and self assessing of students. We are in a way parent friendly and make sure that the parents are kept in loop for each activity of the student and the teacher.
+
+<br>We have accommodated the best of talented teachers from all across the India for students who believe in learning beyond a classroom. We are a one step solution for all those parents who worry about their kid not being focused enough in group classes, for those who believe that their child can do far better if focused a little more, for those who worry for their kid’s safety when they are at work and their child alone with a teacher at home, for those who worry sending their child to coaching at odd hours and most of all for those who not only believe in passing but in learning.</p>
+</div>
+               </div>
+            <div class="col-md-6 footer-nav animated fadeInUp">
+                <h4 class='para'>Menu —</h4>
+                <div class="col-md-4">
+                       <ul class="list">
+                           <li><a href="{% url '6th' %}">Class 6th</a></li>
+                           <li><a href="{% url '7th' %}">Class 7th</a></li>
+                           <li><a href="{% url '8th' %}">Class 8th</a></li>
+                           <li><a href="{% url '9th' %}">Class 9th</a></li>
+                           <li><a href="{% url '10th' %}">Class 10th</a></li>
+                           <li><a href="{% url '11th_Science' %}">Class 11th Science</a></li>
+                           <li><a href="{% url '11th_Commerce' %}">Class 11th Commerce</a></li>
+                         </ul>
+                       </div>
+                           <div class="col-md-4">
+                                  <ul class="list">
+
+                           <li><a href="{% url '11th_Humanities' %}">Class 11th Humanities</a></li>
+                           <li><a href="{% url '12th_Science' %}">Class 12th Science</a></li>
+                           <li><a href="{% url '12th_Commerce' %}">Class 12th Commerce</a></li>
+                           <li><a href="{% url '12th_Humanities' %}">Class 12th Humanities</a></li>
+                       </ul>
+                   </div>
+                <div class="col-md-4">
+                       <ul class="list">
+                           <li><a href="#">About Us</a></li>
+                           <li><a href="#">Contacts</a></li>
+                           <li><a href="#">Terms & Condition</a></li>
+                           <li><a href="#">Privacy Policy</a></li>
+                       </ul>
+                   </div>
+               </div>
+            <div class="col-md-3 footer-social animated fadeInDown">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/ekalshiksha/">Facebook</a></li>
+                    <li><a href="https://twitter.com/ekalshiksha?lang=en">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/ekal_shiksha/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/company/ekal-shiksha/?originalSubdomain=in">Linkdin</a></li>
+                   </ul>
+               </div>
+            </div>
+       </footer>
+
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "3",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+  </script>
+<script src="{% static 'webpages/Js/ReadMore.js' %}"></script>
+<script src="{% static 'webpages/Js/readMoreJS.min.js' %}"></script>
+<script>
+   $readMoreJS.init({
+   target: '.readmore',           // Selector of the element the plugin applies to (any CSS selector, eg: '#', '.'). Default: ''
+   numOfWords: 100,               // Number of words to initially display (any number). Default: 50
+   toggle: true,                 // If true, user can toggle between 'read more' and 'read less'. Default: true
+   moreLink: 'Read More ...',    // The text of 'Read more' link. Default: 'read more ...'
+   lessLink: 'Read Less'         // The text of 'Read less' link. Default: 'read less'
+});
+</script>
+
+<!-- <script src="{% static 'webpages/Js/jquery_flipster_min.js' %}"></script> -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</html>

@@ -210,7 +210,10 @@ body{
     transition: 0.5s;
 }
 
-
+.desc-read a{
+	color: #0095DD;
+	text-decoration: none;
+}
 
 
 .head-text{

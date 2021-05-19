@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="{% static 'webpages/Js/Scrolling-tabs.js' %}"></script>
+
+<script href="{% static 'webpages/Js/Test.js' %}"></script>
+      <script src="{% static 'webpages/Js/st_demo.js' %}"></script>
+  <link rel="stylesheet" href="{% static 'webpages/Scrolling-tabs.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'webpages/Fonts.css' %}">
+    <link rel="stylesheet" href="{% static 'webpages/st_demo.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'webpages/Doubts.css' %}">
+  <script src="{% static 'webpages/Js/Scrolling-tabs.js' %}"></script>
+<link rel="stylesheet" href="{% static 'webpages/Js/jquery_flipster_min.css' %}">
+<link rel="stylesheet" href="{% static 'webpages/Js/jquery_flipster.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'webpages/Index.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'webpages/css/dist/css/bootstrap.min.css' %}" >
+    <link rel="stylesheet" type="text/css" href="{% static 'webpages/css/dist/css/bootstrap.css' %}" >
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{% static 'webpages/css/dist/css/bootstrap-theme.css' %}" >
+    <title>Ekal Shiksha</title>
+
+  </head>
+  <body>
+    <!-- 2nd Navbar Starts here-->
+    <nav class="navbar navbar-default navbar-fixed-top nav1">
+      <div class="container-fluid white" id='Lowerband'>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+   <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav navbar-left">
+              <li><a href="{% url 'About' %}"><h4 class='navh4'>About us</h4></a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4 class='navh4'>Courses</h4> </a>
+                        <ul  class="dropdown-menu dropdown-menu">
+                          <li style='border-bottom: 0%; padding-top: 0%'><a href="{% url '6th' %}"><h5>Class 6th</h5></a></li>
+                          <li><a href="{% url '7th' %}"><h5>class 7th</h5></a></li>
+                          <li><a href="{% url '8th' %}"><h5>Class 8th</h5></a></li>
+                          <li><a href="{% url '9th' %}"><h5 >Class 9th</h5></a></li>
+                          <li><a href="{% url '10th' %}"><h5 >Class 10th</h5></a></li>
+                          <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h5>Class 11th</h5> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '11th_Science' %}"><h5 >Science</h5></a></li>
+                            <li><a href="{% url '11th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                            <li><a href="{% url '11th_Humanities' %}"><h5 >Arts</h5></a></li>
+                          </ul>
+                        </li>
+                          <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle"><h5>Class 12th</h5> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '12th_Science' %}"><h5 >Science</h5></a></li>
+                            <li><a href="{% url '12th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                            <li><a href="{% url '12th_Humanities' %}"><h5 >Arts</h5></a></li>
+                          </ul>
+                          </li>
+                          <!-- <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle"><h4 >Micro Course</h4> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '9th' %}"><h4 >Class 9th</h4></a></li>
+                            <li><a href="{% url '10th' %}"><h4 >Class 10th</h5></a></li>
+                            <li class="dropdown-submenu">
+                            <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h5 >Class 11th</h5> </a>
+                            <ul class="dropdown-menu ">
+                              <li><a href="{% url '11th_Science' %}"><h5 >Science</h5></a></li>
+                              <li><a href="{% url '11th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                              <li><a href="{% url '11th_Humanities' %}"><h5 >Arts</h5></a></li>
+                            </ul>
+                          </li>
+                          <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h5 >Class 12th</h5> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '11th_Science' %}"><h5 >Science</h5></a></li>
+                            <li><a href="{% url '11th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                            <li><a href="{% url '11th_Humanities' %}"><h5 >Arts</h5></a></li>
+                          </ul>
+                        </li>
+                        </li>
+
+                          </ul>
+                          </li> -->
+                          <!-- <li><li><a href='#'><h5 >English Speaking</h5></a></li></li> -->
+                        </ul>
+                          <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4 class='navh4'>Study Material</h4></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#"><h5 >Class 6th</h5></a></li>
+                            <li><a href="#"><h5 >Class 7th</h5></a></li>
+                            <li><a href="#"><h5 >Class 8th</h5></a></li>
+                            <li><a href="#"><h5 >Class 9th</h5></a></li>
+                            <li><a href="#"><h5 >Class 10th</h5></a></li>
+                            <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h5>Class 11th</h5> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '11th_Science' %}"><h5 >Science</h5></a></li>
+                            <li><a href="{% url '11th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                            <li><a href="{% url '11th_Humanities' %}"><h5 >Arts</h5></a></li>
+                          </ul>
+                        </li>
+                          <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle"><h5>Class 12th</h5> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '12th_Science' %}"><h5 >Science</h5></a></li>
+                            <li><a href="{% url '12th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                            <li><a href="{% url '12th_Humanities' %}"><h5 >Arts</h5></a></li>
+                          </ul>
+                          </li>
+
+                          </ul>
+                          </li>
+                  <li><a href="{% url 'Doubts' %}"><h4 class='navh4'>Doubt class</h4></a></li>
+                  <!-- <li><a href="#"><h4>Competitions</h4></a></li> -->
+                  <li><a href="#"><h4 class='navh4'>Teach with us</h4></a></li>
+</li>
+
+            </div>
+      </div>
+  </ul>
+  </nav>
+  <!-- 1st navbar start here -->
+  <nav class="navbar navbar-default navbar-fixed-top nav2">
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+
+        <p><a href="{% url 'index' %}"><img class="pull-up" src="{% static '/webpages/images/Logo.png' %}" width='40%' alt='' ></p>
+      </a>
+    </a>
+  </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+
+
+
+
+  <div class="collapse navbar-collapse" id="navbar1">
+      <ul id='pad'class="nav navbar-nav navbar-right ">
+    <div class="row">
+      <!-- <div class="col-xs-2 col-md-2 col-lg-2 "></div> -->
+    <div class="col-xs-10 col-md-10 col-lg-10"style="padding-right:0px;margin-right:0px;">
+    <li id='pad' ><a href="tel:9716864415"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>  9716864415 &nbsp; </a>
+    </li></div>
+    <!-- <div class="col-xs-2 col-md-2 col-lg-2 "></div> -->
+    <div class="col-xs-10 col-md-10 col-lg-10">
+    <li id='pad' ><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzBWVHwwpBgTtmnMDMpQkrrhrZRHZGFhgBxJqMrBmbcdRghJMXzwLJlLtsjzDCJNcqwSLjv" ><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  Contact@ekalshiksha.in &nbsp; </a>
+    </li></div>
+    <!-- <div class="col-xs-2 col-md-2 col-lg-2 "></div> -->
+    </div>
+
+    </ul>
+    <ul id='pad'class="nav navbar-nav navbar-right ">
+    <div class="row">
+      <div class="col-xs-2 col-md-2 col-lg-2 "></div>
+    <div class="col-xs-10 col-md-10 col-lg-10">
+    <li id='pad' style='margin-left:0px;'><a href="#" ><h4><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  Sign In &nbsp;</h4> </a>
+    </li></div>
+
+    </div>
+
+    </ul>
+
+      <ul id='pad'class="nav navbar-nav navbar-right ">
+
+        <div class="row">
+          <div class="col-xs-10 col-md-10 col-lg-10 ">
+            <li id='pad' style='margin-left:0px;'><a href="#"><h4><span class="glyphicon glyphicon-search" aria-hidden="true"></span>  Enquiry  Now &nbsp;</h4> </a>
+    </div>
+    <div class="col-xs-2 col-md-2 col-lg-2 "></div>
+  </div>
+
+  </ul>
+  </div>
+  </div>
+
+
+  </nav>
+<!-- Start for class 6 -->
+<div class="container">
+  <div class="jumbotron">
+
+  <h1>CBSE CLASS 6</h1>
+    <div class="item readmore">
+  <p>CBSE Class 6 marks a significant step in the learning path of a student’s school life. This grade acts as the foundation for the upcoming years of a student’s school life. A strong foundation can pave their ways for the future that will help them in raising much higher with confidence. There is always a sense of fear in the minds of the children regarding the hefty syllabus that they came across. But once the students are focused, no one can stop them from achieving greatness.</p>
+   <p>Here, children are being taught how they can do an easy conceptualisation of Science, Mathematics, Social Science and English. Since the concepts of this grade are entirely new to the students, complete one on one guidance should be provided to them. This can be done by the top subject matter experts otherwise, students may stumble on their paths.
+  <br>To overcome the above difficulties, our expert faculty have prepared a quality study plan. It will help to generate life long success for the students by providing them with a standardised learning experience. By bringing them forth with Individual classes, they aim at improving their insight with relevant academic content. </p>
+  <br>
+  </div>
+</div>
+</div>
+<!-- <div class="container">
+
+<div class='row'>
+  <div class="col-md-1">
+  </div>
+  <div class="col-md-5">
+    <h1 class='para'>6th class course</h1>
+  </div>
+  <div class="col-md-5">
+    <h1>Language Subject</h1>
+  </div>
+</div>
+<div class='row'>
+<div class="col-xs-1"></div>
+
+<div class="col-xs-3 col-md-3">
+
+
+
+    <div class="btn-group-lg btn-group-vertical">
+      <button type="button" id="pre-reading-btn" class="btn btn-default">Maths</button>
+      <br>
+      <button type="button" id="passage-btn" class="btn btn-default">Science</button>
+      <br>
+      <button type="button" id="post-reading-btn" class="btn btn-default">SST</button>
+    </div>
+
+</div>
+<div class="col-xs-3 col-md-3">
+  <div class="btn-group-lg btn-group-vertical">
+      <button type="button" id="pre-reading-btn" class="btn btn-default">English</button>
+      <br>
+      <button type="button" id="passage-btn" class="btn btn-default">IT</button>
+      <br>
+      <button type="button" id="post-reading-btn" class="btn btn-default">Sanskrit</button>
+      <br>
+    </div>
+
+  </div>
+
+  <div class="col-xs-3 col-md-3">
+    <div class="btn-group-lg btn-group-vertical">
+        <button type="button" class="btn btn-default">English</button>
+        <br>
+        <button type="button" class="btn btn-default">IT</button>
+        <br>
+        <button type="button" class="btn btn-default">Sanskrit</button>
+        <br>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <h1><br></h1>
+        <button type="button" class="btn btn-primary btn-lg btn-huge">Coding classes</button>
+        <br>
+    </div>
+</div>
+
+</div> -->
+<h1 class='para'>Subjects we Offer for your Exellence!!!</h1>
+
+  <div class="container">
+    <div class='row'>
+      <div class='col-xs-0 col-md-2 col-lg-2'></div>
+      <div class='col-xs-12 col-md-9 col-lg-9'>
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#tab1" role="tab" data-toggle="tab"><h2>Mathematics</h2></a></li>
+      <li role="presentation"><a href="#tab2" role="tab" data-toggle="tab"><h2>Science</h2></a></li>
+      <li role="presentation"><a href="#tab3" role="tab" data-toggle="tab"><h2>Social Studies</h2></a></li>
+      <li role="presentation"><a href="#tab4" role="tab" data-toggle="tab"><h2>English</h2></a></li>
+      <!-- <li role="presentation"><a href="#tab5" role="tab" data-toggle="tab"><h2><font face="Crimson Text" size="6">Language Subjects</font></h2></a></li>
+      <li role="presentation"><a href="#tab6" role="tab" data-toggle="tab"><h2><font face="Crimson Text" size="6">Coding Classes</font></h2></a></li> -->
+    </ul>
+
+
+
+
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="tab1">
+        <br>
+        <h2 style='padding-top:3%;'>What a student learns in 6 class Mathematics?</h2>
+        <h3> The beginning of 6 class Maths is initiated by introducing a child to new concepts of numbers.</h3>
+        <ul>
+          <li><p> Chapter 1 “Knowing Our Numbers,” tells about numbers, their multiplication, division, number names, patterns. Also,  the difference between digits and the numbers, place value system, etc is explained. Process and applications of Estimation have been described to a student. By this, they can relate it to daily life examples. </p></li>
+          <li><p> Chapter 2 “Whole Numbers” discusses the properties of whole numbers which helps students to understand mathematical operations. Moreover, Divisibility tests and concepts of HCF and LCM are developed in a better way. </p></li>
+          <li><p> Chapter 3 “Playing with Numbers” involves the understanding of brackets during Addition, Subtraction, multiplication and division. </p></li>
+          <li><p> Chapter 3 “Playing with Numbers” involves the understanding of brackets during Addition, Subtraction, multiplication and division. </p></li>
+          <li> <p>Chapter 5 “Understanding Elementary Shapes” discusses broad categorisation of the shapes formed using curves and lines.</p> </li>
+          <li> <p>Chapter 6 “Integers” is the knowledge about a new family of numbers that have science been introduced.</p> </li>
+          <li> <p>Chapter “Fractions” focuses on what are different forms of numbers. Also, it explains how to deal with them and their application in daily life.</p> </li>
+          <li> <p>Chapter 8 “Decimals” focuses on what are different forms of numbers. Also, it explains how to deal with them and their application in daily life.</p> </li>
+          <li> <p>Chapter 9 “Data Handling” comes up with bar graphs and pie charts. Further,  it adds interest to the learning process of the student.</p> </li>
+          <li> <p>Chapter 10 “Mensuration”  explains the concepts of Area and Perimeter with things surrounding the child’s life. </p> </li>
+          <li> <p>Chapter 11 “Algebra” teaches them the basic meaning of Algebra, variables, and significance.</p> </li>
+          <li> <p>Chapter 12 “Ratio and Proportion” introduces the terms ratio and proportion and their application in making comparisons. </p> </li>
+          <li> <p>Chapter 13 “Symmetry” is all about symmetrical shapes and understanding the division between different patterns and shapes.</p> </li>
+          <li> <p>Chapter 14 Practical Geometry makes a child familiar with different geometrical tools. This is important for doing basic constructions. </p> </li>
+
+        </ul>
+        <p>The textbook of Class 6 Maths all chapters guides teachers as well as students to understand the concept. The reason behind the process is understanding rather than just memorizing it. Many opportunities are provided in textbooks where children will be verifying principles or patterns.</p>
+
+      </div>
+      <div role="tabpanel" class="tab-pane" id="tab2">
+
+        <h2 style='padding-top:5%;'>What Students study in class 6 science?</h2>
+        <h3>6 class science book aims to make a textbook companion for a child. Paheli and Boojho are the two characters who accompany the child throughout the textbook and help them to engage more with the content, questions, activities etc. <br><br>6 class science all chapters are comprehensive and interesting</h3>
+        <ul>
+          <li> <p>Chapter 1 discusses the different sources of food, plant parts and animal products like food and what animals eat. </p> </li>
+          <li> <p>chapter 2 informs about the components of food, balanced diet, various nutrients and body requirements.</p> </li>
+          <li> <p>Chapter 3 Fibre to Fabric tells about the different fabrics and sources of different fibres. Also, their formation and history of clothing material are there.</p> </li>
+          <li> <p>Chapter 4 introduces a child to the concept and importance of classification. It tells about different materials around us and their properties.</p> </li>
+          <li> <p>Chapter 5 deals with techniques of separation of different states of matter. </p> </li>
+          <li> <p>Chapter 6 is a brief introduction to physical and chemical changes.</p> </li>
+          <li> <p>Chapter 7 is about getting to know more about plants. It informs about different herbs, shrubs and trees and their various components.</p> </li>
+          <li> <p>Chapter 8 deals with different Body Movements. It explains bones, joints and the structure of animals.</p> </li>
+          <li> <p>Chapter 9 deals with the organisms and surroundings where they live, habitat and adaptation, different life processes. </p> </li>
+          <li> <p>Chapter 10 introduces the new concept of Motion and different techniques of measurement of distance.</p> </li>
+          <li> <p>Chapter 11 again brings along a new concept of Light, shadows and reflection. </p> </li>
+          <li> <p>Chapter 12 is an introduction to the concept of electricity, how it is produced and what are circuits.</p> </li>
+          <li> <p>Chapter 13 deals with the concept of magnets, how they were discovered, what are magnetic and non-magnetic materials. This will help a child to understand the different phenomenon and the reasons for the things they usually see around. </p> </li>
+          <li> <p>Chapter 14 is all about resources of water, water cycle, ways to preserve water. </p> </li>
+          <li> <p>Chapter 15 provides some information about the composition of air, availability of oxygen, carbon-di-oxide, nitrogen and other gases. </p> </li>
+          <li> <p>Chapter 16 tells about the importance of drainage system, how to deal with garbage and recycling methods. </p> </li>
+        </ul>
+        <p>The textbook provides students with an opportunity to experiment with things on their own. Also, it will help the students to bring out their curiosity, and interact more with peers and elders. It appreciates their questions and promotes practical learning.</p>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="tab3">
+        <h2 style='padding-top:5%;'>What does a student study in class 6 SST?</h2>
+        <p>The syllabus of social studies is divided into three major parts namely History, Civics and Geography. In 6 class SST, all chapters are formulated to enhance student’s basic awareness and lifestyle</p>
+        <h3>6 Class Geography – The Earth Our Habitat </h3>
+        <ul>
+          <li> <p>Geography Chapter 1, The Earth in Our Solar System focuses on learning about the sun, planets, and some celestial bodies that form the solar system. </p> </li>
+          <li> <p>Geography Chapter 2 focuses on the child becoming familiar with the Globe latitudes and longitudes. </p> </li>
+          <li> <p>Geography Chapter 3 provides the meaning of rotation and revolution is given. Moreover, the child also learns about the Motions of Earth.</p> </li>
+          <li> <p>Geography Chapter 4 describes the need and use of maps. </p> </li>
+          <li> <p>Geography chapter 5 explains The Domains of Earth namely - lithosphere, atmosphere, hydrosphere and biosphere. </p> </li>
+          <li> <p>Geography Chapter 6 The Landforms of Earth are explained. </p> </li>
+          <li> <p>Geography Chapter 7 focus on our country India, its location and its geographical aspects. </p> </li>
+        </ul>
+        <p>All the chapters of the SST of 6 class are available of all the chapters at EKAL Shiksha for free which promotes practical learning.</p>
+        <h3>6 Class History - Our Past I</h3>
+        <ul>
+          <li> <p>While studying, Class 6 SST history Chapter 1 answers the questions of What, where, how and when about the past. </p> </li>
+          <li> <p>6 class SST history Chapter 2 evolution of humans is explained from being hunters and gatherers to growing food on their own. </p> </li>
+          <li> <p>Class 6 SST history Chapter 3 informs about the establishment of the Earliest Cities. </p> </li>
+          <li> <p>Class 6 SST history Chapter 4 talks about an important source of history The Books and the Burials which helps us to know more about the past.</p> </li>
+          <li> <p>Then, Class 6 SST history Chapter 5 tells about the Kingdoms, Kings, and the early Republic. Further, It explains the administrative system in the past.</p> </li>
+          <li> <p>Class 6 SST history Chapter 6 concentrates on the new questions and the ideas that prevailed in the past related to religion, language etc. </p> </li>
+          <li> <p>Class 6 SST history Chapter 7 is based on the story of a Great Emperor Ashoka and his Empire. </p> </li>
+          <li> <p>Class 6 SST history Chapter 8 focuses on the establishment of Vital Villages and Thriving Towns.</p> </li>
+          <li> <p>Next, Class 6 SST history chapter 9 discusses the establishment of trade, traders, kings and pilgrims. </p> </li>
+          <li> <p>At last, Class 6 SST history Chapter 10 is based upon the New Empires and Kingdoms and the buildings, paintings and books of that period. </p> </li>
+        </ul>
+        <p>All the chapters in NCERT 6 class SST contain a short text, storyline which will help a child to relate all the concepts of the past with the present time. 6 class History all chapter PDF will help them to understand how things were in the past and how they have changed now. </p>
+        <h3>6 Class Civics- Social and Political Life I </h3>
+        <ul>
+          <li> <p>Class 6 Civics Chapter 1 and 2 introduces the child to the meaning and concept of Diversity and the Discrimination people have to face.  </p> </li>
+          <li> <p>Next, 6 class Civics Chapter 3 and 4 focus on the meaning of Government and the key elements of Democratic Government. </p> </li>
+          <li> <p>Class 6 Civics Chapter 5 is all about the Panchayati Raj. </p> </li>
+          <li> <p>6 class Civics Chapter 6 the child learns about rural livelihood and how things get done there.</p> </li>
+          <li> <p>Class 6 Civics Chapter 7 the child learns about Urban livelihood and how things get done there.</p> </li>
+          <li> <p>6 class Civics Chapter 8 the child learns about rural administration and other similar functions.</p> </li>
+          <li> <p>Class 6 Civics Chapter 9 the child learns about urban administration and other similar functions. </p> </li>
+        </ul>
+        <p>6 class SST all chapter pdf are available for student’s ease for better insight and growth. Moreover, It will help to carry forward their future with good marks.</p>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="tab4">
+        <h2 style='padding-top:5%;'>What is the Course Curriculum of class 6 English main textbook and supplementary reader?</h2>
+        <p>NCERT has prescribed two books to the students for the preparation of 6 class exams chapter wise.<br>
+          The 6 class English book is- <br>
+          Main Textbook - Honeysuckle <br>
+          Supplementary reader - A Pact With Sun
+        </p>
+        <h3>NCERT CLASS 6 ENGLISH BOOK HONEYSUCKLE (PROSE)</h3>
+        <ul>
+          <li> <p>The Class 6 English Chapter 1 “Who Did Patrick’s Homework” is the story about a boy named Patrick who doesn’t like doing his homework. Rather, he is always interested in sports activities.</p> </li>
+          <li> <p>6 class English Chapter 2 “How the Dog Found Himself a New Master” is about a dog.  Furthermore, the dog wants a new master that is stronger than anybody else in the world.</p> </li>
+          <li> <p>Class 6 English Chapter 3 “Taro's Reward” is about a hardworking boy named Taro. Finally, Taro receives a reward of twenty pieces of gold from the emperor of Japan.</p> </li>
+          <li> <p>6 class English Chapter 4 “An Indian American Woman In Space” is the story about the legendary women “Kalpana Chawla”. Further, It is a story of her first space mission.</p> </li>
+          <li> <p>Class 6 English Chapter 5 “A Different Kind Of School” describes the real aim of the school. Also, it is about learning to teach thoughtfulness also.</p> </li>
+          <li> <p>6 class English Chapter 6 “Who I Am” realising the fact that everyone is born different and good at different things.</p> </li>
+          <li> <p>Class 6 English Chapter 7 “Fair Play” is based on a moral that we should respect our elders. Also, our decisions should be impartial no matter what.</p> </li>
+          <li> <p>6 class English Chapter 8 “ A Game Of Chance” is a game on gambling. Here, everyone is asked to try out their luck and get fooled.</p> </li>
+          <li> <p>Class 6 English Chapter 9 “Desert Animals” is about the difficulty that desert animals face. Likewise, It is too difficult for them to spend their lives in the desert's harsh atmosphere.</p> </li>
+          <li> <p>6 class English Chapter 10 “The Banyan Tree '' is about a fight that takes place between a mongoose and a snake.</p> </li>
+        </ul>
+        <h3>NCERT CLASS 6 ENGLISH MAIN TEXTBOOK “HONEYSUCKLE” (POEMS) </h3>
+        <ul>
+          <li> <p>Class 6 English Poem “A House, A Home” is an emotional poem. Also, it throws light on the basic difference between a house and a home. </p> </li>
+          <li> <p>6 class English Poem “The Kite” portrays a beautiful picture of a flying kite with beautiful moves.</p> </li>
+          <li> <p>Class 6 English Poem “The Quarrel” discusses a common phenomenon. Consequently, It is the quarrel that commonly takes place between siblings.</p> </li>
+          <li> <p>6 class English Poem “Beauty” is a poem with beautiful lines. Also, it describes that beautiful things can be seen in day hours such as trees, random people and birds.</p> </li>
+          <li> <p>Class 6 English Poem “Where Do All the Teachers Go?” is a poem in which a child praises all the teachers.  Moreover, Children also consider them special in the shaping of their lives.</p> </li>
+          <li> <p>6 class English Poem “The Wonderful Words” describes the importance and the role of a language. Consequently, Language is crucial for shaping the ideas of the mind.</p> </li>
+          <li> <p>Class 6 English Poem “Vocation” is based on how a child has curiosity and attraction.  Moreover, he praises each and everything he sees around in life. </p> </li>
+          <li> <p>6 class English Poem “Whatif” revolves around a central idea about struggle, fear and uncertainties.</p> </li>
+        </ul>
+        <h3>NCERT CLASS 6 ENGLISH SUPPLEMENTARY READER “ A PACT WITH SUN”</h3>
+        <ul>
+          <li> <p>Class 6 English Supplementary Reader Chapter 1 “A Tail Of Two Birds” a story about two newborn birds. As a result, the birds separate from their mother due to a thunderstorm.</p> </li>
+          <li> <p>6 class English Supplementary Reader Chapter 2 “ The Friendly Mongoose” is based on a belief. Next,  it also teaches students that they should think at least twice or thrice before falling into anybody’s trap.</p> </li>
+          <li> <p>6 class English Supplementary Reader Chapter 3 “The Shepherd’s Treasure” is a story based on humility, wisdom and honesty.  </p> </li>
+          <li> <p>Class 6 English Supplementary Reader Chapter 4 “The Old Clock Shop” is an expressive lesson. It shows how honesty and good deeds always win over every situation.</p> </li>
+          <li> <p>6 class English Supplementary Reader Chapter 5 “Tansen” is a chapter based on Hindustani classical singer “Tansen”.</p> </li>
+          <li> <p>Class 6 English Supplementary Reader Chapter 6 “The Monkey And The Crocodile” is based on a moral. Further,  It teaches students that they should always choose their friends wisely.</p> </li>
+          <li> <p>6 class English Supplementary Reader Chapter 7 “The Wonder Called Sleep” highlights the significance of sleep in the human body.</p> </li>
+          <li> <p>Class 6 English Supplementary Reader Chapter 8 “A Pact With The Sun'' is a story of a mother. The mother suffered from fever, cold, cough and body ache. This is because of not getting the right treatment.</p> </li>
+          <li> <p>6 class English Supplementary Reader Chapter 9 “ What Happened To The Reptiles” is a recognition of the tough lives of reptiles. therefore, It is shown how they live in the forest and face tough situations.</p> </li>
+          <li> <p>Class 6 English Supplementary Reader Chapter 10 “A Strange Wrestling March'' we should always remain calm. Also, we should not become overconfident of our qualities.</p> </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </div>
+<!-- Slider starts here -->
+
+<h1 class='para'>What we have for your child...</h1>
+<section class="carousel-section">
+  <div class="swiper-container mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img class="caro-img" width=150% src="{% static 'webpages/images/1 (2).png' %}" />
+      </div>
+      <div class="swiper-slide">
+        <img class="caro-img "width=150% src="{% static 'webpages/images/2 (2).png' %}" />
+      </div>
+      <div class="swiper-slide">
+        <img class="caro-img" width=150% src="{% static 'webpages/images/3 (2).png' %}" />
+      </div>
+      <div class="swiper-slide">
+        <img class="caro-img" width=150% src="{% static 'webpages/images/5 (2).png' %}" />
+      </div>
+      <div class="swiper4slide">
+        <img class="caro-img" width=150% src="{% static 'webpages/images/4 (2).png' %}" />
+      </div>
+
+      <div class="swiper-slide">
+        <img class="caro-img" width=150% src="{% static 'webpages/images/6 (2).png' %}" />
+      </div>
+      <div class="swiper-slide">
+        <img class="caro-img" width=150% src="{% static 'webpages/images/7 (2).png' %}" />
+      </div>
+      <div class="swiper-slide">
+        <img class="caro-img" width=150% src="{% static 'webpages/images/8 (2).png' %}" />
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+
+  <h1 class="para" style="font-family: crimson text; font-size: 450%">Road Map to your success</h1>
+  <img src="{% static 'webpages/images/RoadMap.png' %}" width="100%" alt="">
+</div>
+<br>
+<div class="jumbotron white" id='Lowerband'>
+    <h1 class='para' style="font-family: crimson text; font-size: 550%">Take your free counseling</h1>
+    <div class="row" style='margin-right:0px;'>
+      <div class="col-xs-4 col-lg-5"></div>
+      <div class="col-xs-4 col-lg-5">
+        <a href="#">
+          <button class="btn btn-danger btn-lg" type="button" name="button">Join us for free!!!</button>
+        </a>
+      </div>
+      <div class="col-xs-4 col-lg-5"></div>
+    </div>
+  </div>
+
+<footer class="footer-bs">
+           <div class="row">
+            <div class="col-md-3 footer-brand animated fadeInLeft">
+              <div class="item">
+                <h2>Logo</h2>
+                   <p>Ekal Shiksha is an Ed-tech company which provides one on one individual online classes. It is an initiative which aims to revolutionize the standard teaching and learning methods. We believe that each student has his or her personal learning speed, method and curriculum which is very important for a teacher to understand and personalize their teaching methods according to the students not vice versa. This platform is especially built for those who have immense potential but are never focused on in group classes, the growth of such students is our moto.
+
+<br>We have been in the teaching industry for past four years, catered to more than 1000s of students till the date. We are unique in a manner that we not only provide tuitions but also we make sure that the performance of each student is tracked through our LMS system and they get to check their clearity of concepts by the MCQs provided after each concept is taught. We have adopted the EAD approach for the better learning, understanding and self assessing of students. We are in a way parent friendly and make sure that the parents are kept in loop for each activity of the student and the teacher.
+
+<br>We have accommodated the best of talented teachers from all across the India for students who believe in learning beyond a classroom. We are a one step solution for all those parents who worry about their kid not being focused enough in group classes, for those who believe that their child can do far better if focused a little more, for those who worry for their kid’s safety when they are at work and their child alone with a teacher at home, for those who worry sending their child to coaching at odd hours and most of all for those who not only believe in passing but in learning.</p>
+</div>
+               </div>
+            <div class="col-md-6 footer-nav animated fadeInUp">
+                <h4 class='para'>Menu —</h4>
+                <div class="col-md-4">
+                       <ul class="list">
+                           <li><a href="{% url '6th' %}">Class 6th</a></li>
+                           <li><a href="{% url '7th' %}">Class 7th</a></li>
+                           <li><a href="{% url '8th' %}">Class 8th</a></li>
+                           <li><a href="{% url '9th' %}">Class 9th</a></li>
+                           <li><a href="{% url '10th' %}">Class 10th</a></li>
+                           <li><a href="{% url '11th_Science' %}">Class 11th Science</a></li>
+                           <li><a href="{% url '11th_Commerce' %}">Class 11th Commerce</a></li>
+                         </ul>
+                       </div>
+                           <div class="col-md-4">
+                                  <ul class="list">
+
+                           <li><a href="{% url '11th_Humanities' %}">Class 11th Humanities</a></li>
+                           <li><a href="{% url '12th_Science' %}">Class 12th Science</a></li>
+                           <li><a href="{% url '12th_Commerce' %}">Class 12th Commerce</a></li>
+                           <li><a href="{% url '12th_Humanities' %}">Class 12th Humanities</a></li>
+                       </ul>
+                   </div>
+                <div class="col-md-4">
+                       <ul class="list">
+                           <li><a href="#">About Us</a></li>
+                           <li><a href="#">Contacts</a></li>
+                           <li><a href="#">Terms & Condition</a></li>
+                           <li><a href="#">Privacy Policy</a></li>
+                       </ul>
+                   </div>
+               </div>
+            <div class="col-md-3 footer-social animated fadeInDown">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/ekalshiksha/">Facebook</a></li>
+                    <li><a href="https://twitter.com/ekalshiksha?lang=en">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/ekal_shiksha/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/company/ekal-shiksha/?originalSubdomain=in">Linkdin</a></li>
+                   </ul>
+               </div>
+            </div>
+       </footer>
+
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "3",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+  </script>
+
+<!-- <script>
+    function openNav() {
+  if(document.getElementById("drop-list").style.maxHeight==="1000px"){
+    document.getElementById("drop-list").style.maxHeight = "0";
+  }else{
+    document.getElementById("drop-list").style.maxHeight="1000px";
+    }
+}
+
+function closeNav() {
+  document.getElementById("drop-list").style.height = "0";
+}
+
+
+
+function droplist(){
+    if(document.getElementById("nested-list").style.display==="none"){
+        document.getElementById("nested-list").style.display="block"
+    }else{
+        document.getElementById("nested-list").style.display="none"
+    }
+}
+function opencard(){
+    if(document.getElementById("sub").style.maxHeight==="500px"){
+        document.getElementById("sub").style.maxHeight="0px";
+        document.getElementById("sub").style.display="none";
+
+    }else{
+    document.getElementById("sub").style.maxHeight="500px";
+    document.getElementById("sub").style.display="block";
+    document.getElementById("sub").style.position="relative";}
+}
+function opencard1(){
+    if(document.getElementById("sub2").style.maxHeight==="500px"){
+        document.getElementById("sub2").style.maxHeight="0px";
+        document.getElementById("sub2").style.display="none";
+
+    }else{
+    document.getElementById("sub2").style.maxHeight="500px";
+    document.getElementById("sub2").style.display="block";
+    document.getElementById("sub2").style.position="relative";}
+}
+function opencard2(){
+    if(document.getElementById("sub3").style.maxHeight==="500px"){
+        document.getElementById("sub3").style.maxHeight="0px";
+        document.getElementById("sub3").style.display="none";
+
+    }else{
+    document.getElementById("sub3").style.maxHeight="500px";
+    document.getElementById("sub3").style.display="block";
+    document.getElementById("sub3").style.position="relative";}
+}
+function opencard3(){
+    if(document.getElementById("sub4").style.maxHeight==="500px"){
+        document.getElementById("sub4").style.maxHeight="0px";
+        document.getElementById("sub4").style.display="none";
+
+    }else{
+    document.getElementById("sub4").style.maxHeight="500px";
+    document.getElementById("sub4").style.display="block";
+    document.getElementById("sub4").style.position="relative";}
+}
+
+function sideopen(){
+    document.getElementById("sidenav").style.width="200px";
+
+}
+function sideclose(){
+    document.getElementById("sidenav").style.width="0";
+}
+</script> -->
+<script src="{% static 'webpages/Js/readMoreJS.min.js' %}"></script>
+<script>
+   $readMoreJS.init({
+   target: '.readmore',           // Selector of the element the plugin applies to (any CSS selector, eg: '#', '.'). Default: ''
+   numOfWords: 100,               // Number of words to initially display (any number). Default: 50
+   toggle: true,                 // If true, user can toggle between 'read more' and 'read less'. Default: true
+   moreLink: 'Read More ...',    // The text of 'Read more' link. Default: 'read more ...'
+   lessLink: 'Read Less'         // The text of 'Read less' link. Default: 'read less'
+});
+</script>
+<!-- <script src="{% static 'webpages/Js/jquery_flipster_min.js' %}"></script> -->
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script> -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</html>

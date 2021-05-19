@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="{% static 'webpages/Js/Scrolling-tabs.js' %}"></script>
+<script href="{% static 'webpages/Js/Test.js' %}"></script>
+      <script src="{% static 'webpages/Js/st_demo.js' %}"></script>
+      <script src="{% static 'webpages/Js/Scrolling-tabs.js' %}"></script>
+<link rel="stylesheet" href="{% static 'webpages/Js/jquery_flipster_min.css' %}">
+<link rel="stylesheet" href="{% static 'webpages/Js/jquery_flipster.css' %}">
+  <link rel="stylesheet" href="{% static 'webpages/Scrolling-tabs.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'webpages/Fonts.css' %}">
+    <link rel="stylesheet" href="{% static 'webpages/st_demo.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'webpages/Doubts.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'webpages/Index.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'webpages/css/dist/css/bootstrap.min.css' %}" >
+    <link rel="stylesheet" type="text/css" href="{% static 'webpages/css/dist/css/bootstrap.css' %}" >
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{% static 'webpages/css/dist/css/bootstrap-theme.css' %}" >
+    <title>Ekal Shiksha</title>
+
+  </head>
+  <body>
+    <!-- 2nd Navbar Starts here-->
+    <nav class="navbar navbar-default navbar-fixed-top nav1">
+      <div class="container-fluid white" id='Lowerband'>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+   <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav navbar-left">
+              <li><a href="{% url 'About' %}"><h4 class='navh4'>About us</h4></a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4 class='navh4'>Courses</h4> </a>
+                        <ul  class="dropdown-menu dropdown-menu">
+                          <li style='border-bottom: 0%; padding-top: 0%'><a href="{% url '6th' %}"><h5>Class 6th</h5></a></li>
+                          <li><a href="{% url '7th' %}"><h5>class 7th</h5></a></li>
+                          <li><a href="{% url '8th' %}"><h5>Class 8th</h5></a></li>
+                          <li><a href="{% url '9th' %}"><h5 >Class 9th</h5></a></li>
+                          <li><a href="{% url '10th' %}"><h5 >Class 10th</h5></a></li>
+                          <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h5>Class 11th</h5> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '11th_Science' %}"><h5 >Science</h5></a></li>
+                            <li><a href="{% url '11th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                            <li><a href="{% url '11th_Humanities' %}"><h5 >Arts</h5></a></li>
+                          </ul>
+                        </li>
+                          <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle"><h5>Class 12th</h5> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '12th_Science' %}"><h5 >Science</h5></a></li>
+                            <li><a href="{% url '12th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                            <li><a href="{% url '12th_Humanities' %}"><h5 >Arts</h5></a></li>
+                          </ul>
+                          </li>
+                          <!-- <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle"><h4 >Micro Course</h4> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '9th' %}"><h4 >Class 9th</h4></a></li>
+                            <li><a href="{% url '10th' %}"><h4 >Class 10th</h5></a></li>
+                            <li class="dropdown-submenu">
+                            <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h5 >Class 11th</h5> </a>
+                            <ul class="dropdown-menu ">
+                              <li><a href="{% url '11th_Science' %}"><h5 >Science</h5></a></li>
+                              <li><a href="{% url '11th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                              <li><a href="{% url '11th_Humanities' %}"><h5 >Arts</h5></a></li>
+                            </ul>
+                          </li>
+                          <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h5 >Class 12th</h5> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '11th_Science' %}"><h5 >Science</h5></a></li>
+                            <li><a href="{% url '11th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                            <li><a href="{% url '11th_Humanities' %}"><h5 >Arts</h5></a></li>
+                          </ul>
+                        </li>
+                        </li>
+
+                          </ul>
+                          </li> -->
+                          <!-- <li><li><a href='#'><h5 >English Speaking</h5></a></li></li> -->
+                        </ul>
+                          <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4 class='navh4'>Study Material</h4></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#"><h5 >Class 6th</h5></a></li>
+                            <li><a href="#"><h5 >Class 7th</h5></a></li>
+                            <li><a href="#"><h5 >Class 8th</h5></a></li>
+                            <li><a href="#"><h5 >Class 9th</h5></a></li>
+                            <li><a href="#"><h5 >Class 10th</h5></a></li>
+                            <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h5>Class 11th</h5> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '11th_Science' %}"><h5 >Science</h5></a></li>
+                            <li><a href="{% url '11th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                            <li><a href="{% url '11th_Humanities' %}"><h5 >Arts</h5></a></li>
+                          </ul>
+                        </li>
+                          <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle"><h5>Class 12th</h5> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '12th_Science' %}"><h5 >Science</h5></a></li>
+                            <li><a href="{% url '12th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                            <li><a href="{% url '12th_Humanities' %}"><h5 >Arts</h5></a></li>
+                          </ul>
+                          </li>
+
+                          </ul>
+                          </li>
+                  <li><a href="{% url 'Doubts' %}"><h4 class='navh4'>Doubt class</h4></a></li>
+                  <!-- <li><a href="#"><h4>Competitions</h4></a></li> -->
+                  <li><a href="#"><h4 class='navh4'>Teach with us</h4></a></li>
+
+
+            </div>
+      </div>
+  </ul>
+  </nav>
+  <!-- 1st navbar start here -->
+  <nav class="navbar navbar-default navbar-fixed-top nav2">
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+
+        <p><a href="{% url 'index' %}"><img class="pull-up" src="{% static 'webpages/images/Logo.png' %}" width='40%' alt='' ></p>
+      </a>
+    </a>
+  </div>
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+
+
+
+
+  <div class="collapse navbar-collapse" id="navbar1">
+    <ul id='pad'class="nav navbar-nav navbar-right ">
+    <div class="row">
+      <!-- <div class="col-xs-2 col-md-2 col-lg-2 "></div> -->
+    <div class="col-xs-10 col-md-10 col-lg-10"style="padding-right:0px;margin-right:0px;">
+    <li id='pad' ><a href="tel:9716864415"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>  9716864415 &nbsp; </a>
+    </li></div>
+    <!-- <div class="col-xs-2 col-md-2 col-lg-2 "></div> -->
+    <div class="col-xs-10 col-md-10 col-lg-10">
+    <li id='pad' ><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzBWVHwwpBgTtmnMDMpQkrrhrZRHZGFhgBxJqMrBmbcdRghJMXzwLJlLtsjzDCJNcqwSLjv" ><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  Contact@ekalshiksha.in &nbsp; </a>
+    </li></div>
+    <!-- <div class="col-xs-2 col-md-2 col-lg-2 "></div> -->
+    </div>
+
+    </ul>
+    <ul id='pad'class="nav navbar-nav navbar-right ">
+    <div class="row">
+      <div class="col-xs-2 col-md-2 col-lg-2 "></div>
+    <div class="col-xs-10 col-md-10 col-lg-10">
+    <li id='pad' style='margin-left:0px;'><a href="#" ><h4><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  Sign In &nbsp;</h4> </a>
+    </li></div>
+
+    </div>
+
+    </ul>
+
+      <ul id='pad'class="nav navbar-nav navbar-right ">
+
+        <div class="row">
+          <div class="col-xs-10 col-md-10 col-lg-10 ">
+            <li id='pad' style='margin-left:0px;'><a href="#"><h4><span class="glyphicon glyphicon-search" aria-hidden="true"></span>  Enquiry  Now &nbsp;</h4> </a>
+    </div>
+    <div class="col-xs-2 col-md-2 col-lg-2 "></div>
+  </div>
+
+  </ul>
+
+
+  </div>
+  </div>
+
+
+  </nav>
+<!-- Start for class 6 -->
+<div class="container">
+  <div class="jumbotron ">
+
+<div class="readmore">
+  <h1 id='class6th' style="font-family: crimson text; font-size: 400%">Class 11th (Science) </h1>
+  <p style=" font-size: 180%">The syllabus of CBSE Class 11 is considered as a foundation for CBSE Class 12 board exams. The stronger the foundation, the better will be the performance in the CBSE board examinations. After having studied diverse subjects throughout your school life, now in CBSE class 11 Science, the real efforts begin. Though students are familiar with Physics, Chemistry and Biology in the earlier classes, still they face difficulties in adapting to the new curriculum.<br>Class 11 Science is more interesting and challenging than class 12. To overcome this challenge, proper guidance along with Individual classes are required for maintaining stability and mastering all the concepts for CBSE Class 12 Boards. Apart from that, the syllabus of JEE and NEET entrance examinations are entirely based on the concepts of class 11 and class 12. Remaining focused is the key to success for good performance in all exams.
+<br>Our online study material will be designed according to the individual learning requirements of a student. Ekal Shiksha proves to be the leading ed-tech platform for enhancing a student’s capability by conducting regular assessments without any hassle. </p>
+</div>
+  </div>
+  <br>
+</div>
+<!-- <div class="container">
+
+<div class='row'>
+  <div class="col-md-1">
+  </div>
+  <div class="col-md-5">
+    <h1 class='para'>6th class course</h1>
+  </div>
+  <div class="col-md-5">
+    <h1>Language Subject</h1>
+  </div>
+</div>
+<div class='row'>
+<div class="col-xs-1"></div>
+
+<div class="col-xs-3 col-md-3">
+
+
+
+    <div class="btn-group-lg btn-group-vertical">
+      <button type="button" id="pre-reading-btn" class="btn btn-default">Maths</button>
+      <br>
+      <button type="button" id="passage-btn" class="btn btn-default">Science</button>
+      <br>
+      <button type="button" id="post-reading-btn" class="btn btn-default">SST</button>
+    </div>
+
+</div>
+<div class="col-xs-3 col-md-3">
+  <div class="btn-group-lg btn-group-vertical">
+      <button type="button" id="pre-reading-btn" class="btn btn-default">English</button>
+      <br>
+      <button type="button" id="passage-btn" class="btn btn-default">IT</button>
+      <br>
+      <button type="button" id="post-reading-btn" class="btn btn-default">Sanskrit</button>
+      <br>
+    </div>
+
+  </div>
+
+  <div class="col-xs-3 col-md-3">
+    <div class="btn-group-lg btn-group-vertical">
+        <button type="button" class="btn btn-default">English</button>
+        <br>
+        <button type="button" class="btn btn-default">IT</button>
+        <br>
+        <button type="button" class="btn btn-default">Sanskrit</button>
+        <br>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <h1><br></h1>
+        <button type="button" class="btn btn-primary btn-lg btn-huge">Coding classes</button>
+        <br>
+    </div>
+</div>
+
+</div> -->
+<h1 class='para' style="font-family: Josefin Sans; font-size: 350%">Subjects we Offer for your Exellence!!!</h1>
+
+  <div class="container">
+
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#tab1" role="tab" data-toggle="tab"><h2 style="font-family: crimson text; font-size: 250%">Physics</h2></a></li>
+      <li role="presentation"><a href="#tab2" role="tab" data-toggle="tab"><h2 style="font-family: crimson text; font-size: 250%">Chemistry</h2></a></li>
+      <li role="presentation"><a href="#tab3" role="tab" data-toggle="tab"><h2 style="font-family: crimson text; font-size: 250%">Mathematics</h2></a></li>
+      <li role="presentation"><a href="#tab4" role="tab" data-toggle="tab"><h2 style="font-family: crimson text; font-size: 250%">Biology</h2></a></li>
+      <li role="presentation"><a href="#tab5" role="tab" data-toggle="tab"><h2  style="font-family: crimson text; font-size: 250%">English</h2></a></li>
+      <!-- <li role="presentation"><a href="#tab6" role="tab" data-toggle="tab"><h2 style="font-family: crimson text; font-size: 250%">Language Subjects</h2></a></li>
+      <li role="presentation"><a href="#tab7" role="tab" data-toggle="tab"><h2 style="font-family: crimson text; font-size: 250%">Coding Classes</h2></a></li> -->
+    </ul>
+
+
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="tab1">
+        <br>
+          <div class="item">
+              <p id='smal' style="padding-top:4%;"><h3>The textbook contains fifteen chapters in two parts. Part I contains first eight chapters while Part II contains next seven chapters. Physics is a subject whose concept will be used in every field be it social science, finance, administration, medicine, etc. the focus of textbook is on understanding rather than memorising. At the end of every chapter summary and points to ponder are provided to make it easy to overview the chapters. The textbook encourages the idea of seminars and mutual interactions. </h3><br>
+
+              <p style=" font-size: 120%">
+
+
+                <ul>
+                  <li> <p>	Class 11 Physics Chapter 1 “Physical World” is an introduction to what is physics?</p> </li>
+                  <li> <p>	Class 11 Physics Chapter 2 “Units and Measurements” teaches about the international system of units, different dimensions, accuracy, precision, etc.</p> </li>
+                  <li> <p>	Class 11 Physics Chapter 3 “Motion in a Straight line” discusses position, path length, displacement, etc.</p> </li>
+                  <li> <p>	Class 11 Physics Chapter 4 “Motion in a Plane” discusses scaler and vector quantity and motion in a plane. </p> </li>
+                  <li> <p>	Class 11 Physics Chapter 5 “Laws of motion” is about an introduction to laws of motion, the law of inertia, and the concept of momentum.</p> </li>
+                  <li> <p>	Class 11 Physics Chapter 6 “Work, Energy, and Power” deals with the concepts of kinetic energy, potential energy and helps to relate such concepts with daily life.</p> </li>
+                  <li> <p>	Class 11 Physics Chapter 7 “System of Particles and the Rotational Motion”<p> </li>
+                  <li> <p>	Class 11 Physics Chapter  8 “Gravitation and various laws” effects related to it. </p> </li>
+                  <li> <p>	Class 11 Physics Chapter 9 takes the attention of students towards “Mechanical properties of solid”</p> </li>
+                  <li> <p>	Class 11 Physics Chapter 10 is all about the “Mechanical properties of fluids”.</p> </li>
+                  <li> <p>	Class 11 Physics Chapter 11 discusses the “Thermal properties of matter”.<p> </li>
+                  <li> <p>	Class 11 Physics Chapter 12 the child learns about “Thermodynamics”, laws of thermodynamics.</p> </li>
+                  <li> <p>	Class 11 Physics Chapter 13 “Kinetic Theory” and the behavior of gases. </p> </li>
+                  <li> <p>	Class 11 Physics In the last 2 chapters the detailed knowledge is provided about “Oscillations and the waves”.</p> </li>                 
+                  </ul>
+
+
+                 
+
+                 <strong style="font-family: crimson text;font-size:20px">Necessary tools and database in the form of Appendices are given at the end of the book. There are also some other appendices at the end of some chapters giving additional information or applications of matter discussed in them.</strong>
+
+
+</p>
+
+
+
+
+</p>
+</div>
+
+      </div>
+      <div role="tabpanel" class="tab-pane" id="tab2">
+        <br>
+        <div class="item">
+            <p id='smal' style="padding-top:4%;"><h3>The book is divided into 2 parts. 1st part consists of seven chapters</h3><br>
+
+
+
+
+              <p style=" font-size: 120%">
+
+
+
+
+
+
+
+                <ul>
+                  <li> <p>Class 11 Chemistry Chapter 1 “Some basic concepts of chemistry”. It discusses the importance of chemistry, matter, different laws of chemical combinations, atomic theory, etc.</p> </li>
+                  <li> <p>Class 11 Chemistry Chapter 2 “Structure of Atom” gives detailed information about The Structure of Atom and the different models associated with it.</p> </li>
+                  <li> <p>Class 11 Chemistry Chapter 3 “Classification of elements and Periodicity” deals with the study of electronic configuration, nomenclature, and laws of periodicity of elements. It gives detailed information about the periodic table.</p> </li>
+                  <li> <p>Class 11 Chemistry Chapter 4 “Chemical Bonding and Molecular Structure” discusses valence electrons, Ionic bonds, etc.</p> </li>
+                  <li> <p>Class 11 Chemistry Chapter 5 “States of Matter” their intermolecular forces, thermal interactions, etc.</p> </li>
+                  <li> <p>Class 11 Chemistry Chapter 6 “Thermodynamics” about the law of thermodynamics and other concepts like specific heat.</p> </li>
+                  <li> <p>Class 11 Chemistry Chapter 7 “Equilibrium” its laws, factors, applications, etc.<p> </li>
+                  </ul>
+
+                <strong style="font-family: crimson text; font-size: 200%">The 2nd part consists of next seven chapters.</strong><br>
+
+                <ul>
+                  <li> <p>	Class 11 Chemistry Chapter 8 “Redox Reactions”, the meaning of reduction and oxidation.</p> </li>
+                  <li> <p>	Class 11 Chemistry Chapter 9 “Hydrogen” discusses the position of hydrogen, occurrence, and isotopes, explains its preparation, properties, reactivity.</p> </li>
+                  <li> <p>	Class 11 Chemistry Chapters 10 focus on the “S-Block” of the periodic table.</p> </li>
+                  <li> <p>	Class 11 Chemistry Chapter 11 focuses on the “P-Block” of the periodic table.</p> </li>
+                  <li> <p>	Class 11 Chemistry 2 chapters are all about “Organic Chemistry”. It deals with the study of organic compounds.</p> </li>
+                  <li> <p>	Class 11 Chemistry Chapter 14 “Environmental Chemistry”, deals with the causes and cures of the major environmental issue: Pollution.</p> </li>
+                  </ul>
+</p>
+
+
+            </p>
+      </div>
+    </div>
+      <div role="tabpanel" class="tab-pane" id="tab3">
+        <div class="item">
+          <p id='smal' style="padding-top:4%;"><Strong><h3>Geography – The Earth Our Habitat</h3></Strong> <br>
+In chapter 1 The Earth in Our Solar System a child learns about the sun, planets, and some celestial bodies that form the solar system. In chapter 2 the child becomes familiar with the Globe latitudes and longitudes. In chapter 3 meaning of rotation and revolution is give and the child learns about Motions of Earth.  Chapter 4 describes about the need and use of maps. In chapter 5 The Domains of Earth and in Chapter 6 The Landforms of Earth are explained. Chapter 7 and 8 focus on location, climate, vegetation and wildlife of India.
+<br>
+<Strong><h3>History -Our Past</h3></Strong><br>I
+Chapter 1 answers the questions of What, where, how and when about the past. In chapter 2 evolution of humans in explained from being hunters and gatherers to growing food on their own. The chapter 3 informs about the establishment of the Earliest Cities. Chapter 4 talks about an important source of history The Books and the Burials which helps us to know more about the past. The next chapter tells about the Kingdoms, Kings, and an Early Republic. It explains about the administrative system in past. Chapter 6 concentrates on the new questions and the ideas that prevailed in the past related to religion, language etc. chapter 7 is based on the story of a Great Emperor Ashoka and his Empire. Chapter focuses on establishment of Vital Villages and Thriving Towns. The next chapter discusses about establishment of trade, traders the kings and the pilgrims. Chapter 10 and 11 are based upon the New Empires and Kingdoms and the buildings, paintings and books of that period.
+All the chapters contain a short text, story line which will a help child to relate all the concepts of past with the present time. It will help them to understand how things were in past and how they have changed now.
+<br>
+<Strong><h3>Social and Political Life</h3></Strong><br> I
+The chapter 1 and 2 introduces the child the meaning and concept of Diversity and the Discrimination people have to face.  Chapter 3 and 4 focuses on the meaning of Government and the key elements of Democratic Government. Chapter 5 is based on Panchayati Raj. In further chapters the child learns about the differences in livelihood and administration of Rural and Urban Areas</p>
+        </div>
+      </div>
+
+      <div role="tabpanel" class="tab-pane" id="tab4">
+        <br>
+          <p id='smal'><h3>The textbook contains twenty-two chapters which are grouped under five thematic units. Each unit has a brief write up and biographical sketch of a prominent scientist  preceding the unit highlighting the essence of the chapters to follow under that unit. Each chapter has, on the first page, a detailed table of contents giving sub-headings within the chapter. </h3><br>
+
+              <p style=" font-size: 120%">The textbook consists of 16 chapters. Theme of each chapter is introduced with examples from daily life and using the activities which students can perform. The textbook follows the constructive approach and provides opportunities to the students to construct knowledge themselves and explore and think beyond the syllabus.<br><br>
+
+                 <strong style="font-family: crimson text; font-size: 150%">Unit-1</strong><br>
+                1st unit Diversity in the Living World consist of four chapters. In this unit the child will get a description, including classification, of animals and plants from a taxonomist’s perspective. <br><br>
+
+                <strong style="font-family: crimson text; font-size: 150%">Unit-2</strong><br>
+                2nd unit STRUCTURAL ORGANISATION IN PLANTS AND ANIMALS consist of next three chapters. In the following chapters of this unit, the structural organisation of plants and animals, including the structural basis of physiological or behavioural phenomena, is described.<br><br>
+
+                 <strong style="font-family: crimson text; font-size: 150%">Unit-3</strong><br>
+                The 3rd unit CELL: STRUCTURE AND FUNCTIONS consist of 3 chapters in which a description of cell structure and cell growth by division is given. A brief description about Biomolecules is also provided.  <br><br>
+
+                 <strong style="font-family: crimson text; font-size: 150%">Unit-4</strong><br>
+                The 4th unit PLANT PHYSIOLOGY consists of 5 chapters. Description of physiological processes, in flowering plants, is given in the chapters in this unit. The processes of mineral nutrition of plants, photosynthesis, transport, respiration and ultimately plant growth and development are described in molecular terms but in the context of cellular activities and even at organism level. Wherever appropriate, the relation of the physiological processes to environment is also discussed. <br><br>
+                 <strong style="font-family: crimson text; font-size: 150%">At the end of each chapter a brief summary is provided. The emphasis has been given on the narrative style, illustrations, activity exercises, clarity of expression, coverage of topics.</strong><br>
+
+
+                 </p></p>
+        </div>
+
+
+
+      <div role="tabpanel" class="tab-pane" id="tab5">
+        <p id='smal'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="tab6">
+        <p id='smal'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="tab7">
+        <p id='smal'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </div>
+<!-- Slider starts here -->
+<br>
+<h1 class='para' style="font-family: crimson text; font-size: 350%">What we have for your child...</h1>
+<section class="carousel-section">
+  <div class="swiper-container mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img class="caro-img"  width=150% src="{% static 'webpages/images/1 (2).png' %}" />
+      </div>
+      <div class="swiper-slide">
+        <img class="caro-img"   width=150% src="{% static 'webpages/images/2 (2).png' %}" />
+      </div>
+      <div class="swiper-slide">
+        <img class="caro-img"  width=150% src="{% static 'webpages/images/3 (2).png' %}" />
+      </div>
+      <div class="swiper-slide">
+        <img class="caro-img"   width=150% src="{% static 'webpages/images/5 (2).png' %}" />
+      </div>
+      <div class="swiper4slide">
+        <img class="caro-img"   width=150% src="{% static 'webpages/images/4 (2).png' %}" />
+      </div>
+
+      <div class="swiper-slide">
+        <img class="caro-img"   width=150% src="{% static 'webpages/images/6 (2).png' %}" />
+      </div>
+      <div class="swiper-slide">
+        <img class="caro-img"  width=150%  src="{% static 'webpages/images/7 (2).png' %}" />
+      </div>
+      <div class="swiper-slide">
+        <img class="caro-img"  width=150% src="{% static 'webpages/images/8 (2).png' %}" />
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+  <h1 class="para" style="font-family: crimson text; font-size: 450%">Road Map to your success</h1>
+  <img src="{% static 'webpages/images/RoadMap.png' %}" width="100%" alt="">
+</div>
+<br>
+<div class="jumbotron white" id='Lowerband'>
+    <h1 class='para' style="font-family: crimson text; font-size: 550%">Take your free counseling</h1>
+    <div class="row" style='margin-right:0px;'>
+      <div class="col-xs-4 col-lg-5"></div>
+      <div class="col-xs-4 col-lg-5">
+        <a href="#">
+          <button class="btn btn-danger btn-lg" type="button" name="button">Join us for free!!!</button>
+        </a>
+      </div>
+      <div class="col-xs-4 col-lg-5"></div>
+    </div>
+  </div>
+
+<footer class="footer-bs">
+           <div class="row">
+            <div class="col-md-3 footer-brand animated fadeInLeft">
+              <div class="item">
+                <h2>Logo</h2>
+                   <p>Ekal Shiksha is an Ed-tech company which provides one on one individual online classes. It is an initiative which aims to revolutionize the standard teaching and learning methods. We believe that each student has his or her personal learning speed, method and curriculum which is very important for a teacher to understand and personalize their teaching methods according to the students not vice versa. This platform is especially built for those who have immense potential but are never focused on in group classes, the growth of such students is our moto.
+
+<br>We have been in the teaching industry for past four years, catered to more than 1000s of students till the date. We are unique in a manner that we not only provide tuitions but also we make sure that the performance of each student is tracked through our LMS system and they get to check their clearity of concepts by the MCQs provided after each concept is taught. We have adopted the EAD approach for the better learning, understanding and self assessing of students. We are in a way parent friendly and make sure that the parents are kept in loop for each activity of the student and the teacher.
+
+<br>We have accommodated the best of talented teachers from all across the India for students who believe in learning beyond a classroom. We are a one step solution for all those parents who worry about their kid not being focused enough in group classes, for those who believe that their child can do far better if focused a little more, for those who worry for their kid’s safety when they are at work and their child alone with a teacher at home, for those who worry sending their child to coaching at odd hours and most of all for those who not only believe in passing but in learning.</p>
+</div>
+               </div>
+            <div class="col-md-6 footer-nav animated fadeInUp">
+                <h4 class='para'>Menu —</h4>
+                <div class="col-md-4">
+                       <ul class="list">
+                           <li><a href="{% url '6th' %}">Class 6th</a></li>
+                           <li><a href="{% url '7th' %}">Class 7th</a></li>
+                           <li><a href="{% url '8th' %}">Class 8th</a></li>
+                           <li><a href="{% url '9th' %}">Class 9th</a></li>
+                           <li><a href="{% url '10th' %}">Class 10th</a></li>
+                           <li><a href="{% url '11th_Science' %}">Class 11th Science</a></li>
+                           <li><a href="{% url '11th_Commerce' %}">Class 11th Commerce</a></li>
+                         </ul>
+                       </div>
+                           <div class="col-md-4">
+                                  <ul class="list">
+
+                           <li><a href="{% url '11th_Humanities' %}">Class 11th Humanities</a></li>
+                           <li><a href="{% url '12th_Science' %}">Class 12th Science</a></li>
+                           <li><a href="{% url '12th_Commerce' %}">Class 12th Commerce</a></li>
+                           <li><a href="{% url '12th_Humanities' %}">Class 12th Humanities</a></li>
+                       </ul>
+                   </div>
+                <div class="col-md-4">
+                       <ul class="list">
+                           <li><a href="#">About Us</a></li>
+                           <li><a href="#">Contacts</a></li>
+                           <li><a href="#">Terms & Condition</a></li>
+                           <li><a href="#">Privacy Policy</a></li>
+                       </ul>
+                   </div>
+               </div>
+            <div class="col-md-3 footer-social animated fadeInDown">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/ekalshiksha/">Facebook</a></li>
+                    <li><a href="https://twitter.com/ekalshiksha?lang=en">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/ekal_shiksha/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/company/ekal-shiksha/?originalSubdomain=in">Linkdin</a></li>
+                   </ul>
+               </div>
+            </div>
+       </footer>
+
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "3",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+  </script>
+<script src="{% static 'webpages/Js/ReadMore.js' %}"></script>
+<script src="{% static 'webpages/Js/readMoreJS.min.js' %}"></script>
+<script>
+   $readMoreJS.init({
+   target: '.readmore',           // Selector of the element the plugin applies to (any CSS selector, eg: '#', '.'). Default: ''
+   numOfWords: 100,               // Number of words to initially display (any number). Default: 50
+   toggle: true,                 // If true, user can toggle between 'read more' and 'read less'. Default: true
+   moreLink: 'Read More ...',    // The text of 'Read more' link. Default: 'read more ...'
+   lessLink: 'Read Less'         // The text of 'Read less' link. Default: 'read less'
+});
+</script>
+<script src="{% static 'webpages/Js/jquery_flipster_min.js' %}"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</html>

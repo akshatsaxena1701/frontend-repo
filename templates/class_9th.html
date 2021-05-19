@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  <script src="{% static 'webpages/Js/Scrolling-tabs.js' %}"></script>
+<script href="{% static 'webpages/Js/Test.js' %}"></script>
+      <script src="{% static 'webpages/Js/st_demo.js' %}"></script>
+      <script src="{% static 'webpages/Js/Scrolling-tabs.js' %}"></script>
+<link rel="stylesheet" href="{% static 'webpages/Js/jquery_flipster_min.css' %}">
+<link rel="stylesheet" href="{% static 'webpages/Js/jquery_flipster.css' %}">
+  <link rel="stylesheet" href="{% static 'webpages/Scrolling-tabs.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'webpages/Fonts.css' %}">
+    <link rel="stylesheet" href="{% static 'webpages/st_demo.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'webpages/Doubts.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'webpages/Index.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'webpages/css/dist/css/bootstrap.min.css' %}" >
+    <link rel="stylesheet" type="text/css" href="{% static 'webpages/css/dist/css/bootstrap.css' %}" >
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{% static 'webpages/css/dist/css/bootstrap-theme.css' %}" >
+    <title>Ekal Shiksha</title>
+
+  </head>
+  <body>
+    <!-- 2nd Navbar Starts here-->
+    <nav class="navbar navbar-default navbar-fixed-top nav1">
+      <div class="container-fluid white" id='Lowerband'>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+   <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav navbar-left">
+              <li><a href="{% url 'About' %}"><h4 class='navh4'>About us</h4></a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4 class='navh4'>Courses</h4> </a>
+                        <ul  class="dropdown-menu dropdown-menu">
+                          <li style='border-bottom: 0%; padding-top: 0%'><a href="{% url '6th' %}"><h5>Class 6th</h5></a></li>
+                          <li><a href="{% url '7th' %}"><h5>class 7th</h5></a></li>
+                          <li><a href="{% url '8th' %}"><h5>Class 8th</h5></a></li>
+                          <li><a href="{% url '9th' %}"><h5 >Class 9th</h5></a></li>
+                          <li><a href="{% url '10th' %}"><h5 >Class 10th</h5></a></li>
+                          <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h5>Class 11th</h5> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '11th_Science' %}"><h5 >Science</h5></a></li>
+                            <li><a href="{% url '11th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                            <li><a href="{% url '11th_Humanities' %}"><h5 >Arts</h5></a></li>
+                          </ul>
+                        </li>
+                          <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle"><h5>Class 12th</h5> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '12th_Science' %}"><h5 >Science</h5></a></li>
+                            <li><a href="{% url '12th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                            <li><a href="{% url '12th_Humanities' %}"><h5 >Arts</h5></a></li>
+                          </ul>
+                          </li>
+                          <!-- <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle"><h4 >Micro Course</h4> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '9th' %}"><h4 >Class 9th</h4></a></li>
+                            <li><a href="{% url '10th' %}"><h4 >Class 10th</h5></a></li>
+                            <li class="dropdown-submenu">
+                            <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h5 >Class 11th</h5> </a>
+                            <ul class="dropdown-menu ">
+                              <li><a href="{% url '11th_Science' %}"><h5 >Science</h5></a></li>
+                              <li><a href="{% url '11th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                              <li><a href="{% url '11th_Humanities' %}"><h5 >Arts</h5></a></li>
+                            </ul>
+                          </li>
+                          <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h5 >Class 12th</h5> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '11th_Science' %}"><h5 >Science</h5></a></li>
+                            <li><a href="{% url '11th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                            <li><a href="{% url '11th_Humanities' %}"><h5 >Arts</h5></a></li>
+                          </ul>
+                        </li>
+                        </li>
+
+                          </ul>
+                          </li> -->
+                          <!-- <li><li><a href='#'><h5 >English Speaking</h5></a></li></li> -->
+                        </ul>
+                          <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4 class='navh4'>Study Material</h4></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#"><h5 >Class 6th</h5></a></li>
+                            <li><a href="#"><h5 >Class 7th</h5></a></li>
+                            <li><a href="#"><h5 >Class 8th</h5></a></li>
+                            <li><a href="#"><h5 >Class 9th</h5></a></li>
+                            <li><a href="#"><h5 >Class 10th</h5></a></li>
+                            <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h5>Class 11th</h5> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '11th_Science' %}"><h5 >Science</h5></a></li>
+                            <li><a href="{% url '11th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                            <li><a href="{% url '11th_Humanities' %}"><h5 >Arts</h5></a></li>
+                          </ul>
+                        </li>
+                          <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle"><h5>Class 12th</h5> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '12th_Science' %}"><h5 >Science</h5></a></li>
+                            <li><a href="{% url '12th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                            <li><a href="{% url '12th_Humanities' %}"><h5 >Arts</h5></a></li>
+                          </ul>
+                          </li>
+
+                          </ul>
+                          </li>
+                  <li><a href="{% url 'Doubts' %}"><h4 class='navh4'>Doubt class</h4></a></li>
+                  <!-- <li><a href="#"><h4>Competitions</h4></a></li> -->
+                  <li><a href="#"><h4 class='navh4'>Teach with us</h4></a></li>
+
+
+            </div>
+      </div>
+  </ul>
+  </nav>
+  <!-- 1st navbar start here -->
+  <nav class="navbar navbar-default navbar-fixed-top nav2">
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+
+        <p><a href="{% url 'index' %}"><img class="pull-up" src="{% static 'webpages/images/Logo.png' %}" width='40%' alt='' ></p>
+      </a>
+    </a>
+  </div>
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+
+
+
+
+  <div class="collapse navbar-collapse" id="navbar1">
+      <ul id='pad'class="nav navbar-nav navbar-right ">
+    <div class="row">
+      <!-- <div class="col-xs-2 col-md-2 col-lg-2 "></div> -->
+    <div class="col-xs-10 col-md-10 col-lg-10"style="padding-right:0px;margin-right:0px;">
+    <li id='pad' ><a href="tel:9716864415"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>  9716864415 &nbsp; </a>
+    </li></div>
+    <!-- <div class="col-xs-2 col-md-2 col-lg-2 "></div> -->
+    <div class="col-xs-10 col-md-10 col-lg-10">
+    <li id='pad' ><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzBWVHwwpBgTtmnMDMpQkrrhrZRHZGFhgBxJqMrBmbcdRghJMXzwLJlLtsjzDCJNcqwSLjv" ><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  Contact@ekalshiksha.in &nbsp; </a>
+    </li></div>
+    <!-- <div class="col-xs-2 col-md-2 col-lg-2 "></div> -->
+    </div>
+
+    </ul>
+    <ul id='pad'class="nav navbar-nav navbar-right ">
+    <div class="row">
+      <div class="col-xs-2 col-md-2 col-lg-2 "></div>
+    <div class="col-xs-10 col-md-10 col-lg-10">
+    <li id='pad' style='margin-left:0px;'><a href="#" ><h4><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  Sign In &nbsp;</h4> </a>
+    </li></div>
+
+    </div>
+
+    </ul>
+
+      <ul id='pad'class="nav navbar-nav navbar-right ">
+
+        <div class="row">
+          <div class="col-xs-10 col-md-10 col-lg-10 ">
+            <li id='pad' style='margin-left:0px;'><a href="#"><h4><span class="glyphicon glyphicon-search" aria-hidden="true"></span>  Enquiry  Now &nbsp;</h4> </a>
+    </div>
+    <div class="col-xs-2 col-md-2 col-lg-2 "></div>
+  </div>
+
+  </ul>
+  </div>
+  </div>
+
+
+  </nav>
+<!-- Start for class 6 -->
+<div class="container">
+  <div class="jumbotron">
+    <div class="item readmore">
+  <h1 id='class6th' style="font-family: crimson text; font-size: 450%">Class 9th</h1>
+  <p style=" font-size: 150%">CBSE class 9 acts as a turning point in the life of a school student that one should not overlook as it offers the conceptual background for class 10, class 11 and class 12 simultaneously. This grade will help a student maintain a strong understructure for the class 10 CBSE board if understood well. Many students ignore this and end up regretting it. Apart from that, most topics which are covered in class 9 will be coming in the competitive exams in a detailed manner. So, students should focus now to ignore the added pressure of the entrance exams. <br>Apart from that, sometimes, a student suddenly starts experiencing new fantasies and thoughts followed by peer pressure which slows down their academic progress. More emphasis should be lay on tracking the subjects analytically and creatively rather than just letting them read books. Students need a change in the teaching methodology to preserve their interest in the study. <br>
+Therefore, the student needs a platform that can help them in maximising their potential and builds lifelong educational success by bringing the right understanding and insight into play along with a systematic approach to learning. </p>
+  </div>
+  </div>
+  <br>
+</div>
+<!-- <div class="container">
+
+<div class='row'>
+  <div class="col-md-1">
+  </div>
+  <div class="col-md-5">
+    <h1 class='para'>6th class course</h1>
+  </div>
+  <div class="col-md-5">
+    <h1>Language Subject</h1>
+  </div>
+</div>
+<div class='row'>
+<div class="col-xs-1"></div>
+
+<div class="col-xs-3 col-md-3">
+
+
+
+    <div class="btn-group-lg btn-group-vertical">
+      <button type="button" id="pre-reading-btn" class="btn btn-default">Maths</button>
+      <br>
+      <button type="button" id="passage-btn" class="btn btn-default">Science</button>
+      <br>
+      <button type="button" id="post-reading-btn" class="btn btn-default">SST</button>
+    </div>
+
+</div>
+<div class="col-xs-3 col-md-3">
+  <div class="btn-group-lg btn-group-vertical">
+      <button type="button" id="pre-reading-btn" class="btn btn-default">English</button>
+      <br>
+      <button type="button" id="passage-btn" class="btn btn-default">IT</button>
+      <br>
+      <button type="button" id="post-reading-btn" class="btn btn-default">Sanskrit</button>
+      <br>
+    </div>
+
+  </div>
+
+  <div class="col-xs-3 col-md-3">
+    <div class="btn-group-lg btn-group-vertical">
+        <button type="button" class="btn btn-default">English</button>
+        <br>
+        <button type="button" class="btn btn-default">IT</button>
+        <br>
+        <button type="button" class="btn btn-default">Sanskrit</button>
+        <br>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <h1><br></h1>
+        <button type="button" class="btn btn-primary btn-lg btn-huge">Coding classes</button>
+        <br>
+    </div>
+</div>
+
+</div> -->
+<h1 class='para' style="font-family: Josefin Sans; font-size: 350%">Subjects we Offer for your Exellence!!!</h1>
+
+  <div class="container">
+    <div class='row'>
+      <div class='col-xs-0 col-md-2 col-lg-2'></div>
+      <div class='col-xs-12 col-md-9 col-lg-9'>
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#tab1" role="tab" data-toggle="tab"><h2 style="font-family: crimson text; font-size: 250%">Mathematics</h2></a></li>
+      <li role="presentation"><a href="#tab2" role="tab" data-toggle="tab"><h2 style="font-family: crimson text; font-size: 250%">Science</h2></a></li>
+      <li role="presentation"><a href="#tab3" role="tab" data-toggle="tab"><h2 style="font-family: crimson text; font-size: 250%">Social Studies</h2></a></li>
+      <li role="presentation"><a href="#tab4" role="tab" data-toggle="tab"><h2 style="font-family: crimson text; font-size: 250%">English</h2></a></li>
+      <!-- <li role="presentation"><a href="#tab5" role="tab" data-toggle="tab"><h2 style="font-family: crimson text; font-size: 250%">Language Subjects</h2></a></li>
+      <li role="presentation"><a href="#tab6" role="tab" data-toggle="tab"><h2 style="font-family: crimson text; font-size: 250%">Coding Classes</h2></a></li> -->
+    </ul>
+
+
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="tab1">
+        <br>
+          <div class="item">
+              <p id='smal' style="padding-top:4%;"><h3>What are the course contents of Class 9 Maths?</h3><br>
+
+              <p style=" font-size: 120%">The 9th standard is the first step towards the secondary schooling of a child. Here, the child starts dealing with formal mathematics, a sense of maturity can be seen. The adolescent or the young adult now begins to think abstractly and reason about hypothetical problems. An increase in understanding of logic can be seen. Hence, the book is designed in a way to teach students about abstract concepts and block building logics. <br><br>
+
+                <ul>
+                  <li> <p>	Class 9 Maths Chapter 1 is a Number System in which children now move towards an understanding of irrational numbers, operations and laws of exponents of real numbers.</p> </li>
+                  <li> <p>	9 Class Maths Chapter 2 is Polynomials that deal with various concepts of polynomials like zero of polynomials, remainder theorem, factorization and identities of various expressions. </p> </li>
+                  <li> <p>	Class 9 Maths Chapter 3 is Coordinate Geometry that introduces a child to the meaning of cartesian or coordinate plane and using it as per the quadrant system. </p> </li>
+                  <li> <p>	9 Class Maths Chapter 4 focuses on linear equations in two variables, its solution, graph and equation parallel to the x and y-axis.</p> </li>
+                  <li> <p>	Class 9 Maths Chapter 5 is the introduction of Euclid’s Geometry. Also, the vocabulary of Axioms and Postulates is developed. </p> </li>
+                  <li> <p>	9 Class Maths Chapter 6 is the Knowledge of Lines and Angles and its principles.</p> </li>
+                  <li> <p>	Class 9 Maths Chapter 7 is the concept of Triangles that is further strengthened by elaborating the concept of angles, angle sum property, parallel and transversal lines, properties and criterion of congruence of triangles. <p> </li>
+                  <li> <p>	9 Class Maths Chapter 8 is the understanding of Quadrilaterals in which the angle sum property of quadrilaterals. Lastly, their properties and types and the mid-point theorem are discussed. </p> </li>
+                  <li> <p>	Class 9 Maths Chapter 9 is Areas of parallelograms and triangles, parallelogram and triangle on the same base and between the same parallels. </p> </li>
+                  <li> <p>	9 Class Maths Chapter 10 is the introduction of Circles: properties of chord and arc, cyclic quadrilaterals. </p> </li>
+                  <li> <p>	Class 9 Maths Chapter 11 is the introduction of Some basic and constructions of triangles.<p> </li>
+                  <li> <p>	9 Class Maths Chapter 12 Heron's formula where some smart calculations are taught.</p> </li>
+                  <li> <p>	Class 9 Maths Chapter 13 is Surface Area and Volume of the cube, cuboid, cylinder, cone, the sphere are explained. </p> </li>
+                  <li> <p>	In 9 Class Maths Chapter 14, The child also deals with the collection, presentation and graphical representation of data and central tendency. </p> </li>
+                  <li> <p>	In 9 Class Maths Chapter 15, Probability is also explained well. Introduction to proof in mathematics and mathematical modelling is also given. <p> </li>
+                 
+                  </ul>
+
+                <strong style="font-family: crimson text; font-size: 150%">The child now can plan things systematically. The concepts help to develop abstract thinking in a child.</strong><br>
+
+</p>
+
+</p>
+</div>
+
+      </div>
+      <div role="tabpanel" class="tab-pane" id="tab2">
+        <br>
+        <div class="item">
+            <p id='smal' style="padding-top:4%;"><h3>What is the syllabus of Class 9 Science?</h3><br>
+
+              <p style=" font-size: 120%">The textbook focuses to make learning more practical rather than theoretical. It helps to build connections between science and real life. The basic knowledge which an individual should have about themselves, their surroundings is provided.2<br><br>
+
+                <ul>
+                  <li> <p>	Class 9 Science Chapter 1 discusses Matter in Our Surroundings, their characteristics, states of matter and effect of pressure. Lastly, it also discusses the temperature on it. </p> </li>
+                  <li> <p>	9 Class Science Chapter 2 discusses mixtures, techniques to separate different components of mixtures, compounds and different types of solutions. </p> </li>
+                  <li> <p>	Class 9 Science Chapter 3 elaborates various concepts and theories related to atoms and molecules. Also,  the explanation of elements, compounds and the whole concept of chemical reactions, chemical equation and chemical formulas.</p> </li>
+                  <li> <p>	9 Class Science Chapter 4 helps a child to build the concepts of chemistry. Further, explains the structure of atoms, the formation of molecules, different chemical formulas and the concept of valency. </p> </li>
+                  <li> <p>	Class 9 Science Chapter 5 explains very well the fundamental unit of life- Cell. </p> </li>
+                  <li> <p>	9 Class Science Chapter 6 is a study about the group of cells- Tissues. </p> </li>
+                  <li> <p>	Class 9 Science Chapter 7 is the focus on Diversity of Living Organisms, their evolution, hierarchy, animal and plant kingdom and their nomenclature. <p> </li>
+                  <li> <p>	9 Class Science Chapter 8 is about Motion. It explains the concept of velocity, acceleration and gives a graphical representation of motion.  </p> </li>
+                  <li> <p>	Class 9 Science Chapter 9 discussed the concepts of Force and Laws of Motion, momentum, inertia and mass.</p> </li>
+                  <li> <p>	9 Class Science Chapter 10 easily explains Gravitation. </p> </li>
+                  <li> <p>	Class 9 Science Chapters 11 shifts the focus towards Work and different Forms of Energy are discussed. <p> </li>
+                  <li> <p>	9 Class Science Chapter 12 discussed the concept of Sound is taught in more depth.  All these chapters will strengthen the logical reasoning and conceptual understanding of students. They’ll be able to connect all the information to the happenings of their daily life. </p> </li>
+                  <li> <p>	Class 9 Science Chapter 13 is focusing on the human body and other living species the chapter puts light on the reasons and causes of various diseases. </p> </li>
+                  <li> <p>	9 Class Science Chapter 14 is about Conservation and Importance of Natural Resources. </p> </li>
+                  <li> <p>	Class 9 Science Chapter 15  discusses the ways to bring improvement in Food Resources.<p> </li>
+                 
+                  </ul>
+                </p>
+</p>
+      </div>
+    </div>
+      <div role="tabpanel" class="tab-pane" id="tab3">
+        <div class="item">
+          <p id='smal' style="padding-top:4%;"><h3>(HISTORY) India and the Contemporary World- 1 <br>What is the syllabus of class 9 SST History?</h3><br>
+
+              <p style=" font-size: 120%">The book focuses on the emergence of the contemporary world. We see changes before our eyes, but do not ask why they are changing. Hence, going through this textbook will help a child to track these changes and understand how the present world evolved. 
+<br><br>
+                <strong style="font-family: crimson text; font-size: 150%">The first section involves events and processes critical to the understanding of the modern world. It includes 3 chapters:
+</strong><br>
+ <ul>
+  <li> <p>	Class 9 SST History Chapter 1, The French revolution will give you an idea about the past of ideas of liberty, freedom and equality and its importance. </p> </li>
+  <li> <p>	9 Class SST History Chapter 2, The Russian revolution deals with the coming of socialism in Europe, the Soviet government, raises the question of economic equality. </p> </li>
+  <li> <p>	Class 9 SST History Chapter 3, Nazism and the rise of Hitler takes us to Germany discussing the politics of Nazism and the rise of Hitler. </p> </li>
+  </ul>
+                <strong style="font-family: crimson text; font-size: 150%">Section 2 moves from dramatic events to routines off people’s lives, their economic and social activities.</strong><br>
+
+                <ul>
+                  <li> <p>	Class 9 SST History Chapter 4, Forest society and colonialism tells about the lives of people living in forests. Lastly, it deals with the development of industries and urban centres in the 19th century and its effects on the forest. </p> </li>
+                  <li> <p>	9 Class SST History Chapter 5, The last chapter Pastoralists in the Modern World tells about the Pastoralists communities. Also, their movement in the mountains and deserts, plains and plateaus of India and Africa are shown.</p> </li>
+                  </ul>
+                <strong style="font-family: crimson text; font-size: 250%">(CIVICS) Democratic Politics<br>What do we study in Class 9 SST Civics?</strong><br>
+                The textbook will take students on a tour of a museum of contemporary democracy. It encourages them to brainstorm and interacts with them through questions, stories and cartoons. 
+                Each chapter begins with a real-life story to create interest and understanding of central issues discussed in the chapter. It will help students to create a link between what they read and what they see around themselves. <br><br>
+
+
+                 
+ <ul>
+  <li> <p>	9 Class SST Civics Chapter 1 Democracy in the contemporary world discusses all the major themes related to the introduction of Democracy.</p> </li>
+  <li> <p>	Class 9 SST Civics Chapter 2 What is Democracy? Why Democracy? Tells about the meaning of democracy, features of a democratic form of government, and what makes democratic government a better form of government. </p> </li>
+  <li> <p>	9 Class SST Civics Chapter 3 Constitutional Design in continuation with 1st tells about the design of the constitution, need for it, values that shape the constitution and its functioning.  </p> </li>
+  <li> <p>	class 9 SST Civics Chapter 4 Electoral Politics understanding about need, challenges and importance of elections is developed. Also, it distinguishes between a democratic and a non-democratic election. </p> </li>
+  <li> <p>	9 Class SST Civics Chapter 5 Working of Institutions focuses on how decisions are taken. Also, how they are implemented in our country, how disputes are resolved. Lastly, It deals with the functioning of 3 major institutions: Executive, Legislature and the Judiciary.  </p> </li>
+  <li> <p>	Class 9 SST Civics Chapter 6 Democratic Rights puts the light upon the importance and need of rights. Further, it explains</p> </li>
+
+</ul>
+
+                 <strong style="font-family: crimson text; font-size: 250%">(GEOGRAPHY) Contemporary India  <br>What is the syllabus of Class 9 SST Geography?
+</strong><br>
+                 As titled, the textbook helps a child to get familiar with their own country. Major Geographical aspects of the country are introduced to a child.
+<br>
+
+<ul>
+  <li> <p>Class 9 SST Geography Chapter 1 India- Size and Location discusses India’s geographical locations and its size in comparison with other countries. And also, it tells about the neighbouring countries of India.</p> </li>
+  <li> <p>Class 9 SST Geography Chapter 2 focuses on the Physical Features of India, about the major physiographic divisions.</p> </li>
+  <li> <p>Class 9 SST Geography Chapter 3 deals with the Drainage systems in India. The Peninsular Rivers and the role of rivers in the economy of the country.</p> </li>
+  <li> <p>Class 9 SST Geography Chapter 4 tells us about the climatic conditions of the country. Occurrence of different seasons, distribution of rainfall, factors affecting the climate etc. </p> </li>
+  <li> <p>Class 9 SST Geography Chapter 5 takes the students towards the study of natural vegetation and wildlife where students learn about flora, fauna, biodiversity and ecosystem.</p> </li>
+  <li> <p>Class 9 SST Geography Chapter 6 is Population which  focuses on the Population of the country, different age groups, factors affecting the population and provides some statistics for the same.</p> </li>
+
+</ul>
+                 
+
+
+                 <strong style="font-family: crimson text; font-size: 250%">ECONOMICS<br>What all chapters are combined in Class 9 SST Economics?</strong><br>
+
+                 The textbook includes 4 chapters. An introduction to Economics, its importance is delivered to a child through this. <br>
+
+                 <ul>
+                  <li> <p> Class 9 SST Economics Chapter 1 is based upon the story of Village Palampur. Palampur is a hypothetical village designed to introduce a child to the basic concept relating to production.</p> </li>
+                  <li> <p>Class 9 SST Economics Chapter 2 talks about People as a Resource. It is an effort to explain the population as an asset for the economy rather than a liability. People as a resource is a way to refer to the country’s working population.</p> </li>
+                  <li> <p>Class 9 SST Economics Chapter 3 deals with one of the most difficult challenges faced by independent India- Poverty. It discusses how poverty is seen in social science and the problems caused due to poverty and attempts to resolve it.</p> </li>
+                  <li> <p>Class 9 SST Economics Chapter 4 Food Security introduces a child to the availability, affordability and accessibility of food to all people at all times. Explains the terms such as “PDS.”</p> </li>
+                  <li> <p>Class 9 SST Geography Chapter 5 takes the students towards the study of natural vegetation and wildlife where students learn about flora, fauna, biodiversity and ecosystem.</p> </li>
+                  <li> <p>Class 9 SST Geography Chapter 6 is Population which  focuses on the Population of the country, different age groups, factors affecting the population and provides some statistics for the same.</p> </li>
+                </ul>
+                 <strong style="font-family: crimson text; font-size: 150%">At the end of every chapter, a small summary is provided which will help a child to overview a chapter easily. And the illustrations, stories will prove to be beneficial in understanding the new terms in Economics which will help a child to understand their real-world in a better way.</strong><br>
+
+
+
+</p>
+
+
+          </p>
+        </div>
+      </div>
+
+      <div role="tabpanel" class="tab-pane" id="tab4">
+        <br>
+        <div class="item">
+          <p id='smal'><h3>What is the course curriculum of Class 9 English main textbook and supplementary reader?</h3><br>
+               <p style=" font-size: 120%">
+Class 9 English has two books -<br>
+Main textbook - Beehive<br>
+Supplementary Reader - Moments
+<br><br>
+                 <strong style="font-family: crimson text; font-size: 150%">NCERT CLASS 9 ENGLISH MAIN TEXTBOOK “BEEHIVE”<br>(PROSE)</strong><br><br>
+
+                 <ul>
+                  <li> <p>	Class 9 English Chapter 1 "The fun they had" provides practical knowledge to students. It is based on a comparison of the education system of past Vs present. Here. the narrator wants to highlight the importance of the traditional education system and not the modern education system.</p> </li>
+                  <li> <p>	9 Class English Chapter 2 " The sound of music" focuses on music as an art and people as artists. Hence, one should give another person a chance to prove his or her talent and embrace the emotions that they carry. </p> </li>
+                  <li> <p>	Class 9 English Chapter 3 "The little girl" is about the bond of children with their parents. Further, it discusses that they should be treated with love to maintain the true balance in the home-based environment.</p> </li>
+                  <li> <p>	9 Class  English Chapter 4 "A truly beautiful mind" refers to the biography of Albert Einstein. Furthermore, his core qualities have been highlighted along with his contribution to mathematics and physics. </p> </li>
+                  <li> <p>	Class 9 English Chapter 5 "The Snake and the mirror" is a narrative within a narrative by a homoeopathic doctor. </p> </li>
+                  <li> <p>	9 Class  English Chapter 6 "My Childhood" is describing Dr Kalam’s Childhood. Also, it discusses his tough journeys till he became the famous leading scientist and the missile man of India.</p> </li>
+                  <li> <p>	Class 9 English Chapter 7 "Packing" is a humorous story of three friends.<p> </li>
+                  <li> <p>	9 Class  English Chapter 8 "Reach for the top" talks about the achievement of great ladies “Santosh Yadav” and “Maria Sharapova”. Apart from having too many troubles, they achieved success.</p> </li>
+                  <li> <p>	Class 9 English Chapter 9 "The bond of love" is about the beautiful and deep bond of love shared. It is between a small bear cub named Bruno and the Author’s wife. </p> </li>
+                  <li> <p>	9 Class  English Chapter 10 "Kathmandu" is about the capital of Nepal, Kathmandu. Moreover, the author is describing his journey to the capital and sharing beautiful experiences that he had while he was there.</p> </li>
+                  <li> <p>	Class 9 English Chapter 11 "If I were you" is a play about Gerrard’s encounter with the criminal. Further, the criminal will try hard to run away from the cops.<p> </li>
+                  </ul>
+
+
+    
+
+                 <strong style="font-family: crimson text; font-size: 150%">NCERT CLASS 9 ENGLISH MAIN TEXTBOOK “BEEHIVE”<br>(POEM)</strong><br><br>
+
+                 <ul>
+                  <li> <p>	Class 9 English poem "The road not taken" is a story in which the narrator was confused among the two diverging roads onto whom he should travel. It focuses on the challenges that lives can throw on us but confidence can lead us to part of success.</p> </li>
+                  <li> <p>	9 Class  English poem "Wind" discusses the strong power that wind possesses and how it can be responsible for causing heavy destruction to our mother earth. The whole poem focuses on the violent concepts of the wind. </p> </li>
+                  <li> <p>	Class 9 English poem "Rain on the Roof" is regarding the comfort that rain provides due to its soothing qualities and healing properties and takes away all the darkness caused by heavy clouds.</p> </li>
+                  <li> <p>	9 Class  English poem "The lake isle of Innisfree" is the poem in which the poet praises the lake isle of Innisfree and wanted to build a small cabin there and live there all alone.</p> </li>
+                  <li> <p>	Class 9 English poem "A legend of the northland" is folklore based on the theme that greed is the biggest sin. All the blessings and comforts of human life are neglected by those who have agreed in their minds and souls. </p> </li>
+                  <li> <p>	9 Class  English poem "No men are foreign is a very beautiful chapter that discusses major themes related to equality and similarities that every person has. This poem follows the concept of universal brotherhood.</p> </li>
+                  <li> <p>	Class 9 English poem "The Duck and the kangaroo" is a very adventurous poem that elaborates the desire of the duck to travel the whole world by going beyond the pond just like a kangaroo does.<p> </li>
+                  <li> <p>	9 Class  English poem "On killing a tree" is a poem that is against deforestation and considers this act as the killing of the trees. This is a sensitive poem that takes the readers beyond some moral responsibilities needed for the environment.</p> </li>
+                  <li> <p>	Class 9 English Beehive poem "The Snake trying” is a poem that is quite sensitive towards the Snake and not considered as something which people should be afraid of. Rather, the poet is showing sympathy and kindness towards the Snake. </p> </li>
+                  <li> <p>	9 Class  English poem "A slumber did my spirit seal" is a poem dedicated to the permanent sleep of death.</p> </li>
+                  </ul>
+
+                <strong style="font-family: crimson text; font-size: 150%">NCERT CLASS 9 ENGLISH SUPPLEMENTARY READER <br>“MOMENTS” </strong><br><br>
+
+                <ul>
+                  <li> <p>	Class 9 English Supplementary reader Chapter 1 "The lost child" focuses on the child desires on almost everything in the world which his eyes catch. Right from the toys laying on the streets to the tunes of the snake charmer, the child needs everything.</p> </li>
+                  <li> <p>	9 Class  English Supplementary reader Chapter 2 "The adventure of Toto" is a very amusing story written by the famous Ruskin Bond. the story highlights the antics of a monkey that the narrator's grandfather has bought for him to add to his collection.</p> </li>
+                  <li> <p>	Class 9 English Supplementary reader Chapter 3 "Iswaran The storyteller" is about highlighting the quality of a storyteller who uses special effects to make his stories more fascinating to the listeners. </p> </li>
+                  <li> <p>	9 Class  English Supplementary reader Chapter 4 "In the kingdom of fools" is a story in which a foolish and his foolish queen rules the entire kingdom. Their considerations are also very vague like they both are.</p> </li>
+                  <li> <p>	Class 9 English Supplementary reader Chapter 5 "The happy prince" is the story of a king with a very kind personality. He always believes in helping the poor and the needy. He is seen as a true example of love and sacrifice.</p> </li>
+                  <li> <p>	9 Class  English Supplementary reader Chapter 6 "Weathering the storm in Ersama" is about a young man who was once stuck in a dreadful storm along with a heavy rainfall that washes away hundreds of people and their houses.</p> </li>
+                  <li> <p>	Class 9 English Supplementary reader Chapter 7 "The last leaf" is a story of a young woman who is critically ill and is suffering from pneumonia. The story has shown her love for ivy vine on the walls outside her window. <p> </li>
+                  <li> <p>	9 Class  English Supplementary reader Chapter 8 "A house is not a home" is the experiences shared by the writer when she entered her new school. She felt very nostalgic without her old friends and the teachers who used to teach her before.</p> </li>
+                  <li> <p>	Class 9 English Supplementary reader Chapter 9 "The accidental tourist" is an entertaining story that has shown the travel experiences of the narrator humorously. </p> </li>
+                  <li> <p>	9 Class  English Supplementary reader Chapter 10 "The beggar" is a story written by Anton Chekhov in which an alcoholic beggar has been granted work by a wealthy advocate. The story shed light on kindness, compassion, and selflessness.</p> </li>
+                  </ul>
+
+               <strong style="font-family: crimson text; font-size: 150%">Summary of Class 9 English all chapter are prepared in an in-depth manner to provide the students with good results.
+</strong>
+
+
+</p></p>
+        </div>
+      </div>
+
+
+
+      <div role="tabpanel" class="tab-pane" id="tab5">
+        <p id='smal'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="tab6">
+        <p id='smal'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Slider starts here -->
+<br>
+<h1 class='para' style="font-family: crimson text; font-size: 350%">What we have for your child...</h1>
+<section class="carousel-section">
+  <div class="swiper-container mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img class="caro-img" width=150% src="{% static 'webpages/images/1 (2).png' %}" />
+      </div>
+      <div class="swiper-slide">
+        <img class="caro-img"   width=150% src="{% static 'webpages/images/2 (2).png' %}" />
+      </div>
+      <div class="swiper-slide">
+        <img class="caro-img"  width=150% src="{% static 'webpages/images/3 (2).png' %}" />
+      </div>
+      <div class="swiper-slide">
+        <img class="caro-img"   width=150% src="{% static 'webpages/images/5 (2).png' %}" />
+      </div>
+      <div class="swiper4slide">
+        <img class="caro-img"   width=150% src="{% static 'webpages/images/4 (2).png' %}" />
+      </div>
+
+      <div class="swiper-slide">
+        <img class="caro-img"   width=150% src="{% static 'webpages/images/6 (2).png' %}" />
+      </div>
+      <div class="swiper-slide">
+        <img class="caro-img"  width=150%  src="{% static 'webpages/images/7 (2).png' %}" />
+      </div>
+      <div class="swiper-slide">
+        <img class="caro-img"  width=150% src="{% static 'webpages/images/8 (2).png' %}" />
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+  <h1 class="para" style="font-family: crimson text; font-size: 450%">Road Map to your success</h1>
+  <img src="{% static 'webpages/images/RoadMap.png' %}" width="100%" alt="">
+</div>
+<br>
+<div class="jumbotron white" id='Lowerband'>
+    <h1 class='para' style="font-family: crimson text; font-size: 550%">Take your free counseling</h1>
+    <div class="row" style='margin-right:0px;'>
+      <div class="col-xs-4 col-lg-5"></div>
+      <div class="col-xs-4 col-lg-5">
+        <a href="#">
+          <button class="btn btn-danger btn-lg" type="button" name="button">Join us for free!!!</button>
+        </a>
+      </div>
+      <div class="col-xs-4 col-lg-5"></div>
+    </div>
+  </div>
+
+<footer class="footer-bs">
+           <div class="row">
+            <div class="col-md-3 footer-brand animated fadeInLeft">
+              <div class="item">
+                <h2>Logo</h2>
+                   <p>Ekal Shiksha is an Ed-tech company which provides one on one individual online classes. It is an initiative which aims to revolutionize the standard teaching and learning methods. We believe that each student has his or her personal learning speed, method and curriculum which is very important for a teacher to understand and personalize their teaching methods according to the students not vice versa. This platform is especially built for those who have immense potential but are never focused on in group classes, the growth of such students is our moto.
+
+<br>We have been in the teaching industry for past four years, catered to more than 1000s of students till the date. We are unique in a manner that we not only provide tuitions but also we make sure that the performance of each student is tracked through our LMS system and they get to check their clearity of concepts by the MCQs provided after each concept is taught. We have adopted the EAD approach for the better learning, understanding and self assessing of students. We are in a way parent friendly and make sure that the parents are kept in loop for each activity of the student and the teacher.
+
+<br>We have accommodated the best of talented teachers from all across the India for students who believe in learning beyond a classroom. We are a one step solution for all those parents who worry about their kid not being focused enough in group classes, for those who believe that their child can do far better if focused a little more, for those who worry for their kid’s safety when they are at work and their child alone with a teacher at home, for those who worry sending their child to coaching at odd hours and most of all for those who not only believe in passing but in learning.</p>
+</div>
+               </div>
+            <div class="col-md-6 footer-nav animated fadeInUp">
+                <h4 class='para'>Menu —</h4>
+                <div class="col-md-4">
+                       <ul class="list">
+                           <li><a href="{% url '6th' %}">Class 6th</a></li>
+                           <li><a href="{% url '7th' %}">Class 7th</a></li>
+                           <li><a href="{% url '8th' %}">Class 8th</a></li>
+                           <li><a href="{% url '9th' %}">Class 9th</a></li>
+                           <li><a href="{% url '10th' %}">Class 10th</a></li>
+                           <li><a href="{% url '11th_Science' %}">Class 11th Science</a></li>
+                           <li><a href="{% url '11th_Commerce' %}">Class 11th Commerce</a></li>
+                         </ul>
+                       </div>
+                           <div class="col-md-4">
+                                  <ul class="list">
+
+                           <li><a href="{% url '11th_Humanities' %}">Class 11th Humanities</a></li>
+                           <li><a href="{% url '12th_Science' %}">Class 12th Science</a></li>
+                           <li><a href="{% url '12th_Commerce' %}">Class 12th Commerce</a></li>
+                           <li><a href="{% url '12th_Humanities' %}">Class 12th Humanities</a></li>
+                       </ul>
+                   </div>
+                <div class="col-md-4">
+                       <ul class="list">
+                           <li><a href="#">About Us</a></li>
+                           <li><a href="#">Contacts</a></li>
+                           <li><a href="#">Terms & Condition</a></li>
+                           <li><a href="#">Privacy Policy</a></li>
+                       </ul>
+                   </div>
+               </div>
+            <div class="col-md-3 footer-social animated fadeInDown">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/ekalshiksha/">Facebook</a></li>
+                    <li><a href="https://twitter.com/ekalshiksha?lang=en">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/ekal_shiksha/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/company/ekal-shiksha/?originalSubdomain=in">Linkdin</a></li>
+                   </ul>
+               </div>
+            </div>
+       </footer>
+
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "3",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+  </script>
+<script src="{% static 'webpages/Js/ReadMore.js' %}"></script>
+<script src="{% static 'webpages/Js/readMoreJS.min.js' %}"></script>
+<script>
+   $readMoreJS.init({
+   target: '.readmore',           // Selector of the element the plugin applies to (any CSS selector, eg: '#', '.'). Default: ''
+   numOfWords: 100,               // Number of words to initially display (any number). Default: 50
+   toggle: true,                 // If true, user can toggle between 'read more' and 'read less'. Default: true
+   moreLink: 'Read More ...',    // The text of 'Read more' link. Default: 'read more ...'
+   lessLink: 'Read Less'         // The text of 'Read less' link. Default: 'read less'
+});
+</script>
+<script src="{% static 'webpages/Js/jquery_flipster_min.js' %}"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</html>

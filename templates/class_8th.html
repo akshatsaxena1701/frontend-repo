@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="{% static 'webpages/Js/Scrolling-tabs.js' %}"></script>
+<script href="{% static 'webpages/Js/Test.js' %}"></script>
+      <script src="{% static 'webpages/Js/st_demo.js' %}"></script>
+      <script src="{% static 'webpages/Js/Scrolling-tabs.js' %}"></script>
+<link rel="stylesheet" href="{% static 'webpages/Js/jquery_flipster_min.css' %}">
+<link rel="stylesheet" href="{% static 'webpages/Js/jquery_flipster.css' %}">
+  <link rel="stylesheet" href="{% static 'webpages/Scrolling-tabs.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'webpages/Fonts.css' %}">
+    <link rel="stylesheet" href="{% static 'webpages/st_demo.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'webpages/Doubts.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'webpages/Index.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'webpages/css/dist/css/bootstrap.min.css' %}" >
+    <link rel="stylesheet" type="text/css" href="{% static 'webpages/css/dist/css/bootstrap.css' %}" >
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{% static 'webpages/css/dist/css/bootstrap-theme.css' %}" >
+    <title>Ekal Shiksha</title>
+
+  </head>
+  <body>
+    <!-- 2nd Navbar Starts here-->
+    <nav class="navbar navbar-default navbar-fixed-top nav1">
+      <div class="container-fluid white" id='Lowerband'>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+   <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav navbar-left">
+              <li><a href="{% url 'About' %}"><h4 class='navh4'>About us</h4></a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4 class='navh4'>Courses</h4> </a>
+                        <ul  class="dropdown-menu dropdown-menu">
+                          <li style='border-bottom: 0%; padding-top: 0%'><a href="{% url '6th' %}"><h5>Class 6th</h5></a></li>
+                          <li><a href="{% url '7th' %}"><h5>class 7th</h5></a></li>
+                          <li><a href="{% url '8th' %}"><h5>Class 8th</h5></a></li>
+                          <li><a href="{% url '9th' %}"><h5 >Class 9th</h5></a></li>
+                          <li><a href="{% url '10th' %}"><h5 >Class 10th</h5></a></li>
+                          <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h5>Class 11th</h5> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '11th_Science' %}"><h5 >Science</h5></a></li>
+                            <li><a href="{% url '11th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                            <li><a href="{% url '11th_Humanities' %}"><h5 >Arts</h5></a></li>
+                          </ul>
+                        </li>
+                          <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle"><h5>Class 12th</h5> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '12th_Science' %}"><h5 >Science</h5></a></li>
+                            <li><a href="{% url '12th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                            <li><a href="{% url '12th_Humanities' %}"><h5 >Arts</h5></a></li>
+                          </ul>
+                          </li>
+                          <!-- <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle"><h4 >Micro Course</h4> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '9th' %}"><h4 >Class 9th</h4></a></li>
+                            <li><a href="{% url '10th' %}"><h4 >Class 10th</h5></a></li>
+                            <li class="dropdown-submenu">
+                            <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h5 >Class 11th</h5> </a>
+                            <ul class="dropdown-menu ">
+                              <li><a href="{% url '11th_Science' %}"><h5 >Science</h5></a></li>
+                              <li><a href="{% url '11th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                              <li><a href="{% url '11th_Humanities' %}"><h5 >Arts</h5></a></li>
+                            </ul>
+                          </li>
+                          <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h5 >Class 12th</h5> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '11th_Science' %}"><h5 >Science</h5></a></li>
+                            <li><a href="{% url '11th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                            <li><a href="{% url '11th_Humanities' %}"><h5 >Arts</h5></a></li>
+                          </ul>
+                        </li>
+                        </li>
+
+                          </ul>
+                          </li> -->
+                          <!-- <li><li><a href='#'><h5 >English Speaking</h5></a></li></li> -->
+                        </ul>
+                          <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4 class='navh4'>Study Material</h4></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#"><h5 >Class 6th</h5></a></li>
+                            <li><a href="#"><h5 >Class 7th</h5></a></li>
+                            <li><a href="#"><h5 >Class 8th</h5></a></li>
+                            <li><a href="#"><h5 >Class 9th</h5></a></li>
+                            <li><a href="#"><h5 >Class 10th</h5></a></li>
+                            <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h5>Class 11th</h5> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '11th_Science' %}"><h5 >Science</h5></a></li>
+                            <li><a href="{% url '11th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                            <li><a href="{% url '11th_Humanities' %}"><h5 >Arts</h5></a></li>
+                          </ul>
+                        </li>
+                          <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle"><h5>Class 12th</h5> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '12th_Science' %}"><h5 >Science</h5></a></li>
+                            <li><a href="{% url '12th_Commerce' %}"><h5 >Commerce</h5></a></li>
+                            <li><a href="{% url '12th_Humanities' %}"><h5 >Arts</h5></a></li>
+                          </ul>
+                          </li>
+
+                          </ul>
+                          </li>
+                  <li><a href="{% url 'Doubts' %}"><h4 class='navh4'>Doubt class</h4></a></li>
+                  <!-- <li><a href="#"><h4>Competitions</h4></a></li> -->
+                  <li><a href="#"><h4 class='navh4'>Teach with us</h4></a></li>
+
+
+            </div>
+      </div>
+  </ul>
+  </nav>
+  <!-- 1st navbar start here -->
+  <nav class="navbar navbar-default navbar-fixed-top nav2">
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+
+        <p><a href="{% url 'index' %}"><img class="pull-up" src="{% static 'webpages/images/Logo.png' %}" width='40%' alt='' ></p>
+      </a>
+    </a>
+  </div>
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+
+
+
+
+  <div class="collapse navbar-collapse" id="navbar1">
+      <ul id='pad'class="nav navbar-nav navbar-right ">
+    <div class="row">
+      <!-- <div class="col-xs-2 col-md-2 col-lg-2 "></div> -->
+    <div class="col-xs-10 col-md-10 col-lg-10"style="padding-right:0px;margin-right:0px;">
+    <li id='pad' ><a href="tel:9716864415"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>  9716864415 &nbsp; </a>
+    </li></div>
+    <!-- <div class="col-xs-2 col-md-2 col-lg-2 "></div> -->
+    <div class="col-xs-10 col-md-10 col-lg-10">
+    <li id='pad' ><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzBWVHwwpBgTtmnMDMpQkrrhrZRHZGFhgBxJqMrBmbcdRghJMXzwLJlLtsjzDCJNcqwSLjv" ><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  Contact@ekalshiksha.in &nbsp; </a>
+    </li></div>
+    <!-- <div class="col-xs-2 col-md-2 col-lg-2 "></div> -->
+    </div>
+
+    </ul>
+    <ul id='pad'class="nav navbar-nav navbar-right ">
+    <div class="row">
+      <div class="col-xs-2 col-md-2 col-lg-2 "></div>
+    <div class="col-xs-10 col-md-10 col-lg-10">
+    <li id='pad' style='margin-left:0px;'><a href="#" ><h4><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  Sign In &nbsp;</h4> </a>
+    </li></div>
+
+    </div>
+
+    </ul>
+
+      <ul id='pad'class="nav navbar-nav navbar-right ">
+
+        <div class="row">
+          <div class="col-xs-10 col-md-10 col-lg-10 ">
+            <li id='pad' style='margin-left:0px;'><a href="#"><h4><span class="glyphicon glyphicon-search" aria-hidden="true"></span>  Enquiry  Now &nbsp;</h4> </a>
+    </div>
+    <div class="col-xs-2 col-md-2 col-lg-2 "></div>
+  </div>
+
+  </ul>
+  </div>
+  </div>
+
+
+  </nav>
+<!-- Start for class 6 -->
+<div class="container">
+  <div class="jumbotron">
+    <div class="item readmore">
+  <h1 id='class6th' style="font-family: crimson text; font-size: 450%">Class 8th</h1>
+  <p style=" font-size: 150%">CBSE Class 8 is the ultimate chapter of a student’s middle schooling where the students suddenly face an immense increase in the syllabus and end up feeling pressured. The arrival of the new topics adds worry and perplexment to both students and their parents. Before stepping into high school, good command over the concepts is necessary for them for achieving their goals in an accelerated way. Apart from just academics, mental preparation is also a crucial factor that can help the students in scoring better. <br>In the current educational scenario, maintaining a strong foundation is vital as these middle school classes act as pillars that bring out uniformity while shaping the students academically. A child needs everything that is well planned so that they don’t have to worry much while executing the plan into real-world learning.<br>
+Our passionate teachers can curate a yearly study plan for the students according to their specialisation and make learning a fun and engaging activity for them using two-way audio-video tools in Individual classes. They can help in changing a child’s habit and attitude towards learning by introducing innovative techniques for its betterment with personal teacher support.</p>
+  </div>
+  </div>
+  <br>
+</div>
+<!-- <div class="container">
+
+<div class='row'>
+  <div class="col-md-1">
+  </div>
+  <div class="col-md-5">
+    <h1 class='para'>6th class course</h1>
+  </div>
+  <div class="col-md-5">
+    <h1>Language Subject</h1>
+  </div>
+</div>
+<div class='row'>
+<div class="col-xs-1"></div>
+
+<div class="col-xs-3 col-md-3">
+
+
+
+    <div class="btn-group-lg btn-group-vertical">
+      <button type="button" id="pre-reading-btn" class="btn btn-default">Maths</button>
+      <br>
+      <button type="button" id="passage-btn" class="btn btn-default">Science</button>
+      <br>
+      <button type="button" id="post-reading-btn" class="btn btn-default">SST</button>
+    </div>
+
+</div>
+<div class="col-xs-3 col-md-3">
+  <div class="btn-group-lg btn-group-vertical">
+      <button type="button" id="pre-reading-btn" class="btn btn-default">English</button>
+      <br>
+      <button type="button" id="passage-btn" class="btn btn-default">IT</button>
+      <br>
+      <button type="button" id="post-reading-btn" class="btn btn-default">Sanskrit</button>
+      <br>
+    </div>
+
+  </div>
+
+  <div class="col-xs-3 col-md-3">
+    <div class="btn-group-lg btn-group-vertical">
+        <button type="button" class="btn btn-default">English</button>
+        <br>
+        <button type="button" class="btn btn-default">IT</button>
+        <br>
+        <button type="button" class="btn btn-default">Sanskrit</button>
+        <br>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <h1><br></h1>
+        <button type="button" class="btn btn-primary btn-lg btn-huge">Coding classes</button>
+        <br>
+    </div>
+</div>
+
+</div> -->
+<h1 class='para' style="font-family: Josefin Sans; font-size: 350%">Subjects we Offer for your Exellence!!!</h1>
+
+  <div class="container">
+    <div class='row'>
+      <div class='col-xs-0 col-md-2 col-lg-2'></div>
+      <div class='col-xs-12 col-md-9 col-lg-9'>
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#tab1" role="tab" data-toggle="tab"><h2 style="font-family: crimson text; font-size: 250%">Mathematics</h2></a></li>
+      <li role="presentation"><a href="#tab2" role="tab" data-toggle="tab"><h2 style="font-family: crimson text; font-size: 250%">Science</h2></a></li>
+      <li role="presentation"><a href="#tab3" role="tab" data-toggle="tab"><h2 style="font-family: crimson text; font-size: 250%">Social Studies</h2></a></li>
+      <li role="presentation"><a href="#tab4" role="tab" data-toggle="tab"><h2 style="font-family: crimson text; font-size: 250%">English</h2></a></li>
+      <!-- <li role="presentation"><a href="#tab5" role="tab" data-toggle="tab"><h2 style="font-family: crimson text; font-size: 250%">Language Subjects</h2></a></li>
+      <li role="presentation"><a href="#tab6" role="tab" data-toggle="tab"><h2 style="font-family: crimson text; font-size: 250%">Coding Classes</h2></a></li> -->
+    </ul>
+
+
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="tab1">
+        <br>
+          <div class="item">
+              <p id='smal' style="padding-top:4%;"><h3 style="font-family: crimson text; font-size: 250%">What are the course contents of Class 8 Maths?</h3><br>
+
+              <p style=" font-size: 120%">This is the last book of the upper primary series. Class 8 maths all chapter solutions is the bridge to class 9th where children will deal with more formal mathematics. The focus is to involve students in the classroom or outside in doing mathematics. Space has been provided for children to engage in reflection, create their own rules and problems based on problems/tasks solved and following their ideas logically. Class 8 maths all formulas are simple and systematic. <br><br>
+
+                <ul>
+                  <li> <p>	Class 8 Maths Chapter 1 Rational Numbers recalls all the operations of rational numbers studied in previous classes and explains them further in-depth.  </p> </li>
+                  <li> <p>	8 Class Maths  Chapter 2 Linear Equations in one variable focuses on applications of equations. The level has been increased by giving variables on both sides of the equation and equations reducible to the linear form. </p> </li>
+                  <li> <p>	Class 8 Maths Chapter 3 talks about Understanding Quadrilaterals, it introduces a child to different types of polygons (parallelogram, rhombus, rectangle, square, kite) and their dependency upon angles and different angle properties. </p> </li>
+                  <li> <p>	8 Class Maths Chapter 4 Practical Geometry guides with the construction of quadrilaterals. Further, the chapter </p> </li>
+                  <li> <p>	Class 8 Maths Chapter 5 Data Handling deals with frequency, probability, histogram, pie chart. </p> </li>
+                  <li> <p>	8 Class Maths Chapter 6 Square and Square Roots teaches the child all the possible method of finding square and square roots of any number.</p> </li>
+                  <li> <p>	Class 8 Maths Chapter 7 Cube and Cube Roots teaches the child about the application and meaning of square and cube as powers, different patterns with perfect square and cube, a method to find square and cube of any number. </p> </li>
+                  <li> <p>	8 Class Maths Chapter 8 detail a student about cost price, selling price, profit and loss, tax and discount, simple interest and compound interest, and their applications which a child can relate to their daily life in Comparing Quantities. <p> </li>
+                  <li> <p>	Class 8 Maths Chapter 9 Algebraic Expressions and Identities deals with the multiplication of polynomials and applying standard identities. </p> </li>
+                  <li> <p>	8 Class Maths Chapter 10 Visualising solid shapes introduces a student to various new solid shapes along with a brief discussion of their properties.</p> </li>
+                  <li> <p>	Class 8 Maths Chapter 11 Mensuration is expanded from further classes as it now deals with the area, perimeter and volume of polygons, 3d shape (cube and cuboid) and cylinder. </p> </li>
+                  <li> <p>	8 Class Maths Chapter 12 Exponents and Powers deals with the use of exponents in standard form and explains the Laws of exponents for both positive as well as negative numbers.  <p> </li>
+                  <li> <p>	Class 8 Maths Chapter 13 briefs a student about how two quantities are linked with each other and changes in one can affect the other Directly or Inversely. </p> </li>
+                  <li> <p>	8 Class Maths Chapter 14 Factorization deals with the meaning of factors and teaches different methods of division of polynomials and standard identities. The emphasis is laid on understanding the concepts and reasons and not memorizing the formulas or the proofs for the problems. The textbooks provide an opportunity for students to Visualize various 2D and 3d shapes and introduce them with Euler’s Formula. </p> </li>
+                  <li> <p>	An introduction to quadrants, coordinates, types of the graph has been provided in Class 8 Maths Chapter 15. </p> </li>
+                  <li> <p>	8 Class Maths Chapter 16 Playing with Numbers recalls the divisibility rules studied in various classes and helps to make understanding in students about the general form of a number. <p> </li>
+                  </ul>
+
+                <strong style="font-family: crimson text; font-size: 150%">The main concern is that a child learns and begins to feel confident about mathematics. The focus is to introduce ideas in a way that is moving towards becoming formal, which will help them in 9th standard as well. Diagrams, point blurbs are used to reduce long explanations and provide knowledge in a simplified way.
+</strong>
+</p>
+</p>
+</div>
+
+      </div>
+      <div role="tabpanel" class="tab-pane" id="tab2">
+        <br>
+        <div>
+            <p id='smal' style="padding-top:4%;"><h3 style="font-family: crimson text; font-size: 250%">What do we study in Class 8 Science?</h3><br>
+
+              <p style=" font-size: 120%">
+                The textbook is designed to connect science that students study in school with their everyday life. Throughout the textbook, activities are suggested to clarify the concepts, develop reasoning and presentation skills. Paheli and Boojho accompany the children on this journey of learning.The language of the book has been kept simple and easy to understand.   <br><br>
+
+
+<ul>
+  <li> <p>	The textbook begins with the discussion of agricultural practices in Class 8 Science Chapter 1 Crop Production and Management. </p> </li>
+  <li> <p>	8 Class Science Chapter 2 is an introduction to microorganisms, their living conditions, uses, diseases caused by them. </p> </li>
+  <li> <p> Class 8 Science Chapter 3 tells about Synthetic Fibres and Plastics. </p> </li>
+  <li> <p>	8 Class Science Chapter 4 elaborate the concepts of Metals and Nonmetals.  Further, it focuses on the chemical properties of the material and its reactivity. </p> </li>
+  <li> <p>	Class 8 Science Chapter 5 is about Natural Resources i.e. Coal and Petroleum and Natural Gas. </p> </li>
+  <li> <p>	8 Class Science Chapter 6 focuses on the process of combustion, the structure of flame and the efficiency of fuel.</p> </li>
+  <li> <p>	Class 8 Science Chapter 7 is about the Conservation of Plants and Animals.<p> </li>
+  <li> <p>	Class 8 Science Chapter 8 of the textbook is an introduction to the structure. Also, the functions of the basic unit of life- Cell. </p> </li>
+  <li> <p>	8 Class Science Chapter 9 explains the life process of reproduction in animals.</p> </li>
+  <li> <p>	Class 8 Science Chapter 10 explains the age of adolescence and puberty. </p> </li>
+  <li> <p>	8 Class Science Chapter 11 deeply discusses the concepts of Force and Pressure.<p> </li>
+  <li> <p>	Class 8 Science Chapter 12 draws its attention towards friction, its causes and the effects associated with it.</p> </li>
+  <li> <p>	8 Class Science Chapter 13 focuses on sound, its causes and the effects associated with it.</p> </li>
+  <li> <p>	Class 8 Science Chapter 14 focuses on the Chemical Effects of the Electric Current.</p> </li>
+  <li> <p>	8 Class Science Chapter 15 is about Some Natural Phenomena like lightning. <p> </li>
+  <li> <p>	Class 8 Science Chapter 16 will teach the students about what is light. Also,  how it is produced, how images are formed and how our eyes function.</p> </li>
+  <li> <p>	8 Class Science Chapter 17 discusses the Solar System.</p> </li>
+  <li> <p>	And lastly, Class 8 Science Chapter 18 of the textbook focuses on the increasing threat of Air and Water Pollution. <p> </li>
+  </ul>
+
+                <strong style="font-family: crimson text; font-size: 150%">Large numbers of exercises are provided at the end of the chapter. It can help a student to revise and practice. Also, photographs, illustrations and cartoons are used to make the learning process more interesting. Sources of extended</strong>
+
+</p>
+</p>
+      </div>
+    </div>
+      <div role="tabpanel" class="tab-pane" id="tab3">
+        <div>
+          <p id='smal' style="padding-top:4%;">
+          <h3 style="font-family: crimson text; font-size: 200%">History (Our Past 3)<br>
+          What do we study in Class 8 SST history?</h3><br>
+
+              <p style=" font-size: 120%">
+
+
+
+
+                <ul>
+                  <li> <p>	Class 8 SST history Chapter 1 How, When and Where? Reflects upon the significance of dates, periods, maintenance of records, survey and other sources of history and their significance. </p> </li>
+                  <li> <p>	8 Class SST history Chapter 2 describes British colonialism and hence is named “From Trade to Territory”. It introduces how the British started to trade and how gradually the company rule expanded. It also mentions the wars, struggles, people experienced. </p> </li>
+                  <li> <p>	Class 8 SST history Chapter 3 “Ruling the Countryside” further explains how the company became the diwan, how they formulated new policies for agriculture for economic benefits and exploited the farmers and struggle of Indians. </p> </li>
+                  <li> <p>	8 Class SST history Chapter 4, “Tribes, Dikus and the Vision of Golden Age” explains how tribes live and the impact of colonialism on their lives. </p> </li>
+                  <li> <p>	Class 8 SST history Chapter 5 “When people Rebel tells about the 1857 revolt against Britishers, demands of Indians and how did the company fight back. </p> </li>
+                  <li> <p>	In 8 Class SST history chapter 6, the impact of liberalism on cities is explained. And the history of how Delhi became New Delhi is given. The life of weavers, iron smelters and</p> </li>
+                  <li> <p>	Class 8 SST history Chapter 7, factory owners are explained in the next chapter elaborating about their trade with the World market and the effect of colonialism on them. <p> </li>
+                  <li> <p>	8 Class SST history Chapter 8 “Civilising the Native, Educating the Nation” focuses upon the ancient education system of India and the influence of the company over it.  </p> </li>
+                  <li> <p>	Class 8 SST history Chapter 9 elaborates about the great leaders who fought against the harmful social practices which discriminate or violate the dignity of an individual in the name of gender and caste. They worked for the abolition of discriminatory practices against women and lower caste. </p> </li>
+                  <li> <p>	8 Class SST history Chapter 10 focuses on the changing world of visual art. </p> </li>
+                  <li> <p>	Class 8 SST history Chapter 11 focuses on the emergence of Nationalism, the formation of a nation, their struggle for freedom, various revolutionary movements. <p> </li>
+                  <li> <p>	And finally Class 8 SST history Chapter 12 witnessing India as a free, democratic country. </p> </li>
+                 
+                  </ul>
+
+                <strong style="font-family: crimson text; font-size: 150%">The history of class 8th is completely focused upon India’s struggle for independence and how colonialism impacted the nation and the lives of people. </strong>
+                 <br><br>
+
+                 <strong style="font-family: crimson text; font-size: 200%">Social and Political life 3 (civics) <br>
+What do we study in Class 8 SST Civics?</strong><br>The textbook is divided into 5 units:<br><br>
+
+                 <strong style="font-family: crimson text; font-size: 180%">The 1st unit focuses on The Indian Constitution and Secularism.</strong><br>
+
+
+                 <ul>
+                  <li> <p>	Class 8 SST history Chapter 1 How, When and Where? Reflects upon the significance of dates, periods, maintenance of records, survey and other sources of history and their significance. </p> </li>
+                  <li> <p>	8 Class SST history Chapter 2 describes British colonialism and hence is named “From Trade to Territory”. It introduces how the British started to trade and how gradually the company rule expanded. It also mentions the wars, struggles, people experienced. </p> </li>
+                 </ul>
+
+                 <strong style="font-family: crimson text; font-size: 180%">The 2nd unit is about Parliament and Making of Laws</strong><br><br>
+
+                 <ul>
+                  <li> <p>	Class 8 SST history Chapter 1 How, When and Where? Reflects upon the significance of dates, periods, maintenance of records, survey and other sources of history and their significance. </p> </li>
+                  <li> <p>	8 Class SST history Chapter 2 describes British colonialism and hence is named “From Trade to Territory”. It introduces how the British started to trade and how gradually the company rule expanded. It also mentions the wars, struggles, people experienced. </p> </li>
+                 </ul>
+                <strong style="font-family: crimson text; font-size: 180%">The 3rd unit is about the judiciary </strong><br><br>
+
+
+                <ul>
+                  <li> <p>	Class 8 SST history Chapter 1 How, When and Where? Reflects upon the significance of dates, periods, maintenance of records, survey and other sources of history and their significance. </p> </li>
+                  <li> <p>	8 Class SST history Chapter 2 describes British colonialism and hence is named “From Trade to Territory”. It introduces how the British started to trade and how gradually the company rule expanded. It also mentions the wars, struggles, people experienced. </p> </li>
+                 </ul>
+               <strong style="font-family: crimson text; font-size: 180%">The 4th unit is about Social justice and the marginalised
+ </strong><br><br>
+
+                <ul>
+                <li> <p>	Class 8 SST history Chapter 1 How, When and Where? Reflects upon the significance of dates, periods, maintenance of records, survey and other sources of history and their significance. </p> </li>
+                <li> <p>	8 Class SST history Chapter 2 describes British colonialism and hence is named “From Trade to Territory”. It introduces how the British started to trade and how gradually the company rule expanded. It also mentions the wars, struggles, people experienced. </p> </li>
+                </ul>
+                <strong style="font-family: crimson text; font-size: 180%">TThe 5th unit explains the Economic Presence of the Government
+ </strong><br><br>
+
+                <ul>
+                  <li> <p>	Class 8 SST history Chapter 1 How, When and Where? Reflects upon the significance of dates, periods, maintenance of records, survey and other sources of history and their significance. </p> </li>
+                  <li> <p>	8 Class SST history Chapter 2 describes British colonialism and hence is named “From Trade to Territory”. It introduces how the British started to trade and how gradually the company rule expanded. It also mentions the wars, struggles, people experienced. </p> </li>
+                </ul>
+                 <strong style="font-family: crimson text; font-size: 200%">Resources and Development (geography)
+<br>What are the course contents of Class 8 SST Geography?
+</strong><br>
+<br><br>
+
+
+<ul>
+  <li> <p>	Class 8 SST Geography chapter 1 Resources is an introduction to what are resources, their types and need and methods to conserve them. </p> </li>
+  <li> <p>	8 Class SST Geography Chapter 2 gives a brief introduction to a few natural resources. It tells about land use, soil formation, problems of water availability, distribution of Natural Vegetation. Finally, it will discuss ways to conserve all the resources. </p> </li>
+  <li> <p>	Class 8 SST Geography Chapter 3 Minerals and Power Resources explains the minerals, their distribution in different continents and India. Furthermore, the use of minerals and conventional and non-conventional resources of energy. </p> </li>
+  <li> <p>	8 Class SST Geography Chapter 4 Agriculture explains types of farming. Also, the importance of farms of the USA and India and development in the agricultural sector. </p> </li>
+  <li> <p>	Class 8 SST Geography Chapter 5 focuses on the classification of industries, action, industrial regions. Lastly, it will discuss the distribution of major industries. </p> </li>
+  <li> <p>	8 Class SST Geography Chapter 6 focuses on humans as a resource. It tells about the population distribution, factors responsible and patterns of population change and composition. </p> </li>
+</ul>
+
+<strong style="font-family: crimson text; font-size: 150%">
+  The stories, case studies and pictures used in all the books make it engaging for a child. Also, it will encourage them to get involved in peer discussion and present their viewpoint on any respective topic. Furthermore, the language used is easy for a child to read and understand.</strong>
+<br><br>
+</p>
+
+
+          </p>
+        </div>
+      </div>
+
+      <div role="tabpanel" class="tab-pane" id="tab4">
+        <div >
+          <p id='smal'><h3 style="font-family: crimson text; font-size: 250%">What is the course curriculum of Class 8 English main textbook and supplementary reader?
+</h3><br>
+
+              <p style=" font-size: 120%">
+                In the English ncert class 8 English, there are chapters and poems from the main textbook (Honeydew) and supplementary reader (It so happened). Also, they are curated by the best teachers to help the students score more marks in their examination. Class 8 English all chapter solutions are discussed in a comprehensive way for better results.</p>
+
+                 <strong style="font-family: crimson text; font-size: 150%">NCERT Class 8 ENGLISH MAIN TEXTBOOK “HONEYDEW”<br> (PROSE)</strong><br>
+                <br>
+        <ul>
+          <li> <p>	Class 8 English Chapter 1 “the best Christmas present in the world” by Michael Morpurgo is a story in which a letter touches the heart. It was a Christmas present from Connie.</p> </li>
+          <li> <p>	8 Class English Chapter 2 “The Tsunami '' is a tale of how Tsunami’s waves cause serious destruction through earthquakes. Also, there was a volcanic eruption that swept away so many family members.</p> </li>
+          <li> <p>	Class 8 English Chapter 3 “glimpses of the past” depicts the story from the Indian past. Here, the great war of independence against British rule and stories are explained. </p> </li>
+          <li> <p>	8 Class English Chapter 4 “Bepin Choudhury’s Lapse of memory” is a funny story. Here, a person is tricked by his friend and avoided by him in the times he needs him the most.</p> </li>
+          <li> <p>	Class 8 English Chapter 5 “The summit within” is a high spirited story in which the author shares his experience and feelings. Further,  he was standing on the top of Mount Everest while doing so.</p> </li>
+          <li> <p>	8 Class English Chapter 6 “This is Jody’s Fawn” is a tale that transfers a message of compassion of love. Moreover, he considers both as a necessity of life without which human beings cannot survive.</p> </li>
+          <li> <p>	Class 8 English Chapter 7 “A Visit to Cambridge” is a highly inspirational tale where two differently-abled people. In this, they share their experiences in a very pleasant way.</p> </li>
+          <li> <p>	8 Class English Chapter 8 “A short monsoon Diary” by Ruskin Bond about the silent miracles of nature and joy. All this is provided by the monsoon season. The author wants everyone to observe each thing with interest.<p> </li>
+          <li> <p>	Class 8 English Chapter 9 “The Great stone face 1” is a popular shape that reminds the people about some spoken prophecy. The prophecy once persisted in that valley.</p> </li>
+          <li> <p>	8 Class English Chapter 10 “The Great stone face 2” is the continuation of the first part itself. Also, it is the personified text of part 1. Here, everything discussed in this is beyond imagination.</p> </li>
+        </ul>
+
+                 <strong style="font-family: crimson text; font-size: 150%">NCERT CLASS 8 ENGLISH MAIN TEXTBOOK “HONEYDEW” <br>(POEMS)</strong><br><br>
+                 <ul>
+                  <li> <p> Class 8 English poem “The ant and the cricket” wanted to convey a very realistic message to its readers. Accordingly, we all are responsible for our future. And, will suffer if we ignore its aspects</p> </li>
+                  <li> <p> 8 Class English poem “Geography lesson” is about the poet’s experience. Following, he views his place from so many feet above the ground and sees that the city is not looking organised.</p> </li>
+                  <li> <p> Class 8 English poem “Macavity- The mystery cat” by the great poet T.S. Eliot is the story of mastermind Macavity. At this time, the cat commits crimes and leaves no evidence behind.</p> </li>
+                  <li> <p> 8 Class English poem “The last bargain” is where a person is in search of a job. A job where he can be his own master and not in control of anyone.</p> </li>
+                  <li> <p> Class 8 English poem “The School Boy” by William Blake is about a schoolboy who seems very unhappy.  He wants to escape from his classroom and focuses on the downsides of learning.</p> </li>
+                  <li> <p> 8 Class English poem “The Duck and the Kangaroo” is about the longing of the Duck to go beyond the pond.  Especially, to explore the beauty of the world just like kangaroos can.</p> </li>
+                  <li> <p> Class 8 English poem “When I set out for Lyonnesse” is a poem where the poet praises a place named “Lyonnesse”. Clearly, its culture has brought so many changes in the life of the poet in just a single visit.</p> </li>
+                  <li> <p> 8 Class English poem “On the grasshopper and the Cricket'' is a nature poem. Hence, it is the description of hot summer and cold winter with a joyous mood.<p> </li>
+                </ul>
+                 
+
+                <strong style="font-family: crimson text; font-size: 150%">NCERT CLASS 8 ENGLISH SUPPLEMENTARY READER <br> “IT SO HAPPENED”</strong><br><br>
+
+                <ul>
+                  <li> <p> Class 8 English supplementary reader chapter 1 “How the camel got his hump” by Rudyard Kipling is just an imaginative fable about a lazy camel who keeps skipping the work.</p> </li>
+                  <li> <p>	8 Class English supplementary reader chapter 2 “Children at work” shows the sad life of children who have to become rag pickers for the sake of their families instead of studying.</p> </li>
+                  <li> <p>	Class 8 English supplementary reader chapter 3 “The selfish giant” is a fantasy tale about a giant who builds a huge wall to keep the little kids out of his garden. Accordingly, this is done so that they cannot play.</p> </li>
+                  <li> <p>	8 Class English supplementary reader chapter 4 “The treasure within” is a hidden tale that tells that every student has his style of learning and interest. Hence,  he may not be a topper but can be an achiever.</p> </li>
+                  <li> <p>	Class 8 English supplementary reader chapter 5 “Princess September” is a story about a young princess named September who has gifted a parrot inside a golden cage who dies.</p> </li>
+                  <li> <p>	8 Class English supplementary reader chapter 6 “The Fight” is a conflict between two boys regarding swimming. Both the boys beat each other and became good friends by the end of the poem. Finally, they convey a message of love over anything else.</p> </li>
+                  <li> <p>	Class 8 English supplementary reader chapter 7 “The open window” is entirely based on an open window and focuses on appearance Vs reality and disbelief.</p> </li>
+                  <li> <p>	8 Class English supplementary reader chapter 8 “Jalebis” is a moral based story that we cannot blindly depend on God for anything that our heart desires. We should work hard to make dreams come true.<p> </li>
+                    <li> <p>	8 Class English supplementary reader chapter 9 “The Comet 1” is an astronomical text about an ambitious astronomer “Manoj Duttada”.<p> </li>
+                      <li> <p>	Class 8 English supplementary reader chapter 10 “The Comet 2” is the continuation of “The Comet 1” and is the conference of many leading scientists of the world.<p> </li>
+
+                  </ul>
+               <strong style="font-family: crimson text; font-size: 150%">Summary of Class 8 English all chapters are prepared with so much research which will be providing a good scope of learning to the students along with good marks.</strong>
+
+
+</p>
+</p>
+        </div>
+      </div>
+
+
+
+      <div role="tabpanel" class="tab-pane" id="tab5">
+        <p id='smal' style="padding-top:4%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="tab6">
+        <p id='smal'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Slider starts here -->
+<br>
+<h1 class='para' style="font-family: crimson text; font-size: 350%">What we have for your child...</h1>
+<section class="carousel-section">
+  <div class="swiper-container mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img class="caro-img" width=150% src="{% static 'webpages/images/1 (2).png' %}" />
+      </div>
+      <div class="swiper-slide">
+        <img class="caro-img"  width=150% src="{% static 'webpages/images/2 (2).png' %}" />
+      </div>
+      <div class="swiper-slide">
+        <img class="caro-img" width=150% src="{% static 'webpages/images/3 (2).png' %}" />
+      </div>
+      <div class="swiper-slide">
+        <img class="caro-img" width=150% src="{% static 'webpages/images/5 (2).png' %}" />
+      </div>
+      <div class="swiper4slide">
+        <img class="caro-img" width=150% src="{% static 'webpages/images/4 (2).png' %}" />
+      </div>
+
+      <div class="swiper-slide">
+        <img class="caro-img" width=150% src="{% static 'webpages/images/6 (2).png' %}" />
+      </div>
+      <div class="swiper-slide">
+        <img class="caro-img" width=150% src="{% static 'webpages/images/7 (2).png' %}" />
+      </div>
+      <div class="swiper-slide">
+        <img class="caro-img" width=150% src="{% static 'webpages/images/8 (2).png' %}" />
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+  <h1 class="para" style="font-family: crimson text; font-size: 450%">Road Map to your success</h1>
+  <img src="{% static 'webpages/images/RoadMap.png' %}" width="100%" alt="">
+</div>
+<br>
+<div class="jumbotron white" id='Lowerband'>
+    <h1 class='para' style="font-family: crimson text; font-size: 550%">Take your free counseling</h1>
+    <div class="row" style='margin-right:0px;'>
+      <div class="col-xs-4 col-lg-5"></div>
+      <div class="col-xs-4 col-lg-5">
+        <a href="#">
+          <button class="btn btn-danger btn-lg" type="button" name="button">Join us for free!!!</button>
+        </a>
+      </div>
+      <div class="col-xs-4 col-lg-5"></div>
+    </div>
+  </div>
+
+<footer class="footer-bs">
+           <div class="row">
+            <div class="col-md-3 footer-brand animated fadeInLeft">
+              <div class="item">
+                <h2>Logo</h2>
+                   <p>Ekal Shiksha is an Ed-tech company which provides one on one individual online classes. It is an initiative which aims to revolutionize the standard teaching and learning methods. We believe that each student has his or her personal learning speed, method and curriculum which is very important for a teacher to understand and personalize their teaching methods according to the students not vice versa. This platform is especially built for those who have immense potential but are never focused on in group classes, the growth of such students is our moto.
+
+<br>We have been in the teaching industry for past four years, catered to more than 1000s of students till the date. We are unique in a manner that we not only provide tuitions but also we make sure that the performance of each student is tracked through our LMS system and they get to check their clearity of concepts by the MCQs provided after each concept is taught. We have adopted the EAD approach for the better learning, understanding and self assessing of students. We are in a way parent friendly and make sure that the parents are kept in loop for each activity of the student and the teacher.
+
+<br>We have accommodated the best of talented teachers from all across the India for students who believe in learning beyond a classroom. We are a one step solution for all those parents who worry about their kid not being focused enough in group classes, for those who believe that their child can do far better if focused a little more, for those who worry for their kid’s safety when they are at work and their child alone with a teacher at home, for those who worry sending their child to coaching at odd hours and most of all for those who not only believe in passing but in learning.</p>
+</div>
+               </div>
+            <div class="col-md-6 footer-nav animated fadeInUp">
+                <h4 class='para'>Menu —</h4>
+                <div class="col-md-4">
+                       <ul class="list">
+                           <li><a href="{% url '6th' %}">Class 6th</a></li>
+                           <li><a href="{% url '7th' %}">Class 7th</a></li>
+                           <li><a href="{% url '8th' %}">Class 8th</a></li>
+                           <li><a href="{% url '9th' %}">Class 9th</a></li>
+                           <li><a href="{% url '10th' %}">Class 10th</a></li>
+                           <li><a href="{% url '11th_Science' %}">Class 11th Science</a></li>
+                           <li><a href="{% url '11th_Commerce' %}">Class 11th Commerce</a></li>
+                         </ul>
+                       </div>
+                           <div class="col-md-4">
+                                  <ul class="list">
+
+                           <li><a href="{% url '11th_Humanities' %}">Class 11th Humanities</a></li>
+                           <li><a href="{% url '12th_Science' %}">Class 12th Science</a></li>
+                           <li><a href="{% url '12th_Commerce' %}">Class 12th Commerce</a></li>
+                           <li><a href="{% url '12th_Humanities' %}">Class 12th Humanities</a></li>
+                       </ul>
+                   </div>
+                <div class="col-md-4">
+                       <ul class="list">
+                           <li><a href="#">About Us</a></li>
+                           <li><a href="#">Contacts</a></li>
+                           <li><a href="#">Terms & Condition</a></li>
+                           <li><a href="#">Privacy Policy</a></li>
+                       </ul>
+                   </div>
+               </div>
+            <div class="col-md-3 footer-social animated fadeInDown">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/ekalshiksha/">Facebook</a></li>
+                    <li><a href="https://twitter.com/ekalshiksha?lang=en">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/ekal_shiksha/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/company/ekal-shiksha/?originalSubdomain=in">Linkdin</a></li>
+                   </ul>
+               </div>
+            </div>
+       </footer>
+
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "3",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+  </script>
+<script src="{% static 'webpages/Js/ReadMore.js' %}"></script>
+<script src="{% static 'webpages/Js/readMoreJS.min.js' %}"></script>
+<script>
+   $readMoreJS.init({
+   target: '.readmore',           // Selector of the element the plugin applies to (any CSS selector, eg: '#', '.'). Default: ''
+   numOfWords: 100,               // Number of words to initially display (any number). Default: 50
+   toggle: true,                 // If true, user can toggle between 'read more' and 'read less'. Default: true
+   moreLink: 'Read More ...',    // The text of 'Read more' link. Default: 'read more ...'
+   lessLink: 'Read Less'         // The text of 'Read less' link. Default: 'read less'
+});
+</script>
+<script src="{% static 'webpages/Js/jquery_flipster_min.js' %}"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</html>
